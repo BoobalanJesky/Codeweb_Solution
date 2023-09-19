@@ -19,7 +19,9 @@
       }
     ],
     "paths": {
-      "@abserve/*": ["./src/*"]
+      "@abserve/*": ["./src/*"],
+      "@mui/material": ["../node_modules/@mui/material"],
+      "@mui/material/styles": ["../node_modules/@mui/material/styles"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
