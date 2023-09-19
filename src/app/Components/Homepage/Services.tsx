@@ -5,11 +5,11 @@ const Services = () => {
   return (
     <div>
         <div className='grid justify-center'>
-            <p className='text-[14px] my-[5px] leading-normal font-semibold text-text-color'>Services</p>
+            <p className='text-[14px] text-center md:text-start my-[5px] leading-normal font-semibold text-text-color'>Services</p>
             <p className='text-[33px] font-bold leading-normal text-text-black max-w-[476px]'>Our Services: Your One-Stop Shop 
 for Every IT Services</p>
         </div>
-        <div className='grid grid-cols-4 gap-[76px]'>
+        <div className='grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-[76px]'>
              <AccountCard
             title="Website Development"
             description="Lorem Ipsum is simply 

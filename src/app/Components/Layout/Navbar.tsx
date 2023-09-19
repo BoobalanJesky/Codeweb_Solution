@@ -8,11 +8,11 @@ const Navbar = () => {
     }
   return (
     <>
-    <section className=' relative mb-40  flex justify-between gap-3  pt-[21px] items-center'>
-        <div className='flex items-center gap-[50px]'>
+    <section className=' relative  mb-10 lg:mb-40  flex justify-between gap-3  pt-[21px] items-center'>
+        <div className={`${styles.NavbarItem} flex items-center lg:gap-[50px]`}>
          <img src="/assets/image/logo.png"/>
          <div>
-          <ul className='flex gap-[25px] text-[14px]  font-medium leading-normal'>
+          <ul className='lg:flex gap-[25px] text-[14px] hidden   font-medium leading-normal whitespace-nowrap'>
             <li>Home</li>
             <li>Company <KeyboardArrowDownIcon/></li>
             <li>Services<KeyboardArrowDownIcon/></li>
@@ -23,13 +23,15 @@ const Navbar = () => {
         </div>
       
         <div>
-            <button className='bg-default-primary text-[#fff] capitalize px-[25px] py-[13px] rounded-[4px] text-[14px] font-medium leading-normal'>
+            <button className='bg-default-primary whitespace-nowrap text-[#fff] capitalize px-[25px] py-[13px] rounded-[4px] text-[14px] font-medium leading-normal'>
             Get A Free Quote
             </button>
         </div>
-        <div className={`${styles.boxShading} absolute border border-solid  bg-opacity-30 w-72 h-72 rounded-full top-[-219px] left-[-397px]`}>
+        <div className={`${styles.boxShading} absolute border border-solid  bg-opacity-30 w-80 h-80 rounded-full top-[-219px] left-[-397px]`}>
   {/* Your content goes here */}
 </div>
+{/* <div className={`${styles.boxShadingRight} absolute border border-solid  bg-opacity-30 w-80 h-80 rounded-full bottom right-0`}>
+  </div> */}
 
         {/* <div className={`${styles.boxShading} border border-[#fff] p-10 `}></div> */}
         {/* <div>

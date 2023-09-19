@@ -1,37 +1,143 @@
-.sideBox{
-box-shadow: 2px 2px 10px 0px rgba(0, 92, 255, 0.14);
+.sideBox {
+  box-shadow: 2px 2px 10px 0px rgba(0, 92, 255, 0.14);
 }
-.sidebox1{
-    box-shadow: 2px 2px 13px 0px rgba(0, 0, 0, 0.10);
+
+.sidebox1 {
+  box-shadow: 2px 2px 13px 0px rgba(0, 0, 0, 0.10);
 }
+
 .pagination {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background-color: #ccc;
+  border-radius: 50%;
+  margin: 0 2px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dot.active {
+  background-color: #005CFF;
+}
+
+.slider {
+  position: absolute;
+  height: 10px;
+  background-color: #005CFF;
+  transition: transform 0.3s ease;
+  transform: translateX(0);
+}
+
+.boxShading {
+  box-shadow: 126px 170px 333px #005cff;
+}
+
+.boxShadingRight {
+  box-shadow: -56px -86px 273px #005cff;
+}
+
+@media only screen and (min-width: 1030px) {
+  .pxPadding {
+    padding-left: 5px;
+    padding-right: 5px;
   }
-  
-  .dot {
-    width: 10px;
-    height: 10px;
-    background-color: #ccc;
-    border-radius: 50%;
-    margin: 0 2px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+}
+
+@media only screen and (min-width: 1072px) {
+  .pxPadding {
+    padding-left: 30px;
+    padding-right: 30px;
   }
-  
-  .dot.active {
-    background-color: #005CFF;
+}
+
+@media only screen and (min-width: 1128px) {
+  .pxPadding {
+    padding-left: 68px;
+    padding-right: 68px;
   }
-  
-  .slider {
-    position: absolute;
-    height: 10px;
-    background-color: #005CFF;
-    transition: transform 0.3s ease;
-    transform: translateX(0);
+}
+
+@media only screen and (min-width: 1030px) {
+  .NavbarItem {
+    gap: 10px
   }
-  .boxShading{
-  box-shadow: 124px 48px 231px #005cff;
+}
+
+@media only screen and (min-width: 1072px) {
+  .NavbarItem {
+    gap: 25px
+  }
+}
+
+@media only screen and (min-width: 1128px) {
+  .NavbarItem {
+    gap: 50px
+  }
+}
+
+@media only screen and (min-width: 1030px) {
+  .AboutItem {
+    gap: 50px
+  }
+}
+
+@media only screen and (min-width: 1072px) {
+  .AboutItem {
+    gap: 50px
+  }
+}
+
+@media only screen and (min-width: 1128px) {
+  .AboutItem {
+    gap: 190px
+  }
+}
+
+@media only screen and (min-width: 1030px) {
+  .AdvGap {
+    gap: 10px;
+  }
+  .AdvWid{
+    padding: 10px 10px;
+  }
+}
+
+@media only screen and (min-width: 1110px) and (max-width: 1336px) {
+  .AdvGap {
+    gap: 101px
+  }
+  .AdvWid{
+    padding: 10px 10px;
+  }
+}
+
+@media only screen and (min-width: 1030px) {
+  .AdvGap {
+    gap: 10px
+  }
+  .AdvWid{
+    padding: 36px 27px;
+  }
+  .journeyPad{
+    padding-left: 72px;
+    padding-right: 72px;
+    gap:70px
+  }
+}
+@media only screen and (min-width: 1034px) and (max-width: 1336px) {
+  .AdvWid{
+    padding: 10px 10px;
+  }
+  .journeyPad{
+    padding-left: 10px;
+    padding-right: 10px;
+    gap: 10px;
+  }
 }

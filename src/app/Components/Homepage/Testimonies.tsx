@@ -11,7 +11,7 @@ const Testimonies = () => {
                     Testimonials From Our Beloved Clients
                 </p>
             </div>
-            <section className="flex items-center">
+            <section className="flex items-center mb-[110px] relative">
                 <div className="w-1/2 flex justify-center">
                     <div style={{ position: "relative", display: "inline-block" }}>
                         <div
@@ -45,6 +45,7 @@ const Testimonies = () => {
                         </div>
                     </div>
                 </div>
+                <div className={`${styles.boxShading} absolute border border-solid  bg-opacity-30 w-80 h-80 rounded-full top-[-306px] left-[-397px]`}></div>
             </section>
         </div>
     );

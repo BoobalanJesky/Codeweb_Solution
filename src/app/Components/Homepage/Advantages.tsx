@@ -1,11 +1,12 @@
 import React from "react";
 import AccountCard from "../Reusable/Accountcard";
-
+import styles from "../../css/about.module.css";
 const Advantages = () => {
   return (
-    <div className="w-full flex items-center mb-[124px] gap-[101px]">
-      <div className="w-1/2">
-        <p className="text-[14px] my-[5px] leading-normal font-semibold text-text-color">
+    <div className={`w-full ${styles.AdvGap} flex flex-wrap lg:flex-nowrap items-center mb-[124px] px-[5px]`} >
+      <div className="w-full flex justify-center lg:w-1/2">
+        <div>
+        <p className="text-[14px] my-[5px] leading-normal text-center lg:text-start font-semibold text-text-color">
           Why Choose Us?
         </p>
         <p className="text-[33px] font-bold leading-normal text-text-black max-w-[476px]">
@@ -18,6 +19,7 @@ const Advantages = () => {
           typesetting industry. Lorem Ipsum has been the industry's standard
           dummy text ever since the 1500s
         </p>
+        <div className="flex justify-center lg:justify-start">
         <button className="bg-default-primary flex justify-between items-center gap-[7px] text-[#fff] capitalize px-[25px] py-[13px] rounded-[4px] text-[14px] font-medium leading-normal">
           <span>About us</span>
           <img
@@ -25,35 +27,37 @@ const Advantages = () => {
             className="w-[12px] h-[8px]"
           ></img>
         </button>
+        </div>
+        </div>
       </div>
-      <div className="w-1/2 grid grid-cols-2 ">
+      <div className="w-full lg:w-1/2 grid gap-3 sm:gap-[6.75rem]  lg:gap-0 mt-8 lg:mt-0 mx-auto sm:grid-cols-2 ">
       <AccountCard
             title="Faster Hiring"
             description="Lorem Ipsum is simply 
             dummy text of the printing."
             icon="/assets/svg/info.svg"
-            className="mt-10 w-[240px] mx-auto"
+            className={`lg:mt-10 ${styles.AdvWid} w-[240px] mx-auto`}
           />
              <AccountCard
             title="Lorem Ipsum"
             description="Lorem Ipsum is simply 
             dummy text of the printing."
             icon="/assets/svg/info.svg"
-            className="mb-10 w-[240px] "
+            className={`lg:mb-10 ${styles.AdvWid} w-[240px] mx-auto lg:mx-0`}
           />
              <AccountCard
             title="Faster Hiring"
             description="Lorem Ipsum is simply 
             dummy text of the printing."
             icon="/assets/svg/info.svg"
-            className="mt-10 w-[240px] mx-auto"
+            className={`lg:mt-10 ${styles.AdvWid} w-[240px] mx-auto`}
           />
              <AccountCard
             title="Faster Hiring"
             description="Lorem Ipsum is simply 
             dummy text of the printing."
             icon="/assets/svg/info.svg"
-            className="mb-10 w-[240px]"
+            className={`lg:mb-10 ${styles.AdvWid} w-[240px] mx-auto lg:mx-0` }
           />
       </div>
     </div>
