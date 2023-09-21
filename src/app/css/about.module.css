@@ -188,3 +188,9 @@ top:205px;
     top:332px;
   }
 }
+.fadeDesign ::before{
+content:url("/assets/image/fade.png")
+}
+.fadeDesign ::after{
+  
+}

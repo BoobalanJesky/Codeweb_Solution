@@ -8,12 +8,10 @@ import Website from './Website'
 export default function Home() {
     return (
       <>
-      <Navbar/>
       <Website/>
      <Choose/>
      <Benefits/>
      <Business/>
      <Reviews/>
-     <Footer/>
       </>
     )}

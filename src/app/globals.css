@@ -18,6 +18,8 @@
 
 body {
   font-family: 'Poppins', sans-serif;
+  max-width: 2000px;
+  margin: auto;
 }
 .slick-track {
   width: 1800px; /* Adjust this value to your desired width */

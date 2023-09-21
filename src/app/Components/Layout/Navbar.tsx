@@ -8,7 +8,7 @@ const Navbar = () => {
     }
   return (
     <>
-    <section className=' relative  mb-10 lg:mb-40 px-[68px]  flex justify-between gap-3  pt-[21px] items-center'>
+    <section className={`${styles.pxPadding} relative  mb-10 lg:mb-40   flex justify-between gap-3  pt-[21px] items-center`}>
         <div className={`${styles.NavbarItem} flex items-center lg:gap-[50px]`}>
          <img src="/assets/image/logo.png"/>
          <div>
@@ -23,7 +23,7 @@ const Navbar = () => {
         </div>
       
         <div>
-            <button className='bg-default-primary whitespace-nowrap text-[#fff] capitalize px-[25px] py-[13px] rounded-[4px] text-[14px] font-medium leading-normal'>
+            <button className='bg-default-primary whitespace-nowrap text-[#fff] capitalize px-[14px] sm:px-[25px] py-[13px] rounded-[4px] text-[14px] font-medium leading-normal'>
             Get A Free Quote
             </button>
         </div>

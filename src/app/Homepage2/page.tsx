@@ -6,17 +6,17 @@ import Ourclient from './Ourclient';
 import Ourteam from './Ourteam';
 import Getstarted from './Getstarted';
 import Footer from '../Components/Layout/Footer';
+import Layout from '../Components/Layout/layout';
 export default function Home() {
   return (
-    <>
-    <Navbar/>
+    <Layout>
     <Aboutus/>
     <Achievements/>
     <Marketing/>
     <Ourclient/>
     <Ourteam/>
     <Getstarted/>
-    <Footer/>
-    </>  
+
+    </Layout>  
     )
 }

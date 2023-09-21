@@ -6,10 +6,9 @@ import Services from "@abserve/app/Homepage3/Services"
 export default function Home() {
     return (
       <>
-      <Navbar/>
+     
       <Service/>
       <Services/>
       <Unique/>
-      <Footer/>
       </>
     )}

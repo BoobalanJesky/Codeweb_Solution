@@ -9,10 +9,10 @@ const config: Config = {
   theme: {
     extend: {
       backgroundColor: {
-        'default-primary': '#0F5DC4',
+        'default-primary': '#005CFF',
       },
       colors:{
-        "text-color":'#0F5DC4',
+        "text-color":'#005CFF',
         "text-black":"#222",
         "text-white":"fff"
       },
