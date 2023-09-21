@@ -3,26 +3,15 @@ import styles from "../../css/about.module.css";
 const Journey = () => {
   return (
     <>
-      <div className={`w-full p-2 h-full bg-[#222] lg:h-[520px] flex items-start justify-center  lg:flex-nowrap lg:gap-[70px]  ${styles.journeyPad} lg:px-[72px]`}>
-        <div className="rounded-full px-[19px] py-[15px] w-[50px] h-[50px] flex justify-start bg-default-primary my-auto">
+      <div className={`w-full relative p-2 h-full bg-[#222] lg:h-[520px] flex items-start justify-center  lg:flex-nowrap lg:gap-[70px]  ${styles.journeyPad} lg:px-[72px]`}>
+        <div className={`rounded-full absolute ${styles.leftAbs}    border border-[#0F5DC4] h-[50px] w-[50px] flex justify-center items-center  bg-default-primary my-auto`}>
             <img src="/assets/svg/leftArrow.svg"/>
         </div>
         <div className="flex justify-center items-center flex-wrap">
-        <div className="relative lg:w-1/2 my-[49px] m-auto">
-          <div className=" grid grid-cols-2 gap-[22px]">
-            <img src="/assets/image/sidePic2.png" className="rounded-[7px] lg:ml-[17px]" />
-            <div
-              className={`${styles.sideBox} w-[90px] h-[104px] bg-[#D4D9E9] rounded-[5px] shadow-md mb-[22px]`}
-            ></div>
-          </div>
-          <div className="absolute gap-[22px]  left-[70px] bottom-[-150px] flex items-center">
-            <div
-              className={`${styles.sidebox1} w-[83px] lg:w-[90px] h-[116px] bg-default-primary rounded-[5px] mt-[55px]`}
-            ></div>
-            <img src="/assets/image/sidePic1.png" className="rounded-[7px]" />
-          </div>
+        <div className="md:w-1/2">
+<img src="/assets/image/banner.png" className="mx-auto w-[318px] md:w-auto lg:mx-0"/>
         </div>
-        <div className="lg:w-1/2 mt-[200px] lg:mt-[49px] my-auto">
+        <div className="md:w-1/2  lg:mt-[49px] my-auto mt-[70px]">
           <p className="text-[14px] my-[5px] text-center lg:text-start  leading-normal font-semibold text-text-color">
             Case Studies
           </p>
@@ -45,7 +34,7 @@ const Journey = () => {
           </button></div>
         </div>
         </div>
-        <div className="rounded-full flex justify-end px-[19px] py-[15px]  w-[50px] h-[50px] bg-default-primary my-auto">
+        <div className={`rounded-full absolute ${styles.rightAbs}    border border-[#0F5DC4] h-[50px] w-[50px] flex justify-center items-center  bg-default-primary my-auto`}>
             <img src="/assets/svg/rightArrow.svg"/>
         </div>
       </div>

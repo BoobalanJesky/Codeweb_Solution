@@ -19,6 +19,13 @@
 body {
   font-family: 'Poppins', sans-serif;
 }
-.grads{
- 
+.slick-track {
+  width: 1800px; /* Adjust this value to your desired width */
+}
+.slick-dots li {
+  margin: 0 !important;
+}
+.slick-dots li button:before {
+  color:#0F5DC4 !important;
+  font-size: 10px !important;
 }

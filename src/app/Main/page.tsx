@@ -9,30 +9,31 @@ import Testimonies from '../Components/Homepage/Testimonies';
 import Footer from '../Components/Layout/Footer';
 import Navbar from '../Components/Layout/Navbar'
 import styles from "../../app/css/about.module.css";
+import Layout from '../Components/Layout/layout';
 const page = () => {
   
   return (
-    <>
+    <Layout>
     {/*  */}
     <div className={`${styles.pxPadding} lg:px-[68px]`}>
-        <Navbar/>
+        {/* <Navbar/> */}
       
         <About/>
         
         <Advantages/>
         <Services/>
     </div>
-    <div className='mt-[71px] mb-[100px] '>
+    <div className='mt-[71px] mb-10 md:mb-[100px] p-2 '>
       <Journey/>
     </div>
-    <div className={`${styles.pxPadding} lg:px-[68px]`}>
+    <div className={`${styles.pxPadding} lg:px-[68px] p-2`}>
     <Dominance/>
     <Testimonies/>
     </div>
-    <div>
+    {/* <div>
       <Footer/>
-    </div>
-    </>  )
+    </div> */}
+    </Layout>  )
 }
 
 export default page

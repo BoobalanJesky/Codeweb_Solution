@@ -3,16 +3,16 @@ import AccountCard from "../Reusable/Accountcard";
 import styles from "../../css/about.module.css";
 const Advantages = () => {
   return (
-    <div className={`w-full ${styles.AdvGap} flex flex-wrap lg:flex-nowrap items-center mb-[124px] px-[5px]`} >
+    <div className={`w-full ${styles.AdvGap} flex flex-wrap lg:flex-nowrap items-center mb-10 lg:mb-[124px] px-[5px]`} >
       <div className="w-full flex justify-center lg:w-1/2">
         <div>
         <p className="text-[14px] my-[5px] leading-normal text-center lg:text-start font-semibold text-text-color">
           Why Choose Us?
         </p>
-        <p className="text-[33px] font-bold leading-normal text-text-black max-w-[476px]">
+        <p className="text-[33px] text-center lg:text-start font-bold leading-normal text-text-black lg:max-w-[476px]">
           The Benefits of Choosing Us, A Positive Driven Approach
         </p>
-        <p className="text-[14px] font-normal leading-[30px] text-[#414141] max-w-[600px] mt-[26px] mb-[20px]">
+        <p className="text-[14px] mx-auto font-normal leading-[30px] text-[#414141] max-w-[600px] mt-[26px] mb-[20px]">
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy text ever
           since the 1500s. Lorem Ipsum is simply dummy text of the printing and
@@ -30,7 +30,7 @@ const Advantages = () => {
         </div>
         </div>
       </div>
-      <div className="w-full lg:w-1/2 grid gap-3 sm:gap-[6.75rem]  lg:gap-0 mt-8 lg:mt-0 mx-auto sm:grid-cols-2 ">
+      <div className="w-full lg:w-1/2 grid gap-5 sm:gap-[6.75rem]  lg:gap-0 mt-8 lg:mt-0 mx-auto sm:grid-cols-2 ">
       <AccountCard
             title="Faster Hiring"
             description="Lorem Ipsum is simply 

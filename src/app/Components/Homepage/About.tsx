@@ -1,78 +1,144 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import styles from "../../css/about.module.css";
-
+import Slider from "react-slick"
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
+// import "./CustomSlider.css"; 
 const About = () => {
   const [activeDot, setActiveDot] = useState(0);
+
 
   const handleDotClick = (index) => {
     setActiveDot(index);
   };
+  
+  // useEffect(() => {
+  //   // Calculate the desired width for the slider track
+  //   const customWidth = 300 * 6; // 300px (width of each slide) multiplied by the number of slides (6 in this case)
+    
+  //   // Set the width of the slider track using JavaScript
+  //   if (sliderRef.current) {
+  //     sliderRef.current.style.width = `${customWidth}px`;
+  //   }
+    
+  // }, []);
+  const settings = {
+    dots: true,
+    infinite: false,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    appendDots: (dots) => (
+      <ul className="custom-dots">
+        {dots.slice(0, 8)}
+      </ul>
+    )
+   
+  };
+  const header = [
+    {
+      pageHead:"",
+      headText: "Website & Mobile Application",
+      head: "Development Company",
+      button:"Explore our services",
+      img:"/assets/svg/keyArrow.svg",
+      bannerImage:"/assets/image/banner.png"
+    },
+    {
+      pageHead:"About Us",
+      headText: "",
+      head: "A Canvas for Passionate Creators: Nurturing Enthusiasm & Creativity",
+      button:"Get Started",
+      img:"",
+      bannerImage:"/assets/image/bannerImage2.png"
+    },
+    {
+      pageHead:"Services",
+      headText: "",
+      head: "Code Web Solutions: The Future of Web & Mobile Technologies",
+      button:"Get Started",
+      img:"",
+      bannerImage:"/assets/image/bannerImage2.png"
+    },
+    {
+      pageHead:"Website Development Services",
+      headText: "",
+      head: "The Best Website Development Services for Your Business",
+      button:"Get Started",
+      img:"",
+      bannerImage:"/assets/image/bannerImage2.png"
+    },
+    {
+      pageHead:"Hire Developers",
+      headText: "",
+      head: "Hire Our Expert Developers For Your Projects",
+      button:"Get Started",
+      img:"",
+      bannerImage:"/assets/image/bannerImage2.png"
+    },
+    {
+      pageHead:"Android Developers",
+      headText: "",
+      head: "Hire Our Expert Android Developers ForYour Projects",
+      button:"Send Query",
+      img:"",
+      bannerImage:"/assets/image/bannerImage2.png"
+    },
+    {
+      pageHead:"Careers",
+      headText: "",
+      head: "We’re Re-defining Work at Code Web Solutions",
+      button:"Explore Vacancies",
+      img:"",
+      bannerImage:"/assets/image/bannerImage2.png"
+    },
+    
+
+  ]
   return (
-    <div className="relative">
-      <div className={`${styles.AboutItem} w-full flex justify-center  flex-wrap lg:flex-nowrap lg:gap-[190px] px-[5px]`}>
-        <div className="grid lg:w-1/2 m-auto">
-          <p className="font-bold lg:pt-[60px] text-center  md:text-start text-[35px] md:max-w-[505px]">
-            <span className="text-text-color">Website & Mobile Application </span>
-            <span className="">Development Company </span>
-          </p>
-          <p className="md:max-w-[570px] flex justify-center text-[14px] mt-[27px] mb-[51px] leading-normal font-normal">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text ever
-            since the 1500s
-          </p>
-
-          <div className="flex justify-center md:justify-start gap-[11px]">
-            <button className="bg-default-primary flex justify-between items-center gap-[7px] text-[#fff] capitalize px-[25px] py-[13px] rounded-[4px] text-[14px] font-medium leading-normal">
-              <span>Explore our services</span>
-              <img
-                src="/assets/svg/keyArrow.svg"
-                className="w-[12px] h-[8px]"
-              ></img>
-            </button>
-            <div className="rounded-full border border-default-primary flex justify-between px-[21px] py-[14px] bg-default-primary">
-              <img src="/assets/svg/arrow.svg" />
-            </div>
-          </div>
-        </div>
-        <div className="mt-[50px] lg:mt-0 lg:w-1/2 ">
-          <div className="relative">
-            <div className="grid grid-cols-2 gap-[22px]">
-              <img src="/assets/image/sidePic2.png" className="rounded-[7px] m-auto " />
-              <div
-                className={`${styles.sideBox} w-[90px] h-[104px] bg-[#D4D9E9] rounded-[5px] shadow-md mb-[22px]`}
-              ></div>
-            </div>
-            <div className="absolute gap-[22px]  left-[70px] bottom-[-150px] flex items-center">
-              <div
-                className={`${styles.sidebox1} w-[90px] h-[116px] bg-default-primary rounded-[5px] mt-[55px]`}
-              ></div>
-              <img src="/assets/image/sidePic1.png" className="rounded-[7px]" />
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div className="mt-[205px] md:mt-[165px] mb-[124px] flex justify-center">
-        <ul className={`${styles.pagination}`}> 
-          {[...Array(5)].map((_, index) => (
-            <li
-              key={index}
-              className={`${styles.dot} ${activeDot === index ? styles.active : ""
-                }`}
-              onClick={() => handleDotClick(index)}
-            />
+  <div className="mb-[124px]">
+        <Slider {...settings} >
+          {header.map((i, j) => (
+              <div key={j} className="custom-slide" >
+              <div className={`${styles.AboutItem} w-full flex justify-center  flex-wrap lg:flex-nowrap lg:gap-[190px] px-[5px]`}>
+                <div className="grid md:w-1/2 m-auto">
+                  <p className="font-bold lg:pt-[60px] mt-[7px] text-center   md:text-start text-[35px] md:max-w-[545px]">
+                    <span className="text-text-color block text-[14px] font-semibold leading-normal">{i.pageHead}</span>
+                    <span className="text-text-color">{i.headText} </span>
+                    <span className="">{i.head} </span>
+                  </p>
+                  <p className="sm:max-w-[530px]  mx-auto md:mx-0 flex justify-center text-[14px] mt-[27px] mb-[20px] md:mb-[51px] leading-normal font-normal">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting
+                    industry. Lorem Ipsum has been the industry's standard dummy text ever
+                    since the 1500s
+                  </p>
+        
+                  <div className="flex mb-8 md:mb-0 justify-center md:justify-start gap-[11px]">
+                    <button className="bg-default-primary flex justify-between items-center gap-[7px] text-[#fff] capitalize px-[25px] py-[13px] rounded-[4px] text-[14px] font-medium leading-normal">
+                      <span>{i.button}</span>
+                      <img
+                        src={i.img}
+                        className="w-[12px] h-[8px]"
+                      ></img>
+                    </button>
+                    {j === 0 && ( 
+                  <div className="rounded-full border border-default-primary flex justify-between px-[21px] py-[14px] bg-default-primary">
+                    <img src="/assets/svg/arrow.svg" alt="arrow" />
+                  </div>
+                )}
+                  </div>
+                </div>
+        
+                <div className="md:w-1/2">
+                  <img src={i.bannerImage} className="mx-auto lg:mx-0" />
+                </div>
+              </div>
+              </div>
           ))}
-          <div
-            className={`${styles.slider}`}
-            style={{ transform: `translateX(${activeDot * 15}px)` }}
-          />
-        </ul>
-      </div>
-
-
-    </div>
+        </Slider>
+        </div>
   );
 };
 

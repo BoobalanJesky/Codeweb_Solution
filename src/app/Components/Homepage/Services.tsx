@@ -1,6 +1,6 @@
 import React from 'react'
 import AccountCard from '../Reusable/Accountcard'
-
+import styles from "../../css/about.module.css";
 const Services = () => {
   return (
     <div>
@@ -9,7 +9,7 @@ const Services = () => {
             <p className='text-[33px] font-bold leading-normal text-text-black max-w-[476px]'>Our Services: Your One-Stop Shop 
 for Every IT Services</p>
         </div>
-        <div className='grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-[76px]'>
+        <div className={`${styles.servicesGap} grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 `}>
              <AccountCard
             title="Website Development"
             description="Lorem Ipsum is simply 

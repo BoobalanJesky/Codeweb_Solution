@@ -116,6 +116,10 @@
   .AdvWid{
     padding: 10px 10px;
   }
+  .servicesGap{
+gap: 30px;
+  }
+
 }
 
 @media only screen and (min-width: 1030px) {
@@ -130,7 +134,19 @@
     padding-right: 72px;
     gap:70px
   }
+  .servicesGap{
+gap:76px
+  }
+  .leftAbs{
+left:75px;
+top:205px;
+  }
+  .rightAbs{
+    right:75px;
+    top:205px;
+  }
 }
+/* left-[75px] top-[205px]  */
 @media only screen and (min-width: 1034px) and (max-width: 1336px) {
   .AdvWid{
     padding: 10px 10px;
@@ -139,5 +155,36 @@
     padding-left: 10px;
     padding-right: 10px;
     gap: 10px;
+  }
+  .servicesGap{
+    gap:30px
+      }
+      .leftAbs{
+        left:15px;
+        top:270px;
+      }
+      .rightAbs{
+        right:15px;
+        top:270px;
+      }
+}
+@media only screen and (min-width: 826px) and (max-width: 1034px) {
+  .rightAbs{
+    right:15px;
+    top:362px;
+  }
+  .leftAbs{
+    left:15px;
+    top:362px;
+  }
+}
+@media only screen and (min-width: 290px )and (max-width: 825px) {
+  .rightAbs{
+    right:15px;
+    top:332px;
+  }
+  .leftAbs{
+    left:15px;
+    top:332px;
   }
 }

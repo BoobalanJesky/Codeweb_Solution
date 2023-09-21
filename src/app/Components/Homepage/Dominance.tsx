@@ -9,7 +9,7 @@ const Dominance = () => {
           <p className="text-[14px]  text-center leading-normal font-semibold text-text-color">
             Industries We Serve
           </p>
-          <p className="text-[33px] font-bold leading-normal mt-[5px] mb-[70px] text-[#222] ">
+          <p className="text-[33px] font-bold leading-normal mt-[5px] m-10 md:mb-[70px] text-[#222] ">
             Our Impactful Presence in Various Industries
           </p>
         </div>
