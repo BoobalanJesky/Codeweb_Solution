@@ -8,7 +8,7 @@ const Navbar = () => {
     }
   return (
     <>
-    <section className=' relative  mb-10 lg:mb-40  flex justify-between gap-3  px-[68px] pt-[21px] items-center'>
+    <section className=' relative  mb-10 lg:mb-40  flex justify-between gap-3  pt-[21px] items-center'>
         <div className={`${styles.NavbarItem} flex items-center lg:gap-[50px]`}>
          <img src="/assets/image/logo.png"/>
          <div>

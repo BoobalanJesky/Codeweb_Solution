@@ -7,10 +7,10 @@ export default function Ourteam() {
                 <p className="text-[24px] md:text-[28px] lg:text-[33px] text-[#000] font-bold leading-normal text-center">Introducing Our Talented Team Members</p>
             </div>
             <div className='mt-[71px] px-[70px] flex flex-wrap justify-around gap-7'>
-                <div className="w-[295px] bg-[#fff] border-1 shadow-md rounded-xl">
-                    <div className="">
-                    <img className="rounded-xl" src="/assets/image/Ellipse 20.png"/>
-                    {/* <img className="px-[63px] py-[57px]" src="/assets/image/Mask group(3).png"/> */}
+                <div className="w-[295px]  bg-[#fff] border-1 shadow-md rounded-xl">
+                    <div className="relative">
+                    <img className="rounded-xl " src="/assets/image/Ellipse 20.png"/>
+                    {/* <img className=" absolute" src="/assets/image/Mask group(3).png"/> */}
                     </div>
                     <p className="text-[#000] leading-[33px] text-center font-medium text-[18px]">Brayden Tengan</p>
                     <p className="text-[#414141] text-[14px] text-center mb-[21px] leading-[33px] font-medium ">CEO & Founder</p>

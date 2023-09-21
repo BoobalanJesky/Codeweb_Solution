@@ -6,7 +6,7 @@ const Footer = () => {
             <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:lg:grid-cols-3 xl:grid-cols-4 gap-[70px]'>
                 <div className=''>
                     <p className='text-[27px] font-bold leading-normal text-[#fff]'>Code Web Solutions</p>
-                    <p className='text-[14px] font-normal leading-[30px] text-[#fff] w-[310px]'>
+                    <p className='text-[14px] font-normal leading-[30px] text-[#fff] md:w-[310px]'>
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.
                     </p>
                     <div className='grid gap-[14px] pt-[27px]'>
@@ -56,7 +56,7 @@ const Footer = () => {
                 </div>
                 <div>
                     <p className='text-[27px] font-bold leading-normal text-[#fff]'>Customer Support</p>
-                    <ul className='text-[14px] font-normal leading-[30px] text-[#fff] w-[300px]'>
+                    <ul className='text-[14px] font-normal leading-[30px] text-[#fff] md:w-[300px]'>
                         <li><b>Email ID:</b> support@cws.com</li>
                         <li><b>Phone No:</b> +1 1984 321 6313</li>
                         <li><b>Address:</b> Lorem Ipsum is simply dummy text
