@@ -11,29 +11,25 @@ import Navbar from '../Components/Layout/Navbar'
 import styles from "../../app/css/about.module.css";
 import Layout from '../Components/Layout/layout';
 const page = () => {
-  
+
   return (
     <Layout>
-    {/*  */}
-    <div className={`${styles.pxPadding} lg:px-[68px]`}>
-        {/* <Navbar/> */}
-      
-        <About/>
-        
-        <Advantages/>
-        <Services/>
-    </div>
-    <div className='mt-[71px] mb-10 md:mb-[100px] p-2 '>
-      <Journey/>
-    </div>
-    <div className={`${styles.pxPadding} lg:px-[68px] p-2`}>
-    <Dominance/>
-    <Testimonies/>
-    </div>
-    {/* <div>
-      <Footer/>
-    </div> */}
-    </Layout>  )
+      <div className={`${styles.pxPadding} lg:px-[68px]`}>
+        <About />
+        <Advantages />
+        <Services />
+      </div>
+      <div className='mt-[71px] mb-10 md:mb-[100px] p-2 '>
+        <Journey />
+      </div>
+      <div className={`${styles.pxPadding} lg:px-[68px]`}>
+        <Dominance />
+        <Testimonies />
+      </div>
+      <div>
+        <Footer />
+      </div>
+    </Layout>)
 }
 
 export default page

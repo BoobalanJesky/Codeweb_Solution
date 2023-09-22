@@ -1,0 +1,22 @@
+.verticalLine {
+    background-color: #ccc;
+    height: 40px;
+    width: 3px;
+}
+
+
+.stepItem {
+    @apply relative flex flex-col justify-center items-center w-36;
+}
+
+.stepItem:not(:first-child):before {
+    @apply content-[''] bg-slate-200 absolute w-[3px] h-full top-2/4 left-[48%] transform -translate-x-2/4;
+}
+
+.step {
+    @apply w-10 h-10 flex items-center justify-center z-10 relative bg-slate-700 rounded-full font-semibold text-white cursor-pointer;
+}
+
+.active .step {
+    @apply bg-default-primary;
+}
