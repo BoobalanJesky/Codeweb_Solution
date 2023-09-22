@@ -1,3 +1,4 @@
+"use client"
 import React, { useRef, useState } from "react";
 import styles from "../../css/about.module.css";
 import Slider from "react-slick"
@@ -70,7 +71,7 @@ const Testimonies = () => {
                             <p className="text-[14px] mt-[100px] my-[5px] text-center leading-normal font-semibold text-text-color">
                                 {i.subHead}
                             </p>
-                            <p className="text-[33px] font-bold flex justify-center leading-normal mt-[5px] mb-10 md:mb-[70px] text-[#222] ">
+                            <p className="text-[28px] md:text-[28px] lg:text-[33px] font-bold flex justify-center leading-normal mt-[5px] mb-10 md:mb-[70px] text-[#222] ">
                                 {i.head}
                             </p>
                         </div>

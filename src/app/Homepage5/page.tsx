@@ -1,5 +1,4 @@
 import Layout from "../Components/Layout/layout";
-import Navbar from "../Components/Layout/Navbar";
 import Achievements from "./Achievements";
 import Developer from "./Developer";
 import Hire from "./Hire";
