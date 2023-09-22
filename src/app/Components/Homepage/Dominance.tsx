@@ -15,7 +15,7 @@ const Dominance = () => {
         </div>
       </div>
       
-      <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-[10px] sm:gap-[40px]">
+      <div className="flex flex-wrap gap-[10px] sm:gap-[40px]">
         <AccountCard
           title=""
           description="Retail, Ecommerce"

@@ -18,16 +18,33 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  max-width: 2000px;
-  margin: auto;
+  /* max-width: 2000px;
+  margin: auto; */
 }
 .slick-track {
-  width: 1800px; /* Adjust this value to your desired width */
+  width: 100%; 
 }
 .slick-dots li {
-  margin: 0 !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
 }
 .slick-dots li button:before {
   color:#005cff !important;
   font-size: 10px !important;
 }
+/* Container holding the carousel */
+
+.custom-slide {
+  width: 100% !important; /* Set your desired width */
+/* height:100% !important; */
+}
+/* Style for carousel items (slides) */
+
+.carousel-container {
+  width: 100%; /* Set a default width */
+}
+.slick-arrow slick-next{
+  display: none;
+}
+
+

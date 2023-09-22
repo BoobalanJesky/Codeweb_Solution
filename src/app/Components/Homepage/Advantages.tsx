@@ -3,7 +3,7 @@ import AccountCard from "../Reusable/Accountcard";
 import styles from "../../css/about.module.css";
 const Advantages = () => {
   return (
-    <div className={`w-full ${styles.AdvGap} flex flex-wrap lg:flex-nowrap items-center mb-10 lg:mb-[124px] px-[5px]`} >
+    <div className={`w-full ${styles.AdvGap} flex flex-wrap mt-[124px] lg:flex-nowrap items-center mb-10 lg:mb-[124px] px-[5px]`} >
       <div className="w-full flex justify-center lg:w-1/2">
         <div>
         <p className="text-[14px] my-[5px] leading-normal text-center lg:text-start font-semibold text-text-color">

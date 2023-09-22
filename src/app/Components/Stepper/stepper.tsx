@@ -26,7 +26,7 @@ const Stepper = () => {
                         </div>
                         <p className='flex items-center gap-[14px]'>
                             <span className='text-text-black text-[35px] font-medium leading-normal'>{step.year}</span>
-                            <span className='text-[#414141] whitespace-nowrap text-[18px] font-medium leading-[33px]'>{step.start}</span>
+                            <span className='text-[#414141]  text-[18px] font-medium leading-[33px]'>{step.start}</span>
                         </p>
                     </div>
                 </div>
