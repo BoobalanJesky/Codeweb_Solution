@@ -5,6 +5,7 @@ import Chooseus from "./Chooseus";
 import Industries from "./Industries";
 import Sendquery from "./Sendquery";
 import Platform from "./platform";
+import Topquality from "./Topquality";
 export default function Home() {
     return (
         <>
@@ -13,8 +14,9 @@ export default function Home() {
             <Achievements/>
             <Chooseus/>
             <Platform/>
+            <Topquality/>
             <Industries/>
-            <Testimonies/>
+           {/* <Testimonies/> */}
             </Layout>
         </>
     )
