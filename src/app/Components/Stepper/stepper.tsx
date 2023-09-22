@@ -15,7 +15,7 @@ const Stepper = () => {
     }
 
     return (
-        <section className={`${styles.verticalStepper} flex  gap-[90px] flex-col items-start`}>
+        <section className={`${styles.verticalStepper} flex gap-[80px] lg:gap-[90px] grid items-start`}>
             {steps.map((step, i) => (
                 <div key={i} className={`${styles.stepItem} ${activeSteps.includes(i + 1) && styles.active}`} onClick={() => handleStepClick(i)}>
                     <div className='grid grid-cols-2 items-center gap-2'>
@@ -24,12 +24,14 @@ const Stepper = () => {
 
                             </div>
                         </div>
+                        
                         <p className='flex items-center gap-[14px]'>
                             <span className='text-text-black text-[35px] font-medium leading-normal'>{step.year}</span>
                             <span className='text-[#414141]  text-[18px] font-medium leading-[33px]'>{step.start}</span>
                         </p>
                     </div>
-                </div>
+                    </div>
+                
             ))}
         </section>
     );

@@ -37,19 +37,19 @@ export default function Choose() {
                     title="Market Analysis"
                     description="Lorem Ipsum is simply dummy text of the printing and typesetting industry."
                     icon="/assets/image/Group 2005.png"
-                    className="mt-[50px] w-[290px] md:w-[338px] px-[25px] py-[54px] grid justify-items-center text-center"
+                    className=" w-[290px] md:w-[338px] px-[25px] py-[54px] grid justify-items-center text-center"
                 />
                 <AccountCard
                     title="Experienced Team"
                     description="Lorem Ipsum is simply dummy text of the printing and typesetting industry."
                     icon="/assets/image/Group 2031.svg"
-                    className="mt-[50px] w-[290px] md:w-[338px] px-[25px] py-[54px] grid justify-items-center text-center"
+                    className=" w-[290px] md:w-[338px] px-[25px] py-[54px] grid justify-items-center text-center"
                 />
                 <AccountCard
                     title="Business Growth"
                     description="Lorem Ipsum is simply dummy text of the printing and typesetting industry."
                     icon="/assets/image/Group 2005.png"
-                    className=" mt-[50px] w-[290px] md:w-[338px] px-[25px] py-[54px] grid justify-items-center text-center"
+                    className="  w-[290px] md:w-[338px] px-[25px] py-[54px] grid justify-items-center text-center"
                 />
             </div>
         </>
