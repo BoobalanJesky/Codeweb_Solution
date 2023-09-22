@@ -6,7 +6,7 @@ export default function Developer() {
             <div className="mt-[100px] grid grid-cols-1 lg:grid-cols-2 bg-[#1E1E1E]">
                 <div className="my-auto px-[20px] lg:pl-[104px] pt-[20px] md:block">
                     <p className="font-semibold text-[14px] text-[#005CFF] leading-normal">Get In Touch With Us</p>
-                    <p className="font-bold text-[#FFF] pt-5 text-[28px] md:text-[30px] lg:text-[33px] md:max-w-[530px] leading-normal">Do You Want To Know More
+                    <p className="font-bold text-[#FFF] pt-5 text-[24px] md:text-[30px] lg:text-[33px] md:max-w-[530px] leading-normal">Do You Want To Know More
                         Dedicated Developer Services?</p>
                     <p className="text-[14px] text-[#fff] md:max-w-[590px] leading-[30px] pt-[20px]">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
                         has been the industry's standard dummy text ever since the 1500s.</p>

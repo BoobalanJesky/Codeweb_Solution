@@ -8,7 +8,7 @@ export default function Technologies() {
                 <p className='text-[28px] md:text-[30px] lg:text-[33px] font-bold leading-normal text-text-black max-w-[600px] text-center'>List of Technologies We Offer
                     Dedicated Developers For</p>
             </div>
-            <div className='mt-[70px] flex flex-wrap justify-center gap-[15px] lg:gap-[76px]'>
+            <div className='md:mt-[70px] flex flex-wrap justify-center gap-[15px] lg:gap-[76px]'>
                 <AccountCard
                     title="Website Development"
                     description="Lorem Ipsum is simply 
