@@ -1,5 +1,4 @@
-import Footer from '../Components/Layout/Footer'
-import Navbar from '../Components/Layout/Navbar'
+import Layout from '../Components/Layout/layout'
 import Benefits from './Benefits'
 import Business from './Business'
 import Choose from './Choose'
@@ -8,10 +7,12 @@ import Website from './Website'
 export default function Home() {
     return (
       <>
+      <Layout>
       <Website/>
      <Choose/>
      <Benefits/>
      <Business/>
      <Reviews/>
+     </Layout>
       </>
     )}
