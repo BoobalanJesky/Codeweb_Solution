@@ -1,5 +1,6 @@
 import React from "react";
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
+import Stepper from "../Components/Stepper/stepper";
 export default function Marketing() {
     return (
         <>
@@ -19,7 +20,7 @@ export default function Marketing() {
                         unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                     <div className="mt-[20px] flex">
                         <p className="text-[18px] text-[#005CFF] font-semibold leading-normal ">contact us<KeyboardArrowRightIcon /></p>
-
+<Stepper/>
                     </div>
                    
             </div>
