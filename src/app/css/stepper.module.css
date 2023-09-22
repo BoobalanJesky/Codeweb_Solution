@@ -10,11 +10,11 @@
 }
 
 .stepItem:not(:first-child):before {
-    @apply content-[''] bg-slate-200 absolute w-[3px] h-full top-2/4 left-[48%] transform -translate-x-2/4;
+    @apply content-[''] bg-slate-200 absolute w-[3px] h-[120px] top-[-106px] left-[11px] transform -translate-x-2/4;
 }
 
 .step {
-    @apply w-10 h-10 flex items-center justify-center z-10 relative bg-slate-700 rounded-full font-semibold text-white cursor-pointer;
+    @apply w-[14px] h-[14px] flex items-center justify-center z-10 relative bg-slate-300 rounded-full font-semibold text-white cursor-pointer;
 }
 
 .active .step {
