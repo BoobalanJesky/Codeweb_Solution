@@ -15,7 +15,7 @@ const config: Config = {
       colors:{
         "text-color":'#005CFF',
         "text-black":"#222",
-        "text-white":"fff"
+        "text-white":"#fff"
       },
       backgroundImage: {
         "theme-secondary":"bg-gradient-to-tl(180deg, #FFFFFF 50%, #005CFF 50%)",

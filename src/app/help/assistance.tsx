@@ -1,29 +1,29 @@
 import React from 'react'
 import styles from "../css/about.module.css"
 const Assistance = () => {
-    const cards = [
-        {
-          icon: "/assets/svg/target.svg",
-          title: "Office location",
-          location: "United States"
-        },
-        {
-          icon: "/assets/svg/cal.svg",
-          title: "Office location",
-          location: "United States"
-        },
-        {
-          icon: "/assets/svg/mail.svg",
-          title: "Office location",
-          location: "United States"
-        }
-      ];
+  const cards = [
+    {
+      icon: "/assets/svg/target.svg",
+      title: "Office location",
+      location: "United States"
+    },
+    {
+      icon: "/assets/svg/cal.svg",
+      title: "Office location",
+      location: "United States"
+    },
+    {
+      icon: "/assets/svg/mail.svg",
+      title: "Office location",
+      location: "United States"
+    }
+  ];
   return (
     <>
       <section className='relative '>
         <img src="/assets/svg/spring.svg" className='absolute hidden md:block lg:left-[103px]' />
         <div className='grid justify-items-center relative'>
-          <p className={`${styles.fadeDesign}`}>Get In Touch</p>
+          <p className='text-[14px] font-semibold leading-normal text-text-color'>Get In Touch</p>
           <p className='text-[35px] text-center font-bold relative leading-normal max-w-[326px]'>
             We’re Here To Help You Any Time!
             {[41, 81, 41].map((top, index) => (
@@ -48,7 +48,6 @@ const Assistance = () => {
             </div>
           ))}
         </div>
-
       </section></>
   )
 }
