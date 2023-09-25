@@ -18,7 +18,7 @@ function AccountCard({
 
       <img src={icon} alt={title} className={imageClassName} />
       <p className="text-base not-italic font-semibold  py-[16px] text-[14px] leading-normal">{title}</p>
-      <p className="  font-normal  text-[#414141]  leading-normal">
+      <p className="  font-normal  text-[#414141] text-[14px] leading-normal">
         {description}
       </p>
       {/* </Link> */}

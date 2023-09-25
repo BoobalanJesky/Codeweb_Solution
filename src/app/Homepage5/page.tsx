@@ -1,4 +1,5 @@
 import Layout from "../Components/Layout/layout";
+import Business from "../Homepage4/Business";
 import Achievements from "./Achievements";
 import Developer from "./Developer";
 import Hire from "./Hire";
@@ -10,7 +11,8 @@ export default function Home() {
       <Hire/>
       <Achievements/>
       <Technologies/>
-      <Developer/>
+      {/* <Developer/> */}
+      <Business/>
       </Layout>
       </>
     )
