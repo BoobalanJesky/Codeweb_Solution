@@ -1,20 +1,17 @@
 import React from 'react'
 import Layout from '../Components/Layout/layout'
+import Assistance from './assistance'
 import styles from "../css/about.module.css"
+import Business from '../Homepage4/Business'
 const page = () => {
+
+
   return (
     <Layout>
-      <section className='relative '>
-     
-          <img src="/assets/svg/spring.svg" className='absolute left-[255px]'/>
-       
-        <div className='grid justify-items-center'>
-          <p className={`${styles.fadeDesign}`}>Get In Touch</p>
-          <p className='text-[35px] text-center font-bold leading-normal max-w-[326px]'>We’re Here To Help
-            You Any Time!</p>
-        </div>
-        {/* <img src="/assets/image/fade.png" className=''/ > */}
-      </section>
+        <div className={`${styles.pxPadding} lg:px-[68px]`}>
+    <Assistance/>
+    <Business/>
+    </div>
     </Layout>
   )
 }
