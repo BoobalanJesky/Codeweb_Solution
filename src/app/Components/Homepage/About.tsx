@@ -82,13 +82,13 @@ const About = () => {
       bannerImage: "/assets/image/bannerImage2.png"
     },
   ]
-  
+
   return (
-    <div className="mb-[124px]">
+    <div className="">
       <Slider {...settings} >
         {header.map((i, j) => (
           <div key={j} className="custom-slide" >
-            <div className={`${styles.AboutItem} w-full flex justify-center  flex-wrap lg:flex-nowrap lg:gap-[190px] px-[5px]`}>
+            <div className={`${styles.AboutItem} w-full flex justify-center  flex-wrap lg:flex-nowrap lg:gap-[210px] px-[5px] mb-[73px]`}>
               <div className="grid md:w-1/2 m-auto">
                 <p className="font-bold lg:pt-[60px] mt-[7px] text-center   md:text-start text-[35px] md:max-w-[545px]">
                   <span className="text-text-color block text-[14px] font-semibold leading-normal">{i.pageHead}</span>
@@ -103,14 +103,14 @@ const About = () => {
 
                 <div className="flex mb-8 md:mb-0 justify-center md:justify-start gap-[11px]">
                   <button className="bg-default-primary flex justify-between items-center gap-[7px] text-[#fff] capitalize px-[25px] py-[13px] rounded-[4px] text-[14px] font-medium leading-normal">
-                    <span>{i.button}</span>
+                    <span className="whitespace-nowrap">{i.button}</span>
                     <img
                       src={i.img}
                       className="w-[12px] h-[8px]"
                     ></img>
                   </button>
                   {j === 0 && (
-                    <div className="rounded-full border border-default-primary flex justify-between px-[21px] py-[14px] bg-default-primary">
+                    <div className="rounded-full border  flex justify-between px-[21px] py-[14px] bg-default-primary">
                       <img src="/assets/svg/arrow.svg" alt="arrow" />
                     </div>
                   )}
@@ -118,7 +118,7 @@ const About = () => {
               </div>
 
               <div className="md:w-1/2">
-                <img src={i.bannerImage} className="mx-auto lg:mx-0" />
+                <img src={i.bannerImage} className="mx-auto lg:mx-0 w-[419px] h-[421px]" />
               </div>
             </div>
           </div>

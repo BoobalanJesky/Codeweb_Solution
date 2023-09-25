@@ -63,10 +63,10 @@ const Testimonies = () => {
         }
       };
     return (
-        <div className="grid grid-cols-1">
+        <div className="grid grid-cols-1  mx-auto">
             <Slider {...settings}  ref={sliderRef} initialSlide={currentSlide}>
                 {testimony.map((i, j) => (
-                    <div key={j} className="custom-slide">
+                    <div key={j} className="custom-slide ">
                         <div>
                             <p className="text-[14px] mt-[100px] my-[5px] text-center leading-normal font-semibold text-text-color">
                                 {i.subHead}

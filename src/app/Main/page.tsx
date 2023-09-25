@@ -19,7 +19,7 @@ const page = () => {
         <Advantages />
         <Services />
       </div>
-      <div className='mt-[71px] mb-10 md:mb-[100px] p-2 '>
+      <div className='mt-[71px] mb-10 md:mb-[100px] '>
         <Journey />
       </div>
       <div className={`${styles.pxPadding} lg:px-[68px]`}>

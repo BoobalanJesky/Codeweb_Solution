@@ -38,9 +38,12 @@ function MyForm() {
                 label="Your Name"
                 value={formik.values.name}
                 onChange={formik.handleChange}
-                error={formik.touched.name && Boolean(formik.errors.name)}
-                helperText={formik.touched.name && formik.errors.name}
+            // error={formik.touched.name && Boolean(formik.errors.name)}
+            // helperText={formik.touched.name && formik.errors.name}
             />
+            {formik.touched.name && formik.errors.name && (
+                <div className="text-xs text-red-500 font-semibold">{formik.errors.name}</div>
+            )}
             <div className='py-[30px]'>
                 <TextField
                     className='bg-[#EBEBEB] rounded-xl text-[#616161] text-[18px] '
@@ -51,9 +54,12 @@ function MyForm() {
                     label="Email Address"
                     value={formik.values.email}
                     onChange={formik.handleChange}
-                    error={formik.touched.email && Boolean(formik.errors.email)}
-                    helperText={formik.touched.email && formik.errors.email}
-                /></div>
+                // error={formik.touched.email && Boolean(formik.errors.email)}
+                // helperText={formik.touched.email && formik.errors.email}
+                />
+                {formik.touched.email && formik.errors.email && (
+                    <div className="text-xs text-red-500 font-semibold">{formik.errors.email}</div>
+                )}</div>
 
             <TextField
                 className='bg-[#EBEBEB] rounded-xl text-[#616161] text-[18px]'
@@ -64,9 +70,12 @@ function MyForm() {
                 label="Phone Number"
                 value={formik.values.phoneNumber}
                 onChange={formik.handleChange}
-                error={formik.touched.phoneNumber && Boolean(formik.errors.phoneNumber)}
-                helperText={formik.touched.phoneNumber && formik.errors.phoneNumber}
+            // error={formik.touched.phoneNumber && Boolean(formik.errors.phoneNumber)}
+            // helperText={formik.touched.phoneNumber && formik.errors.phoneNumber}
             />
+            {formik.touched.phoneNumber && formik.errors.phoneNumber && (
+                <div className="text-xs text-red-500 font-semibold">{formik.errors.phoneNumber}</div>
+            )}
             <div className='py-[30px]'>
 
                 <TextField
@@ -80,9 +89,10 @@ function MyForm() {
                     rows={4}
                     value={formik.values.textarea}
                     onChange={formik.handleChange}
-                    error={formik.touched.textarea && Boolean(formik.errors.textarea)}
-                    helperText={formik.touched.textarea && formik.errors.textarea}
-                /></div>
+                />
+                {formik.touched.textarea && formik.errors.textarea && (
+                    <div className="text-xs text-red-500 font-semibold">{formik.errors.textarea}</div>
+                )}</div>
             <div className='pt-[30px] flex justify-center'>
                 <Button
                     className='bg-[#005CFF] text-[#fff] rounded font-medium px-[25px]'

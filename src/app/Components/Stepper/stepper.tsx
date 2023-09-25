@@ -15,25 +15,27 @@ const Stepper = () => {
     }
 
     return (
-        <section className={`${styles.verticalStepper} flex gap-[80px] lg:gap-[90px] grid items-start`}>
+        <section className={`${styles.verticalStepper}   gap-[67px] md:gap-[40px] lg:gap-[90px] grid justify-center items-start`}>
             {steps.map((step, i) => (
-                <div key={i} className={`${styles.stepItem} ${activeSteps.includes(i + 1) && styles.active}`} onClick={() => handleStepClick(i)}>
-                    <div className='grid grid-cols-2 items-center gap-2'>
-                        <div className='border rounded-full w-[23px] h-[23px] flex justify-center bg-blue-400 bg-opacity-30 items-center'>
-                            <div className={`${styles.step}`}>
+                <div className='relative'>
+                    <div className='flex gap-[28px] items-center'>
+                        <div key={i} className={`${styles.stepItem}  ${activeSteps.includes(i + 1) && styles.active}`} onClick={() => handleStepClick(i)}>
+                            <div className=''>
+                                <div className='border rounded-full w-[23px] h-[23px] flex justify-center bg-blue-400 bg-opacity-30 items-center'>
+                                    <div className={`${styles.step}`}></div>
+                                </div>
 
                             </div>
+
                         </div>
-                        
-                        <p className='flex items-center gap-[14px]'>
-                            <span className='text-text-black text-[24px] md:text-[30px] lg:text-[35px] font-medium leading-normal'>{step.year}</span>
-                            <span className='text-[#414141] lg:whitespace-nowrap text-[14px] md:text-[16px] xl:text-[18px] font-medium leading-[33px]'>{step.start}</span>
-                        </p>
+                        <p className='text-text-black md:text-[15px] lg:text-[35px] font-medium leading-normal'>{step.year}</p>
+                        <p className='text-[#414141] md:text-[13px]  lg:text-[18px] font-medium leading-[33px]'>{step.start}</p>
+
                     </div>
-                    </div>
-                
+                    {i < 3 && <div className='bg-slate-200 h-[130px]  md:h-[66px] lg:h-[120px] w-[3px] mx-auto absolute top-[28px] lg:top-[40px] left-[8px]'></div>}
+                </div>
             ))}
-        </section>
+        </section >
     );
 }
 

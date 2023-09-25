@@ -6,7 +6,7 @@
 
 
 .stepItem {
-    @apply relative flex flex-col justify-center items-center w-36;
+    @apply relative grid justify-center items-center w-[20px];
 }
 
 .stepItem:not(:first-child):before {

@@ -2,6 +2,17 @@ import React from "react";
 import AccountCard from "../Reusable/Accountcard";
 
 const Dominance = () => {
+  const cardData = [
+    { description: "Retail, Ecommerce" },
+    { description: "Education & E-learning" },
+    { description: "Healthcare & Fitness" },
+    { description: "Logistics & Distribution" },
+    { description: "Social Networking" },
+    { description: "Real Estate" },
+    { description: "Travel & Hospitality" },
+    { description: "Food & Restaurant" },
+  ];
+
   return (
     <div>
       <div className="flex justify-center">
@@ -14,64 +25,18 @@ const Dominance = () => {
           </p>
         </div>
       </div>
-      
-      <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-[10px] sm:gap-[40px]">
-        <AccountCard
-          title=""
-          description="Retail, Ecommerce"
-          icon="/assets/svg/cart.svg"
-          className="w-[260px] text-center h-[176px]  mx-auto"
-          imageClassName="mx-auto"
-        />
-        <AccountCard
-          title=""
-          description="Education & E-learning"
-          icon="/assets/svg/cart.svg"
-          className="w-[260px] text-center h-[176px]  mx-auto"
-          imageClassName="mx-auto"
-        />
-        <AccountCard
-          title=""
-          description="Healthcare & Fitness"
-          icon="/assets/svg/cart.svg"
-          className="w-[260px] text-center h-[176px]  mx-auto"
-          imageClassName="mx-auto"
-        />
-        <AccountCard
-          title=""
-          description="Logistics & Distribution"
-          icon="/assets/svg/cart.svg"
-          className="w-[260px] text-center h-[176px]  mx-auto"
-          imageClassName="mx-auto"
-        />
-        <AccountCard
-          title=""
-          description="Social Networking"
-          icon="/assets/svg/cart.svg"
-          className="w-[260px] text-center h-[176px]  mx-auto"
-          imageClassName="mx-auto"
-        />
-           <AccountCard
-          title=""
-          description="Real Estate"
-          icon="/assets/svg/cart.svg"
-          className="w-[260px] text-center h-[176px]  mx-auto"
-          imageClassName="mx-auto"
-        />
-           <AccountCard
-          title=""
-          description="Travel & Hospitality"
-          icon="/assets/svg/cart.svg"
-          className="w-[260px] text-center h-[176px]  mx-auto"
-          imageClassName="mx-auto"
-        />
-           <AccountCard
-          title=""
-          description="Food & Restaurant"
-          icon="/assets/svg/cart.svg"
-          className="w-[260px] text-center h-[176px]  mx-auto"
-          imageClassName="mx-auto"
-        />
+
+      <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-[10px] sm:gap-[40px]">
+        {cardData.map((card, index) => (
+          <AccountCard
+            key={index}
+            title=""
+            description={card.description}
+            icon="/assets/svg/cart.svg"
+            className="w-[228px] h-[176px] mx-auto flex flex-col justify-center items-center"
+            imageClassName="mx-auto"
+          />
+        ))}
       </div>
     </div>
   );
