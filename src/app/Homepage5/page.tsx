@@ -1,4 +1,5 @@
 import Layout from "../Components/Layout/layout";
+import Business from "../Homepage4/Business";
 import Achievements from "./Achievements";
 import Developer from "./Developer";
 import Hire from "./Hire";
@@ -14,9 +15,8 @@ export default function Home() {
           <Technologies />
         </div>
         <div>
-          <Developer />
+        <Business/>
           </div>
-
       </Layout>
     </>
   )

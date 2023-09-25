@@ -56,7 +56,7 @@ const Services = () => {
     <div>
       <div className='grid justify-center'>
         <p className='text-[14px] text-center  my-[5px] leading-normal font-semibold text-text-color'>Services</p>
-        <p className='text-[33px] font-bold leading-normal text-text-black max-w-[476px]'>Our Services: Your One-Stop Shop
+        <p className='text-[24px] md:text-[30px] lg:text-[33px] font-bold leading-normal text-text-black max-w-[560px] text-center'>Our Services: Your One-Stop Shop
           for Every IT Services</p>
       </div>
       <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-[15px] lg:gap-[76px]">
