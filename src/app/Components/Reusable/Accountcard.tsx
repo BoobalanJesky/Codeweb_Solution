@@ -1,29 +1,28 @@
-
 import React from 'react'
 
 interface Props {
-//   href: string;
+  //   href: string;
   title: string;
   description: string;
   icon: string;
-  className?: string; 
+  className?: string;
   imageClassName?: string;
 }
 function AccountCard({
-//   href,
-   title, description, icon,className,imageClassName
-}:Props) {
+  //   href,
+  title, description, icon, className, imageClassName
+}: Props) {
   return (
     // <Link href={href} 
-    <div className={`cursor-pointer shadow-lg border rounded-xl px-[27px] py-[36px] ${className}`}>
-     
-      <img src={icon} alt={title} className={imageClassName}/>
+    <div className={`cursor-pointer shadow-lg border rounded-xl ${className}`}>
+
+      <img src={icon} alt={title} className={imageClassName} />
       <p className="text-base not-italic font-semibold  py-[16px] text-[14px] leading-normal">{title}</p>
-      <p className=" text-[14px] font-normal  text-[#414141]  leading-normal">
+      <p className="  font-normal  text-[#414141]  leading-normal">
         {description}
       </p>
-          {/* </Link> */}
-      </div>
+      {/* </Link> */}
+    </div>
 
   )
 }

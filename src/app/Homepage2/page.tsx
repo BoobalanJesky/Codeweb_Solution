@@ -5,18 +5,21 @@ import Achievements from './Achievements';
 import Ourclient from './Ourclient';
 import Ourteam from './Ourteam';
 import Getstarted from './Getstarted';
-import Footer from '../Components/Layout/Footer';
 import Layout from '../Components/Layout/layout';
+import styles from "../../app/css/about.module.css";
 export default function Home() {
   return (
     <Layout>
-    <Aboutus/>
-    <Achievements/>
-    <Marketing/>
-    <Ourclient/>
-    <Ourteam/>
-    <Getstarted/>
-
-    </Layout>  
-    )
+      <div className={`${styles.pxPadding} lg:px-[68px]`}>
+        <Aboutus />
+        <Achievements />
+        <Marketing />
+        <Ourclient />
+        <Ourteam />
+      </div>
+      <div>
+        <Getstarted />
+      </div>
+    </Layout>
+  )
 }

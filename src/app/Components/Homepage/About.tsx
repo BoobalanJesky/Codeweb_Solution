@@ -82,7 +82,7 @@ const About = () => {
       bannerImage: "/assets/image/bannerImage2.png"
     },
   ]
-  
+
   return (
     <div className="">
       <Slider {...settings} >
@@ -110,7 +110,7 @@ const About = () => {
                     ></img>
                   </button>
                   {j === 0 && (
-                    <div className="rounded-full border border-default-primary flex justify-between px-[21px] py-[14px] bg-default-primary">
+                    <div className="rounded-full border  flex justify-between px-[21px] py-[14px] bg-default-primary">
                       <img src="/assets/svg/arrow.svg" alt="arrow" />
                     </div>
                   )}

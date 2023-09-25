@@ -39,6 +39,7 @@ const Journey = () => {
     },
   ]
   const settings = {
+    arrows: false,
     infinite: false,
     speed: 500,
     slidesToShow: 1,
@@ -46,7 +47,6 @@ const Journey = () => {
   };
   const goToNextSlide = () => {
     if (currentSlide === sliderRef.current.props.children.length - 1) {
-      // If at the last slide, reset to the first slide
       setCurrentSlide(0);
       sliderRef.current.slickGoTo(0);
     } else {
@@ -57,7 +57,6 @@ const Journey = () => {
 
   const goToPrevSlide = () => {
     if (currentSlide === 0) {
-      // If at the first slide, go to the last slide
       setCurrentSlide(sliderRef.current.props.children.length - 1);
       sliderRef.current.slickGoTo(sliderRef.current.props.children.length - 1);
     } else {
@@ -66,47 +65,46 @@ const Journey = () => {
     }
   };
   return (
-    <></>
-    // <div className="relative">
-    //    {/*   */}
-    //  <div onClick={goToPrevSlide} className={`rounded-full  ${styles.leftAbs} absolute z-10   border border-[#0F5DC4] h-[50px] w-[50px] flex justify-center items-center  bg-default-primary my-auto`}>
-    //           <img src="/assets/svg/leftArrow.svg" />
-    //         </div>
-    //   <Slider {...settings} ref={sliderRef} initialSlide={currentSlide}>
-    //     {journey.map((i, j) => (
-    //       <div className={`w-full   p-2 h-full bg-[#222] lg:h-[520px] flex items-start justify-center  lg:flex-nowrap lg:gap-[70px]  ${styles.journeyPad} lg:px-[72px]`}>
-           
-    //         <div key={j} className="flex justify-center items-center flex-wrap">
-    //           <div className="md:w-1/2">
-    //             <img src="/assets/image/banner.png" className="mx-auto w-[318px] md:w-auto " />
-    //           </div>
-    //           <div className="md:w-1/2  lg:mt-[49px] my-auto mt-[70px]">
-    //             <p className="text-[14px] my-[5px] text-center lg:text-start  leading-normal font-semibold text-text-color">
-    //               {i.subhead}
-    //             </p>
-    //             <p className="text-[33px] text-center lg:text-start font-bold leading-normal text-[#fff] lg:max-w-[500px]">
-    //               {i.head}
-    //             </p>
-    //             <p className="text-[14px] font-normal leading-[30px] text-[#fff]   md:max-w-[518px] mt-[26px] mb-[20px]">
-    //               {i.para}
-    //             </p>
-    //             <div className="flex justify-center lg:justify-start">
-    //               <button className="bg-default-primary flex justify-between items-center gap-[7px] text-[#fff] capitalize px-[25px] py-[13px] rounded-[4px] text-[14px] font-medium leading-normal">
-    //                 <span>{i.button}</span>
-    //                 <img
-    //                   src="/assets/svg/keyArrow.svg"
-    //                   className="w-[12px] h-[8px]"
-    //                 ></img>
-    //               </button></div>
-    //           </div>
-    //         </div>
-           
-    //       </div>))}
-    //   </Slider>
-    //   <div onClick={goToNextSlide} className={`rounded-full absolute ${styles.rightAbs}    border border-[#0F5DC4] h-[50px] w-[50px] flex justify-center items-center  bg-default-primary my-auto`}>
-    //           <img src="/assets/svg/rightArrow.svg" />
-    //         </div>
-    // </div>
+    <div className="relative">
+      {/*   */}
+      <div onClick={goToPrevSlide} className={`rounded-full  ${styles.leftAbs} absolute z-10   border border-[#0F5DC4] h-[50px] w-[50px] flex justify-center items-center  bg-default-primary my-auto`}>
+        <img src="/assets/svg/leftArrow.svg" />
+      </div>
+      <Slider {...settings} ref={sliderRef} initialSlide={currentSlide}>
+        {journey.map((i, j) => (
+          <div className={`w-full   p-2 h-full bg-[#222] lg:h-[520px] flex items-start justify-center  lg:flex-nowrap lg:gap-[70px]  ${styles.journeyPad} lg:px-[72px]`}>
+
+            <div key={j} className="flex justify-center items-center flex-wrap">
+              <div className="md:w-1/2">
+                <img src="/assets/image/banner.png" className="mx-auto w-[318px] md:w-auto " />
+              </div>
+              <div className="md:w-1/2  lg:mt-[49px] my-auto mt-[70px]">
+                <p className="text-[14px] my-[5px] text-center lg:text-start  leading-normal font-semibold text-text-color">
+                  {i.subhead}
+                </p>
+                <p className="text-[33px] text-center lg:text-start font-bold leading-normal text-[#fff] lg:max-w-[500px]">
+                  {i.head}
+                </p>
+                <p className="text-[14px] font-normal leading-[30px] text-[#fff]   md:max-w-[518px] mt-[26px] mb-[20px]">
+                  {i.para}
+                </p>
+                <div className="flex justify-center lg:justify-start">
+                  <button className="bg-default-primary flex justify-between items-center gap-[7px] text-[#fff] capitalize px-[25px] py-[13px] rounded-[4px] text-[14px] font-medium leading-normal">
+                    <span>{i.button}</span>
+                    <img
+                      src="/assets/svg/keyArrow.svg"
+                      className="w-[12px] h-[8px]"
+                    ></img>
+                  </button></div>
+              </div>
+            </div>
+
+          </div>))}
+      </Slider>
+      <div onClick={goToNextSlide} className={`rounded-full absolute ${styles.rightAbs}    border border-[#0F5DC4] h-[50px] w-[50px] flex justify-center items-center  bg-default-primary my-auto`}>
+        <img src="/assets/svg/rightArrow.svg" />
+      </div>
+    </div>
   );
 };
 
