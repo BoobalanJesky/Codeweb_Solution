@@ -1,5 +1,4 @@
 import React from 'react'
-
 interface Props {
   //   href: string;
   title: string;
@@ -7,10 +6,13 @@ interface Props {
   icon: string;
   className?: string;
   imageClassName?: string;
+  link?: string;
+  LinkclassName?:string
+  iconComponent?:ReactNode
 }
 function AccountCard({
   //   href,
-  title, description, icon, className, imageClassName
+  title, description, icon, className, imageClassName,link,iconComponent ,LinkclassName
 }: Props) {
   return (
     // <Link href={href} 
@@ -21,7 +23,8 @@ function AccountCard({
       <p className="  font-normal  text-[#414141]  leading-normal">
         {description}
       </p>
-      {/* </Link> */}
+      <p className={`text-[14px] text-normal ${LinkclassName} leading-normal flex gap-[3px]  text-text-color`}><span>{link}
+      </span>{iconComponent} </p>
     </div>
 
   )

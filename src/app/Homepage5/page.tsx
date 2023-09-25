@@ -3,15 +3,21 @@ import Achievements from "./Achievements";
 import Developer from "./Developer";
 import Hire from "./Hire";
 import Technologies from "./Technologies";
+import styles from "../css/about.module.css"
 export default function Home() {
-    return (
-      <>
+  return (
+    <>
       <Layout>
-      <Hire/>
-      <Achievements/>
-      <Technologies/>
-      <Developer/>
+        <div className={`${styles.pxPadding} lg:px-[68px]`}>
+          <Hire />
+          <Achievements />
+          <Technologies />
+        </div>
+        <div>
+          <Developer />
+          </div>
+
       </Layout>
-      </>
-    )
+    </>
+  )
 }

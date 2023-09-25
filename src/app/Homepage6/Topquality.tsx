@@ -17,7 +17,7 @@ export default function Topquality() {
                         has been the industry's standard dummy text ever since the 1500s.</p>
                 </div>
                 <div className="py-[90px] px-[20px]">
-                    <div className='bg-[#1E1E1E] max-w-[600px] max-h-[617px] rounded-[20px] border-[#fff] border-2 px-[20px] mx-auto '>
+                    <div className='bg-[#1E1E1E] rounded-[20px] border-[#fff] border-2 px-[20px] mx-auto '>
                         <MyAccordion title="Efficient and Productive Workforce" 
                          content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. "
                          expanded={expanded === 'panel1'}

@@ -10,8 +10,9 @@ const page = () => {
     <Layout>
         <div className={`${styles.pxPadding} lg:px-[68px]`}>
     <Assistance/>
-    <Business/>
     </div>
+    <Business/>
+   
     </Layout>
   )
 }
