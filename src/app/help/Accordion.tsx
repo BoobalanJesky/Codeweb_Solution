@@ -9,16 +9,16 @@ import AddIcon from '@mui/icons-material/Add';
 import RemoveIcon from '@mui/icons-material/Remove';
 function MyAccordion({ title, content, expanded, onChange }) {
     return (
-      <Accordion expanded={expanded} onChange={onChange} className='bg-[#1E1E1E] rounded-xl'>
+      <Accordion expanded={expanded} onChange={onChange} sx={{border:"0.5px solid",borderBottom:"#005CFF 0.5px solid",borderTop:"#fff 0.5px solid",borderLeft:"#fff 0.5px solid",borderRight:"#fff 0.5px solid"}}>
         <AccordionSummary
-          expandIcon={expanded ? <RemoveIcon className='text-[#fff]' /> : <AddIcon className='text-[#fff]'/>}
+          expandIcon={expanded ? <RemoveIcon className='text-[#005CFF]' /> : <AddIcon className='text-[#005CFF]'/>}
           aria-controls="panel-content"
           id="panel-header"
         >
-          <Typography className='text-[16px] md:text-[18px] leading-[18px] font-medium text-[#fff] py-[30px] px-[20px] bg-[#1E1E1E]'>{title}</Typography>
+          <Typography className='text-[14px] md:text-[18px] leading-[18px] font-semibold text-[#414141] py-[30px] md:px-[20px]'>{title}</Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography className='text-[14px] leading-[30px] text-[#fff] bg-[#1E1E1E] max-w-[650px]'>{content}</Typography>
+          <Typography className='text-[14px] leading-[30px] text-[#414141] md:px-[20px]'>{content}</Typography>
         </AccordionDetails>
       </Accordion>
   );

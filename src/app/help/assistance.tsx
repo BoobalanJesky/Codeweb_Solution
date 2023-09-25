@@ -41,7 +41,7 @@ const Assistance = () => {
             <div key={index} className='flex justify-center items-center h-full w-full sm:w-[338px] py-[54px] rounded-[21px] border m-auto shadow-sm'>
               <div className='grid gap-[21px] relative'>
                 <img src="/assets/image/ellipse.png" className='mx-auto' alt='Ellipse' />
-                <img src={card.icon} className={`absolute top-[36px] left-[${index === 2 ? 41 : 46}px]`} alt='Icon' />
+                <img src={card.icon} style={{ position: 'absolute', top: '36px', left: `${index === 2 ? '41px' : '46px'}` }} alt='Icon' />
                 <p className='text-[18px] leading-[33px] font-medium text-center'>{card.title}</p>
                 <p className='text-[16px] font-semibold leading-[25px] text-center'>{card.location}</p>
               </div>

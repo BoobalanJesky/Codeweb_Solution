@@ -1,4 +1,5 @@
 import React from "react";
+import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
 import AccountCard from "../Reusable/Accountcard";
 
 const Dominance = () => {
@@ -32,9 +33,9 @@ const Dominance = () => {
             key={index}
             title=""
             description={card.description}
-            icon="/assets/svg/cart.svg"
-            className="w-[228px] h-[176px] mx-auto flex flex-col justify-center items-center"
-            imageClassName="mx-auto"
+            icon={<AddShoppingCartIcon/>}
+            className="w-[228px] h-[176px] mx-auto flex flex-col justify-center items-center hover:bg-[#005CFF]"
+            imageClassName="mx-auto hover:text-[#fff]"
           />
         ))}
       </div>
