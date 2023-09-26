@@ -18,8 +18,19 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  /* max-width: 2000px;
-  margin: auto; */
+  max-width: 2000px;
+  margin: auto;
+}
+.linearColor ::before{
+  content: "";  
+  background-color: #005cff;
+  position: absolute;
+  width: 30%; 
+  height: 100%;
+  top: 0;
+  left: 0; 
+  border-radius: 100%;
+  filter: blur(8px)
 }
 .slick-track {
   width: 100%; 

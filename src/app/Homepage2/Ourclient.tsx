@@ -6,19 +6,19 @@ export default function Ourclient() {
             title: "Market Analysis",
             description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
             icon: "/assets/image/Group 2005.png",
-            className: "w-[290px] md:w-[307px] px-[17px] py-[25px] mx-auto grid justify-items-center text-center",
+            className: "w-[338px] h-[338px] px-[17px] py-[25px] mx-auto grid justify-items-center text-center",
         },
         {
             title: "Experienced Team",
             description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
             icon: "/assets/image/Group 2031.svg",
-            className: "w-[290px] md:w-[307px] px-[17px] mx-auto py-[25px] grid justify-items-center text-center",
+            className: "w-[338px] h-[338px] px-[17px] mx-auto py-[25px] grid justify-items-center text-center",
         },
         {
             title: "Business Growth",
             description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
             icon: "/assets/image/Group 2005.png",
-            className: "w-[290px] md:w-[307px] px-[17px] mx-auto py-[25px] grid justify-items-center text-center",
+            className: "w-[338px] h-[338px] px-[17px] mx-auto py-[25px] grid justify-items-center text-center",
         }
     ];
 
