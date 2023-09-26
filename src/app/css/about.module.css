@@ -249,3 +249,13 @@
     grid-template-columns: repeat(1, 1fr);
   }
 }
+@media (max-width: 1130px) {
+  .customChoose {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 764px) {
+  .customChoose {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

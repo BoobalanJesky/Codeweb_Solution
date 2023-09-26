@@ -1,42 +1,43 @@
 import React from "react";
 import AccountCard from "../Components/Reusable/Accountcard";
+import styles from "../../app/css/about.module.css";
 export default function Choose() {
     const cardData = [
         {
             title: "Lorem Ipsum",
             description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
             icon: "/assets/image/Group 2005.png",
-            className: "w-[290px] md:w-[310px] px-2 sm:px-[25px] text-[14px] mx-auto py-[54px] grid justify-items-center text-center",
+            className: "w-full sm:w-[338px] h-[338px] px-[25px] text-[13px] mx-auto py-[54px] grid justify-items-center text-center",
         },
         {
             title: "Lorem Ipsum",
             description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
             icon: "/assets/image/Group 2031.svg",
-            className: "w-[290px] md:w-[310px] px-2 sm:px-[25px] text-[14px] mx-auto py-[54px] grid justify-items-center text-center",
+            className: "w-full sm:w-[338px] h-[338px] px-[25px] text-[13px] mx-auto py-[54px] grid justify-items-center text-center",
         },
         {
             title: "Lorem Ipsum",
             description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
             icon: "/assets/image/Group 2005.png",
-            className: "w-[290px] md:w-[310px] px-2 sm:px-[25px] text-[14px]  mx-auto py-[54px] grid justify-items-center text-center",
+            className: "w-full sm:w-[338px] h-[338px] px-[25px] text-[13px]  mx-auto py-[54px] grid justify-items-center text-center",
         },
         {
             title: "Lorem Ipsum",
             description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
             icon: "/assets/image/Group 2031.svg",
-            className: "w-[290px] md:w-[310px] px-2 sm:px-[25px] text-[14px] mx-auto py-[54px] grid justify-items-center text-center",
+            className: "w-full sm:w-[338px] h-[338px] px-[25px] text-[13px] mx-auto py-[54px] grid justify-items-center text-center",
         },
         {
             title: "Lorem Ipsum",
             description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
             icon: "/assets/image/Group 2005.png",
-            className: "w-[290px] md:w-[310px] px-2 sm:px-[25px] text-[14px] mx-auto py-[54px] grid justify-items-center text-center",
+            className: "w-full sm:w-[338px] h-[338px] px-[25px] text-[13px] mx-auto py-[54px] grid justify-items-center text-center",
         },
         {
             title: "Lorem Ipsum",
             description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
             icon: "/assets/image/Group 2031.svg",
-            className: "w-[290px] md:w-[310px] px-2 sm:px-[25px] text-[14px] mx-auto py-[54px] grid justify-items-center text-center",
+            className: "w-full sm:w-[338px] h-[338px] px-[25px] text-[13px] mx-auto py-[54px] grid justify-items-center text-center",
         },
     ];
     return (
@@ -53,7 +54,7 @@ export default function Choose() {
                 </div>
 
             </div>
-            <div className="mt-[40px] grid sm:grid-cols-2 lg:grid-cols-3 mx-auto gap-y-[50px]  ">
+            <div className={`mt-[40px] grid sm:grid-cols-2 gap-y-5  lg:grid-cols-3  mx-auto lg:gap-y-[50px] ${styles.customChoose}`}>
                 {cardData.map((card, index) => (
                     <AccountCard
                         key={index}
