@@ -88,14 +88,14 @@ const About = () => {
       <Slider {...settings} >
         {header.map((i, j) => (
           <div key={j} className="custom-slide" >
-            <div className={`${styles.AboutItem} w-full flex justify-center  flex-wrap lg:flex-nowrap lg:gap-[210px] px-[5px] mb-[73px]`}>
+            <div className={`${styles.AboutItem} w-full flex justify-center  flex-wrap lg:flex-nowrap items-center px-[5px] mb-[73px]`}>
               <div className="grid md:w-1/2 m-auto">
-                <p className="font-bold lg:pt-[60px] mt-[7px] text-center   md:text-start text-[24px] sm:text-[28px] md:text-[30px] lg:text-[35px] text-[35px] md:max-w-[545px]">
+                <p className="font-bold  mt-[7px] text-center   md:text-start text-[24px] md:text-[30px] lg:text-[35px] max-w-[567px]">
                   <span className="text-text-color block text-[14px] font-semibold leading-normal">{i.pageHead}</span>
                   <span className="text-text-color ">{i.headText} </span>
                   <span className="">{i.head} </span>
                 </p>
-                <p className="sm:max-w-[530px]  mx-auto md:mx-0 flex justify-center text-[14px] mt-[27px] mb-[20px] md:mb-[51px] leading-normal font-normal">
+                <p className="max-w-[540px]  md:mx-0 flex justify-center text-[14px] mt-[27px] mb-[20px] md:mb-[51px] leading-normal font-normal">
                   Lorem Ipsum is simply dummy text of the printing and typesetting
                   industry. Lorem Ipsum has been the industry's standard dummy text ever
                   since the 1500s
@@ -118,7 +118,7 @@ const About = () => {
               </div>
 
               <div className="md:w-1/2">
-                <img src={i.bannerImage} className="mx-auto lg:mx-0 w-[419px] h-[421px]" />
+                <img src={i.bannerImage} className="mx-auto" />
               </div>
             </div>
           </div>
