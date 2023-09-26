@@ -1,6 +1,5 @@
 "use client"
 import React, { useRef, useState } from "react";
-import styles from "../../css/about.module.css";
 import Slider from "react-slick"
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -63,7 +62,7 @@ const Testimonies = () => {
         }
       };
     return (
-        <div className="grid grid-cols-1  mx-auto">
+        <div className="grid grid-cols-1 mx-auto ">
             <Slider {...settings}  ref={sliderRef} initialSlide={currentSlide}>
                 {testimony.map((i, j) => (
                     <div key={j} className="custom-slide ">
@@ -81,7 +80,7 @@ const Testimonies = () => {
                             </div>
                             <div className="md:w-1/2 grid gap-[20px] ">
                                 <div>
-                                    <p className="text-[33px] font-bold text-center md:text-start leading-normal text-text-black md:max-w-[476px]">
+                                    <p className="text-[24px] md:text-[30px] lg:text-[33px] font-bold text-center md:text-start leading-normal text-text-black md:max-w-[476px]">
                                         {i.mainHead}
                                     </p>
                                     <p className="text-[14px] font-normal  leading-[30px] text-[#414141] md:max-w-[520px] mt-[26px] mb-[20px]">

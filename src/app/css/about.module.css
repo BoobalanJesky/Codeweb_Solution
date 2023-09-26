@@ -197,3 +197,35 @@
 .fadeDesign ::after {
   content: url("/assets/image/fade.png")
 }
+@media (max-width: 1299px) {
+  .customcols {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 936px) {
+  .customcols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 624px) {
+  .customcols {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (max-width: 1354px) {
+  .customCard {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 1028px) {
+  .customCard {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 624px) {
+  .customCard {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+

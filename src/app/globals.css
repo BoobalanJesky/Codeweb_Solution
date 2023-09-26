@@ -46,5 +46,19 @@ body {
 .slick-arrow slick-next{
   display: none;
 }
+/* .backColor::before{
+  border-radius: 659px;
+background: rgba(0, 92, 255, 0.25);
+filter: blur(147.5px);
+width: 659px;
+height: 659px;
+flex-shrink: 0;
+} */
 
-
+/* .backColor{
+  border-radius: 643px;
+  background: rgba(0, 92, 255, 0.25);
+  filter: blur(147.5px);
+  width: 643px;
+  height: 643px;
+} */

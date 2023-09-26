@@ -6,19 +6,19 @@ export default function Ourclient() {
             title: "Market Analysis",
             description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
             icon: "/assets/image/Group 2005.png",
-            className: "w-[290px] md:w-[307px] px-[17px] py-[25px] mx-auto grid justify-items-center text-center",
+            className: "w-[290px] md:w-[310px] px-2 sm:px-[25px] text-[14px] mx-auto py-[54px]  grid justify-items-center text-center",
         },
         {
             title: "Experienced Team",
             description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
             icon: "/assets/image/Group 2031.svg",
-            className: "w-[290px] md:w-[307px] px-[17px] mx-auto py-[25px] grid justify-items-center text-center",
+            className: "w-[290px] md:w-[310px] px-2 sm:px-[25px] text-[14px] mx-auto py-[54px] grid justify-items-center text-center",
         },
         {
             title: "Business Growth",
             description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
             icon: "/assets/image/Group 2005.png",
-            className: "w-[290px] md:w-[307px] px-[17px] mx-auto py-[25px] grid justify-items-center text-center",
+            className: "w-[290px] md:w-[310px] px-2 sm:px-[25px] text-[14px] mx-auto py-[54px] grid justify-items-center text-center",
         }
     ];
 
@@ -36,7 +36,7 @@ export default function Ourclient() {
                 </div>
 
             </div>
-            <div className="mt-10 md:mt-[91px] flex flex-wrap mx-auto gap-[40px]">
+            <div className="mt-10 md:mt-[91px] flex flex-wrap mx-auto gap-[100px]">
                 {accountCardsData.map((card, index) => (
                     <AccountCard
                         key={index}
