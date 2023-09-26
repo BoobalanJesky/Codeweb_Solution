@@ -11,12 +11,14 @@ const config: Config = {
       backgroundColor: {
         'default-primary': '#005CFF',
         'default-black':"#222222",
-        'default-white':"#fff"
+        'default-white':"#fff",
+        'default-gray':"#414141"
       },
       colors:{
         "text-color":'#005CFF',
         "text-black":"#222",
-        "text-white":"#fff"
+        "text-white":"#fff",
+        "text-gray":"#414141"
       },
       backgroundImage: {
         "theme-secondary":"bg-gradient-to-tl(180deg, #FFFFFF 50%, #005CFF 50%)",

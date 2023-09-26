@@ -1,7 +1,8 @@
-import React from "react";
+"use client "
+import React, { useState } from "react";
 import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
 import AccountCard from "../Reusable/Accountcard";
-
+import styles from "../../css/about.module.css";
 const Dominance = () => {
   const cardData = [
     { description: "Retail, Ecommerce"},
@@ -27,18 +28,19 @@ const Dominance = () => {
         </div>
       </div>
 
-      <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-[10px] sm:gap-[40px]">
-        {cardData.map((card,index) => (
-          <AccountCard
-            key={index}
-            title=""
-            description={card.description}
-            icon="/assets/svg/cart.svg"
-            className="w-[228px] h-[176px] mx-auto flex flex-col justify-center items-center hover:bg-[#005CFF]"
-            imageClassName="mx-auto"
-            DescclassName="group-hover:text-[#ffff]"
-          />
-        ))}
+      <div className={`grid sm:grid-cols-2 lg:grid-cols-4  ${styles.customcols} gap-[10px] sm:gap-[40px]`}>
+      {cardData.map((card, index) => (
+        <AccountCard
+          key={index}
+          title=""
+          description={card.description}
+          icon="/assets/svg/cart.svg"
+          className="w-[259px] h-[176px]  mx-auto flex flex-col justify-center items-center hover:bg-[#005CFF]"
+          imageClassName="mx-auto hover:bg-[url('/assets/image/shop.png')]"
+          DescclassName="group-hover:text-[#ffff]"
+        />
+    ))}
+     
       </div>
     </div>
   );

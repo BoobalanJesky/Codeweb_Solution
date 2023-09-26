@@ -40,14 +40,14 @@ export default function Vacancies() {
                     <p className="text-[24px] md:text-[28px] lg:text-[33px] text-[#000] font-bold leading-normal text-center max-w-[600px]">Available Positions</p>
                 </div>
             </div>
-            <div className="mt-[90px] grid grid-cols-1 lg:grid-cols-2 gap-[20px] gap-y-[40px]">
+            <div className="mt-[90px] grid  sm:grid-cols-2 gap-[20px] gap-y-[40px]">
                 {header.map((i, j) => (
                     <div key={j} className="">
-                        <div className="bg-[#fff] p-[20px] xl:w-[620px] mx-auto border-1 shadow-xl rounded-[20px]">
-                            <p className="text-[#414141] text-[14px] font-semibold leading-[18px]">{i.head}</p>
-                            <p className="text-[#414141] pt-[20px] text-[14px] grid font-semibold leading-[30px] "><span>{i.para}</span>
+                        <div className="bg-[#fff] grid gap-[20px] p-[20px]  mx-auto border-1 shadow-lg rounded-[20px]">
+                            <p className="text-text-gray text-[14px] font-semibold leading-[18px]">{i.head}</p>
+                            <p className="text-text-gray text-[14px] grid  gap-[20px] font-normal leading-[30px] "><span>{i.para}</span>
                             <span>{i.para2}</span></p>
-                            <button className="text-[#fff] text-[14px] font-medium leading-normal bg-[#005CFF] rounded-[4px] mt-[20px] px-[25px] py-[13px]">Explore More</button>
+                            <button className="text-[#fff] w-[140px] h-[47px] text-[14px] font-medium leading-normal bg-[#005CFF] rounded-[4px] mt-[20px] px-[25px] py-[13px]">Explore More</button>
                         </div>
                     </div>
                 ))}
