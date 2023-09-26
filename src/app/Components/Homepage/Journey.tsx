@@ -72,20 +72,21 @@ const Journey = () => {
       </div>
       <Slider {...settings} ref={sliderRef} initialSlide={currentSlide}>
         {journey.map((i, j) => (
+          // eslint-disable-next-line react/jsx-key
           <div className={`w-full   p-2 h-full bg-[#222] lg:h-[520px] flex items-start justify-center  lg:flex-nowrap lg:gap-[70px]  ${styles.journeyPad} lg:px-[72px]`}>
 
             <div key={j} className="flex justify-center items-center flex-wrap">
               <div className="md:w-1/2">
-                <img src="/assets/image/banner.png" className="mx-auto w-[318px] md:w-auto " />
+                <img src="/assets/image/banner.png" className="mx-auto py-[50px]" />
               </div>
-              <div className="md:w-1/2  lg:mt-[49px] my-auto mt-[70px]">
+              <div className="md:w-1/2  lg:mt-[49px] my-auto md:mt-[70px]">
                 <p className="text-[14px] my-[5px] text-center lg:text-start  leading-normal font-semibold text-text-color">
                   {i.subhead}
                 </p>
                 <p className="text-[24px] md:text-[30px] lg:text-[33px] text-center lg:text-start font-bold leading-normal text-[#fff] lg:max-w-[500px]">
                   {i.head}
                 </p>
-                <p className="text-[14px] font-normal leading-[30px] text-[#fff]   md:max-w-[518px] mt-[26px] mb-[20px]">
+                <p className="text-[14px] font-normal leading-[30px] text-[#fff] md:max-w-[518px] mt-[26px] mb-[20px]">
                   {i.para}
                 </p>
                 <div className="flex justify-center lg:justify-start">
