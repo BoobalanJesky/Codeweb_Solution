@@ -27,7 +27,7 @@ function MyAccordion({ title, content, expanded, onChange, sx,contentSx,removeSx
         aria-controls="panel-content"
         id="panel-header"
       >
-        <Typography sx={{titleSx}}>{title}</Typography>
+        <Typography sx={titleSx}>{title}</Typography>
       </AccordionSummary>
       <AccordionDetails>
         <Typography sx={contentSx}>{content}</Typography>

@@ -9,12 +9,13 @@ const page = () => {
 
   return (
     <Layout>
-        <div className={`${styles.pxPadding} lg:px-[68px]`}>
-    <Assistance/>
-    <div><Business/></div>
-    <Faq/>
-    </div>
-    
+      <div className={`${styles.pxPadding} lg:px-[68px]`}>
+        <Assistance />
+      </div>
+      <div><Business /></div>
+      <div className={`${styles.pxPadding} lg:px-[68px] mb-[100px]`}>
+        <Faq/>
+      </div>
     </Layout>
   )
 }

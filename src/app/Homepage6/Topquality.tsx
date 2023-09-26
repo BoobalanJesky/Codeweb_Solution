@@ -49,6 +49,9 @@ export default function Topquality() {
             border:"0.5px solid #fff",
             backgroundColor: "#222222",
           }}
+          titleSx={{
+            color:"#fff"
+          }}
           contentSx={{
             fontSize: '14px',
             '@media (min-width: 768px)': {

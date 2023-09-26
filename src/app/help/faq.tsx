@@ -11,11 +11,11 @@ export default function Faq() {
 
     return (
         <>
-            <div className="mt-10 md:mt-[100px] text-center">
+            <div className="mt-10  md:mt-[100px] text-center">
                 <p className="text-[14px] text-[#005CFF] font-semibold leading-normal">FAQ</p>
                 <p className="text-[28px] md:text-[30px] lg:text-[35px] text-[#000] font-bold leading-normal mx-auto">Frequently Asked Questions</p>
             </div>
-            <div className='md:mt-[110px]'>
+            <div className='md:mt-[40px]'>
                 {[1, 2, 3, 4, 5].map((panel, index) => (
                     <MyAccordion
                         key={index}
