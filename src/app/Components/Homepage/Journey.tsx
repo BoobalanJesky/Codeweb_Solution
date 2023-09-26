@@ -82,7 +82,7 @@ const Journey = () => {
                 <p className="text-[14px] my-[5px] text-center lg:text-start  leading-normal font-semibold text-text-color">
                   {i.subhead}
                 </p>
-                <p className="text-[33px] text-center lg:text-start font-bold leading-normal text-[#fff] lg:max-w-[500px]">
+                <p className="text-[24px] md:text-[30px] lg:text-[33px] text-center lg:text-start font-bold leading-normal text-[#fff] lg:max-w-[500px]">
                   {i.head}
                 </p>
                 <p className="text-[14px] font-normal leading-[30px] text-[#fff]   md:max-w-[518px] mt-[26px] mb-[20px]">

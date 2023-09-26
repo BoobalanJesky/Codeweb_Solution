@@ -90,9 +90,9 @@ const About = () => {
           <div key={j} className="custom-slide" >
             <div className={`${styles.AboutItem} w-full flex justify-center  flex-wrap lg:flex-nowrap lg:gap-[210px] px-[5px] mb-[73px]`}>
               <div className="grid md:w-1/2 m-auto">
-                <p className="font-bold lg:pt-[60px] mt-[7px] text-center   md:text-start text-[35px] md:max-w-[545px]">
+                <p className="font-bold lg:pt-[60px] mt-[7px] text-center   md:text-start text-[24px] sm:text-[28px] md:text-[30px] lg:text-[35px] text-[35px] md:max-w-[545px]">
                   <span className="text-text-color block text-[14px] font-semibold leading-normal">{i.pageHead}</span>
-                  <span className="text-text-color">{i.headText} </span>
+                  <span className="text-text-color ">{i.headText} </span>
                   <span className="">{i.head} </span>
                 </p>
                 <p className="sm:max-w-[530px]  mx-auto md:mx-0 flex justify-center text-[14px] mt-[27px] mb-[20px] md:mb-[51px] leading-normal font-normal">

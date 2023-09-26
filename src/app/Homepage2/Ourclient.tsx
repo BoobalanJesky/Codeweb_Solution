@@ -36,7 +36,7 @@ export default function Ourclient() {
                 </div>
 
             </div>
-            <div className="mt-10 md:mt-[91px] flex flex-wrap mx-auto gap-[40px]">
+            <div className="mt-10 md:mt-[91px] flex flex-wrap mx-auto gap-[100px]">
                 {accountCardsData.map((card, index) => (
                     <AccountCard
                         key={index}
