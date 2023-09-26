@@ -8,7 +8,7 @@ const Navbar = () => {
     }
   return (
     <>
-    <section className={`${styles.pxPadding} relative linearColor  mb-10 lg:mb-[115px]   flex justify-between gap-3  pt-[21px] items-center`}>
+    <section className={`${styles.pxPadding} relative linearColor bg-default-white  mb-10 lg:mb-[115px]   flex justify-between gap-3  pt-[21px] items-center`}>
         <div className={`${styles.NavbarItem} flex items-center lg:gap-[50px]`}>
          <img src="/assets/image/logo.png"/>
          <div>

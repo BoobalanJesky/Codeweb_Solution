@@ -23,6 +23,32 @@ export default function Faq() {
                         content={`Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.`}
                         expanded={expanded === `panel${panel}`}
                         onChange={handleChange(`panel${panel}`)}
+                        sx={{  
+                            backgroundColor: "#fff",
+                            paddingTop: '30px',
+                            paddingBottom:"30px",
+                            borderBottom:"0.5px solid #005cff"
+                            // borderBottom:"2px"
+                          }}
+                            titleSx={{
+                                fontSize: '14px',
+                                '@media (min-width:600px)': {
+                                  fontSize: '18px',
+                                  lineHeight: '18px',
+                                },
+                                fontWeight: '600',
+                                color: '#222',
+                                paddingTop: '30px',
+                              }}
+                              addSx={{
+                                color:"#005cff"
+                              }}
+                              removeSx={{
+                                color:"#005cff"
+                              }}
+                          contentSx={{
+                            color: '#222',
+                          }}
                     />
                 ))}
             </div>

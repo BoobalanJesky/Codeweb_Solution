@@ -29,8 +29,12 @@ body {
   height: 100%;
   top: 0;
   left: 0; 
+  filter: drop-shadow(8px 8px 10px #005cff);
+  /* filter: blur(8px); */
   border-radius: 100%;
-  filter: blur(8px)
+
+  z-index: -1;
+
 }
 .slick-track {
   width: 100%; 
@@ -57,19 +61,6 @@ body {
 .slick-arrow slick-next{
   display: none;
 }
-/* .backColor::before{
-  border-radius: 659px;
-background: rgba(0, 92, 255, 0.25);
-filter: blur(147.5px);
-width: 659px;
-height: 659px;
-flex-shrink: 0;
-} */
-
-/* .backColor{
-  border-radius: 643px;
-  background: rgba(0, 92, 255, 0.25);
-  filter: blur(147.5px);
-  width: 643px;
-  height: 643px;
-} */
+.css-ws89sb-MuiPaper-root-MuiAccordion-root.Mui-expanded {
+  margin:0 !important
+}
