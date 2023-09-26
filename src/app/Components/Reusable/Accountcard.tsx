@@ -19,7 +19,7 @@ function AccountCard({
     <div className={`cursor-pointer shadow-lg border rounded-xl ${className}`}>
 
       <img src={icon} alt={title} className={imageClassName} />
-      <p className="text-base not-italic font-semibold  py-[16px] text-[14px] leading-normal">{title}</p>
+      <p className=" not-italic font-semibold  py-[16px] text-[14px] leading-normal">{title}</p>
       <p className="  font-normal  text-[#414141] text-[14px] leading-normal">
         {description}
       </p>

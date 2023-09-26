@@ -14,8 +14,8 @@ export default function Business() {
                         </p>
                     </div>
                 </div>
-                <div className="w-full md:w-1/2  lg:p-[80px] mx-auto">
-                    <div className='bg-[#fff] rounded-md md:rounded-[20px] mx-auto px-[58px] py-[58px]'>
+                <div className="w-full md:w-1/2 p-2 sm:p-7  lg:p-[80px] mx-auto">
+                    <div className='bg-[#fff] rounded-md md:rounded-[20px] mx-auto px-8 py-10 lg:px-[58px] lg:py-[58px]'>
                         <MyForm />
                     </div>
                 </div>

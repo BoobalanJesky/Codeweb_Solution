@@ -1,10 +1,10 @@
 import Layout from "../Components/Layout/layout";
 import Business from "../Homepage4/Business";
-import Achievements from "./Achievements";
 import Developer from "./Developer";
 import Hire from "./Hire";
 import Technologies from "./Technologies";
 import styles from "../css/about.module.css"
+import Achievements from "../Homepage2/Achievements";
 export default function Home() {
   return (
     <>
