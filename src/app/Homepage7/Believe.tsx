@@ -6,19 +6,19 @@ export default function Believe() {
             title: "Friendly Atmosphere",
             description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
             icon: "/assets/image/Group 2005.png",
-            className: "w-[290px] md:w-[307px] px-[17px] py-[25px] mx-auto grid justify-items-center text-center",
+            className: "w-full sm:w-[338px] sm:h-[338px]  px-[24px] mx-auto py-[44px]  grid justify-items-center text-center",
         },
         {
             title: "Vision - Oriented",
             description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
             icon: "/assets/image/Group 2031.svg",
-            className: "w-[290px] md:w-[307px] px-[17px] mx-auto py-[25px] grid justify-items-center text-center",
+            className: "w-full sm:w-[338px] sm:h-[338px]   px-[24px] mx-auto py-[44px] grid justify-items-center text-center",
         },
         {
             title: "Regular Fun Activities",
             description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
             icon: "/assets/image/Group 2005.png",
-            className: "w-[290px] md:w-[307px] px-[17px] mx-auto py-[25px] grid justify-items-center text-center",
+            className: "w-full sm:w-[338px] sm:h-[338px]   px-[24px] mx-auto py-[44px] grid justify-items-center text-center",
         }
     ];
 

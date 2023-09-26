@@ -107,19 +107,39 @@
 }
 
 @media only screen and (min-width: 1110px) and (max-width: 1336px) {
-  .AdvGap {
-    gap: 101px
-  }
+
+ 
 
   .servicesGap {
     gap: 30px;
   }
 
 }
-
+@media only screen and (min-width: 900px) and (max-width: 1336px) {
+  .AdvLeft{
+    width: 100%;
+  }
+  .AdvGap {
+    gap: 101px;
+    display: grid;
+  }
+  .AdvPara{
+    max-width: 100%;
+  }
+  .AdvParagraph{
+    max-width: 100%;
+  }
+  .AdvRight{
+    width: 100%;
+  }
+  .advGridgap{
+    margin: 0;
+  }
+}
 @media only screen and (min-width: 1030px) {
   .AdvGap {
-    gap: 10px
+    gap: 10px;
+    
   }
 
   .journeyPad {
@@ -197,7 +217,6 @@
 .fadeDesign ::after {
   content: url("/assets/image/fade.png")
 }
-<<<<<<< HEAD
 
 
 @media (max-width: 1299px) {
@@ -220,7 +239,7 @@
     grid-template-columns: repeat(3, 1fr); 
   }
 }
-@media  (max-width: 1028px) {
+@media (max-width: 1028px) {
   .customCard {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -230,5 +249,3 @@
     grid-template-columns: repeat(1, 1fr);
   }
 }
-=======
->>>>>>> 3a3b6c97e410fe82b94a8b67e315186ee16de33a

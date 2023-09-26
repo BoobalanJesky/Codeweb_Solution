@@ -36,7 +36,7 @@ const Assistance = () => {
             ))}
           </p>
         </div>
-        <div className='mt-[70px] flex justify-center p-2 gap-y-10 flex-wrap mx-auto'>
+        <div className='mt-[70px] flex justify-center gap-2 p-2 gap-y-10 flex-wrap mx-auto'>
           {cards.map((card, index) => (
             <div key={index} className='flex justify-center items-center h-full w-full sm:w-[338px] py-[54px] rounded-[21px] border m-auto shadow-sm'>
               <div className='grid gap-[21px] relative'>
