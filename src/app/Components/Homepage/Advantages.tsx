@@ -35,7 +35,7 @@ const Advantages = () => {
           <p className="text-[14px] my-[5px] leading-normal text-center lg:text-start font-semibold text-text-color">
             Why Choose Us?
           </p>
-          <p className={`text-[33px] text-center lg:text-start font-bold leading-normal text-text-black ${styles.AdvPara} lg:max-w-[476px]`}>
+          <p className={`text-[24px] md:text-[30px] lg:text-[33px] text-center lg:text-start font-bold leading-normal text-text-black ${styles.AdvPara} lg:max-w-[476px]`}>
             The Benefits of Choosing Us, A Positive Driven Approach
           </p>
           <p className={`text-[14px] mx-auto font-normal leading-[30px] text-[#414141] ${styles.AdvParagraph} max-w-[600px] mt-[26px] mb-[20px] `}>
