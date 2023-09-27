@@ -26,9 +26,9 @@ const page = () => {
         <Dominance />
         <Testimonies />
       </div>
-      <div>
+      {/* <div>
         <Footer />
-      </div>
+      </div> */}
     </Layout>)
 }
 

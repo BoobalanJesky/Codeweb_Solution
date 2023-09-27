@@ -32,9 +32,9 @@ const Dominance = () => {
           <div key={index} className="shadow-lg border rounded-xl bg-[#fff] group transition duration-500 hover:bg-[#005CFF] mx-auto py-[50px] w-[259px] h-[176px]">
             <div className="grid justify-center gap-[15px]">
             <AddShoppingCartIcon className="w-[38px] h-[40px] group-hover:text-[#fff] mx-auto"/>
-            <div className="text-[#414141] group-hover:text-[#fff] text-[14px] leading-normal font-normal">
+            <p className="text-[#414141] group-hover:text-[#fff] text-[14px] leading-normal font-normal">
               {card.description}
-              </div>
+              </p>
             </div>
           </div>
         ))}
