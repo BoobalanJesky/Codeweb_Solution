@@ -47,7 +47,7 @@ export default function Vacancies() {
                             <p className="text-text-gray text-[14px] font-semibold leading-[18px]">{i.head}</p>
                             <p className="text-text-gray text-[14px] grid  gap-[20px] font-normal leading-[30px] "><span>{i.para}</span>
                             <span>{i.para2}</span></p>
-                            <button className="text-[#fff] w-[140px] h-[47px] text-[14px] font-medium leading-normal bg-[#005CFF] rounded-[4px] mt-[20px] px-[25px] py-[13px]">Explore More</button>
+                            <button className="text-[#fff] w-[140px] h-[47px] text-[14px] font-medium leading-normal bg-[#005CFF] rounded-[4px] px-[25px] py-[13px]">Explore More</button>
                         </div>
                     </div>
                 ))}

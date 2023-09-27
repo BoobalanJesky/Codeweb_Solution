@@ -24,7 +24,7 @@ const Navbar = () => {
         </div>
       
         <div>
-            <button className='bg-default-primary whitespace-nowrap text-[#fff] capitalize px-[14px] sm:px-[25px] py-[13px] rounded-[4px] text-[14px] font-medium leading-normal'>
+            <button className='bg-default-primary whitespace-nowrap text-[#fff] capitalize px-[5px] sm:px-[25px] py-[10px] rounded-[4px] text-[10px] sm:text-[14px] font-medium leading-normal'>
             Get A Free Quote
             </button>
         </div>
