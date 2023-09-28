@@ -14,7 +14,7 @@ export default function Marketing() {
                         <img className="" src="/assets/image/Group 2024.png" />
                     </div>
                 </div>
-                <div className="md:w-1/2 mx-auto ">
+                <div className="md:w-1/2 mx-auto">
                     <div className="max-w-[583px] mx-auto">
                         <p className="text-[#414141] text-[14px]  font-normal leading-[33px]">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
                             Ipsum has been the industry's standard dummy text ever since the 1500s, when an
