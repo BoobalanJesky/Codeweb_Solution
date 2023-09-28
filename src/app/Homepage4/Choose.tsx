@@ -54,7 +54,7 @@ export default function Choose() {
                 </div>
 
             </div>
-            <div className={`mt-[40px] grid sm:grid-cols-2 gap-y-5  lg:grid-cols-3  mx-auto lg:gap-y-[50px] ${styles.customChoose}`}>
+            <div className={`mt-[40px] grid sm:grid-cols-2  lg:grid-cols-3  mx-auto gap-y-[50px] ${styles.customChoose}`}>
                 {cardData.map((card, index) => (
                     <AccountCard
                         key={index}

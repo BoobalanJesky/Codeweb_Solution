@@ -62,7 +62,7 @@ const Testimonies = () => {
         }
     };
     return (
-        <div className="grid grid-cols-1 mx-auto">
+        <div className="grid grid-cols-1 mx-auto relative testimonial">
             <Slider {...settings} ref={sliderRef} initialSlide={currentSlide}>
                 {testimony.map((i, j) => (
                     <div key={j} className="custom-slide ">

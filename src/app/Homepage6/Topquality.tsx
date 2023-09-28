@@ -60,7 +60,7 @@ export default function Topquality() {
             },
             fontWeight: 'bold',
             color: '#fff',
-            paddingTop: '30px',
+            paddingTop: '20px',
             paddingLeft: '20px',
           }}
           addSx={{

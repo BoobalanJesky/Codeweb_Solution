@@ -14,9 +14,11 @@ const page = () => {
 
   return (
     <>
-    <div className="relative background" id="demo">
+    <div className="relative about" id="demo">
     <Navbar/>
+    <div className={`${styles.pxPadding} relative about lg:px-[68px]`}>
     <About />
+    </div>
     </div>
       <div className={`${styles.pxPadding} lg:px-[68px]`}>
         
@@ -30,6 +32,7 @@ const page = () => {
         <Dominance />
         <Testimonies />
       </div>
+      <Footer/>
       </>
   )
 }
