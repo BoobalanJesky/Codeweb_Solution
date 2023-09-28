@@ -32,7 +32,7 @@ export default function Platform() {
           <p className="text-[24px] md:text-[28px] lg:text-[33px] text-[#000] font-bold leading-normal text-center max-w-[600px]">What Makes Android A Good Application Development Platform?</p>
         </div>
       </div>
-      <div className="mt-[90px] grid grid-cols-1 md:grid-cols-2 gap-[20px]">
+      <div className="mt-10 md:mt-[90px] grid grid-cols-1 md:grid-cols-2 gap-[20px]">
         {platformInfo.map((info, index) => (
           <div key={index} className="bg-[#fff] p-[20px] grid gap-[20px]  mx-auto border-1 shadow-xl rounded-[20px]">
             <div className="flex gap-[20px] items-center">

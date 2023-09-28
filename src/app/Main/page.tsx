@@ -13,23 +13,28 @@ import Layout from '../Components/Layout/layout';
 const page = () => {
 
   return (
-    <Layout>
+    <>
+    <div className="relative about" id="demo">
+    <Navbar/>
+    <div className={`${styles.pxPadding} relative about lg:px-[68px]`}>
+    <About />
+    </div>
+    </div>
       <div className={`${styles.pxPadding} lg:px-[68px]`}>
-        <About />
+        
         <Advantages />
         <Services />
       </div>
-      <div className='mt-[71px] mb-10 md:mb-[100px] '>
+      <div className='mt-[71px] mb-10 md:mb-[100px]'>
         <Journey />
       </div>
       <div className={`${styles.pxPadding} lg:px-[68px]`}>
         <Dominance />
         <Testimonies />
       </div>
-      {/* <div>
-        <Footer />
-      </div> */}
-    </Layout>)
+      <Footer/>
+      </>
+  )
 }
 
 export default page
