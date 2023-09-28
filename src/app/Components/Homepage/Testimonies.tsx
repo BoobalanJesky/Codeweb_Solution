@@ -62,12 +62,12 @@ const Testimonies = () => {
         }
     };
     return (
-        <div className="grid grid-cols-1 mx-auto relative testimonial">
+        <div className="grid grid-cols-1 mx-auto mt-[100px] relative testimonial">
             <Slider {...settings} ref={sliderRef} initialSlide={currentSlide}>
                 {testimony.map((i, j) => (
                     <div key={j} className="custom-slide ">
                         <div className="grid justify-center">
-                            <p className="text-[14px] mt-[100px] my-[5px] text-center leading-normal font-semibold text-text-color">
+                            <p className="text-[14px]  my-[5px] text-center leading-normal font-semibold text-text-color">
                                 {i.subHead}
                             </p>
                             <p className="text-[24px] md:text-[28px] lg:text-[33px] font-bold max-w-[623px] text-center flex justify-center leading-normal mt-[5px] mb-10 md:mb-[70px] text-[#222] ">

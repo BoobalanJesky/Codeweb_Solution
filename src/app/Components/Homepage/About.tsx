@@ -17,6 +17,7 @@ const About = () => {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
+    prevArrow: <></> ,
     appendDots: (dots) => (
       <ul className="custom-dots">
         {dots.slice(0, 8)}

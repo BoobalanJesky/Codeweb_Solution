@@ -21,7 +21,6 @@ const page = () => {
     </div>
     </div>
       <div className={`${styles.pxPadding} lg:px-[68px]`}>
-        
         <Advantages />
         <Services />
       </div>
