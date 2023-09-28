@@ -1,20 +1,27 @@
-import Layout from '../Components/Layout/layout'
-import Unique from './Unique'
-import styles from "../../app/css/about.module.css";
-import Services from '../Components/Homepage/Services';
-import Innovative from './innovative';
+import Layout from '@abserve/app/Components/Layout/layout'
+import Unique from '@abserve/app/Services/Unique'
+import styles from "@abserve/app/css/about.module.css";
+import Services from '@abserve/app/Components/Homepage/Services';
+import Innovative from '@abserve/app/Services/innovative';
+import Navbar from '../Components/Layout/Navbar';
+import Footer from '../Components/Layout/Footer';
 export default function Home() {
   return (
     <>
-      <Layout>
+    <div className="relative about" id="demo">
+    <Navbar/>
+    <div className={`${styles.pxPadding} relative about lg:px-[68px]`}>
+    <Innovative />
+    </div>
+    </div>
         <div className={`${styles.pxPadding} lg:px-[68px]`}>
-          <Innovative />
+          
           <Services />
         </div>
         <div>
           <Unique />
         </div>
-      </Layout>
+     <Footer/>
     </>
   )
 }

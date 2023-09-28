@@ -11,13 +11,13 @@ export default function Marketing() {
                         Company Founded When You Need Marketing Results
                     </p>
                     <div className="">
-                        <img className="" src="/assets/image/Group 2024.png" />
+                        <img className="" src="./assets/image/Group 2024.png" />
                     </div>
                 </div>
                 <div className="md:w-1/2 mx-auto">
                     <div className="max-w-[583px] mx-auto">
                         <p className="text-[#414141] text-[14px]  font-normal leading-[33px]">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                            Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                            Ipsum has been the industry&#39s standard dummy text ever since the 1500s, when an
                             unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                         <div className="mt-[20px] mb-[30px] flex">
                             <p className="text-[18px] text-[#005CFF] font-semibold leading-normal ">contact us<KeyboardArrowRightIcon /></p>

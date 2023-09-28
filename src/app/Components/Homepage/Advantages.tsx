@@ -6,25 +6,25 @@ const Advantages = () => {
     {
       title: "Faster Hiring",
       description: "Lorem Ipsum is simply dummy text of the printing.",
-      icon: "/assets/svg/info.svg",
+      icon: "./assets/svg/info.svg",
       className: `${styles.advGridgap} lg:mt-10 w-[243px] h-[243px] px-[27px] py-[36px] mx-auto`,
     },
     {
       title: "Lorem Ipsum",
       description: "Lorem Ipsum is simply dummy text of the printing.",
-      icon: "/assets/svg/Frame.svg",
+      icon: "./assets/svg/Frame.svg",
       className: "lg:mb-10 w-[243px] h-[243px] px-[27px] py-[36px] w-[228px] mx-auto lg:mx-0",
     },
     {
       title: "Faster Hiring",
       description: "Lorem Ipsum is simply dummy text of the printing.",
-      icon: "/assets/svg/account.svg",
+      icon: "./assets/svg/account.svg",
       className: `${styles.advGridgap} lg:mt-10 w-[243px] h-[243px] px-[27px] py-[36px] mx-auto`,
     },
     {
       title: "Faster Hiring",
       description: "Lorem Ipsum is simply dummy text of the printing.",
-      icon: "/assets/svg/hosting tools.svg",
+      icon: "./assets/svg/hosting tools.svg",
       className: "lg:mb-10 w-[243px] h-[243px] px-[27px] py-[36px]  w-[228px] mx-auto lg:mx-0",
     },
   ];
@@ -40,16 +40,16 @@ const Advantages = () => {
           </p>
           <p className={`text-[14px] mx-auto font-normal leading-[30px] text-[#414141] ${styles.AdvParagraph} max-w-[600px] mt-[26px] mb-[20px] `}>
             Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text ever
+            industry. Lorem Ipsum has been the industry&#39s standard dummy text ever
             since the 1500s. Lorem Ipsum is simply dummy text of the printing and
-            typesetting industry. Lorem Ipsum has been the industry's standard
+            typesetting industry. Lorem Ipsum has been the industry&#39s standard
             dummy text ever since the 1500s
           </p>
           <div className="flex justify-center lg:justify-start">
             <button className="bg-default-primary flex justify-between items-center gap-[7px] text-[#fff] capitalize px-[25px] py-[13px] rounded-[4px] text-[14px] font-medium leading-normal">
               <span>About us</span>
               <img
-                src="/assets/svg/keyArrow.svg"
+                src="./assets/svg/keyArrow.svg"
                 className="w-[12px] h-[8px]"
               ></img>
             </button>

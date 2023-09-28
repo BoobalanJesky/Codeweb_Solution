@@ -2,10 +2,10 @@ import React from "react";
 export default function Ourteam() {
  
     const imageUrls = [
-        "/assets/image/ceo.png",
-        "/assets/image/designer.png",
-        "/assets/image/coo.png",
-        "/assets/image/cooo.png",
+        "./assets/image/ceo.png",
+        "./assets/image/designer.png",
+        "./assets/image/coo.png",
+        "./assets/image/cooo.png",
     ];
     return (
         <>

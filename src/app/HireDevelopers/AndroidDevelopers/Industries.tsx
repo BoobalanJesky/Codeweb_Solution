@@ -1,37 +1,37 @@
 import React from "react";
-import styles from "../../app/css/about.module.css";
+import styles from "@abserve/app/css/about.module.css";
 export default function Industries() {
     const header = [
         {
-            icon: "/assets/image/14102962671595341166 1.png",
+            icon: "./assets/image/14102962671595341166 1.png",
             head: "Healthcare & Fitness"
         },
         {
-            icon: "/assets/image/4987286121594941299 1.png",
+            icon: "./assets/image/4987286121594941299 1.png",
             head: "Finance & Banking"
         },
         {
-            icon: "/assets/image/5575858831595156046 1.png",
+            icon: "./assets/image/5575858831595156046 1.png",
             head: "Education & Technology"
         },
         {
-            icon: "/assets/image/15706546551638029481 1.png",
+            icon: "./assets/image/15706546551638029481 1.png",
             head: "Management Services"
         },
         {
-            icon: "/assets/image/2817315341595601896 1.png",
+            icon: "./assets/image/2817315341595601896 1.png",
             head: "Logistics & Transportation"
         },
         {
-            icon: "/assets/image/online-shopping-icon 1.png",
+            icon: "./assets/image/online-shopping-icon 1.png",
             head: "E-Commerce"
         },
         {
-            icon: "/assets/image/2714854771586786105 1.png",
+            icon: "./assets/image/2714854771586786105 1.png",
             head: "Travel & Tourism"
         },
         {
-            icon: "/assets/image/microphone-line-icon 1.png",
+            icon: "./assets/image/microphone-line-icon 1.png",
             head: "Insurance"
         },
     ]

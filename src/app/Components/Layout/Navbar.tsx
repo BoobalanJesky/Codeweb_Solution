@@ -11,7 +11,7 @@
 //     {/* linearColor */}
 //     <div className="relative pxPadNav    mb-10 lg:mb-[115px]  background flex justify-between gap-3  pt-[21px] items-center">
 //         <div className={`${styles.NavbarItem} flex items-center lg:gap-[50px]`}>
-//          <img src="/assets/image/logo.png"/>
+//          <img src="./assets/image/logo.png"/>
 //          <div>
 //           <ul className='lg:flex gap-[25px] text-[14px] hidden   font-medium leading-normal whitespace-nowrap'>
 //             <li>Home</li>
@@ -54,8 +54,8 @@ const Header = () => {
     <section className=" ">
       <nav className="mx-auto flex items-center justify-between py-3 px-4 lg:px-8" aria-label="Global">
         <div className="pr-6 ">
-          <Link className="" href="/Homepage">
-            <img src="/assets/svg/logo.svg" alt="Rebustar-logo" />
+          <Link className="" href="/Homepage/">
+            <img src="./assets/svg/logo.svg" alt="logo" />
           </Link>
         </div>
         <div className="flex lg:hidden">
@@ -69,14 +69,14 @@ const Header = () => {
         <div className='hidden lg:flex lg:gap-x-12'>
           <ul className="list-none flex grow m-0 navbar-nav">
             <li className="nav-item px-3.5 py-2">
-              <p className="nav-link cursor-pointer no-underline font-medium leading-normal whitespace-nowrap text-[14px] text-text-black hover:text-text-color" rel="noopener noreferrer" target="_self" href="/about-us">Home</p>
+              <Link className="nav-link cursor-pointer no-underline font-medium leading-normal whitespace-nowrap text-[14px] text-text-black hover:text-text-color" rel="noopener noreferrer" target="_self" href="/Homepage/">Home</Link>
             </li>
             <li className="nav-item drop-down px-3.5 py-2">
               <div className="group relative cursor-pointer">
                 <div className="flex items-center justify-between">
-                  <a className="menu-hover no-underline font-medium leading-normal whitespace-nowrap text-[14px] text-text-black hover:text-text-color">
+                  <Link className="menu-hover no-underline font-medium leading-normal whitespace-nowrap text-[14px] text-text-black hover:text-text-color" href='/AboutUs/'>
                     Company
-                  </a>
+                  </Link>
                   <span>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -95,19 +95,19 @@ const Header = () => {
                   </span>
                 </div>
                 <div className="invisible absolute z-50 flex w-max flex-col bg-[#fff] border-solid border border-slate-200 rounded py-1 shadow-xl group-hover:visible">
-                  <Link className=" block px-4 border-solid hover:border-l-4 border-l-4 border-[#fff0] hover:border-l-[#004299] text-[16px] font-[productsans-Regular] text-[#423F3F] hover no-underline hover:bg-[#cfcfcf]" href="/uber-clone">Company</Link>
-                  <Link className=" block px-4 border-solid hover:border-l-4 border-l-4 border-[#fff0] hover:border-l-[#004299] text-[16px] font-[productsans-Regular] text-[#423F3F] hover no-underline hover:bg-[#cfcfcf]" href="/ubereats-clone/">Services</Link>
-                  <Link className=" block px-4 border-solid hover:border-l-4 border-l-4 border-[#fff0] hover:border-l-[#004299] text-[16px] font-[productsans-Regular] text-[#423F3F] hover no-underline hover:bg-[#cfcfcf]" href="/instacart-clone">Hire Developers</Link>
-                  <Link className=" block px-4 border-solid hover:border-l-4 border-l-4 border-[#fff0] hover:border-l-[#004299] text-[16px] font-[productsans-Regular] text-[#423F3F] hover no-underline hover:bg-[#cfcfcf]" href="/airbnb-clone">Contact Us</Link>
+                  <Link className=" block px-4 border-solid hover:border-l-4 border-l-4 border-[#fff0] hover:border-l-[#004299] text-[14px] text-[#423F3F] hover no-underline  hover:bg-[#cfcfcf]" href="/AboutUs/">Company</Link>
+                  <Link className=" block px-4 border-solid hover:border-l-4 border-l-4 border-[#fff0] hover:border-l-[#004299] text-[14px] text-[#423F3F] hover no-underline  hover:bg-[#cfcfcf]" href="/Services/">Services</Link>
+                  <Link className=" block px-4 border-solid hover:border-l-4 border-l-4 border-[#fff0] hover:border-l-[#004299] text-[14px] text-[#423F3F] hover no-underline  hover:bg-[#cfcfcf]" href="/HireDevelopers/">Hire Developers</Link>
+                  <Link className=" block px-4 border-solid hover:border-l-4 border-l-4 border-[#fff0] hover:border-l-[#004299] text-[14px] text-[#423F3F] hover no-underline  hover:bg-[#cfcfcf]" href="/ContactUs/">Contact Us</Link>
                 </div>
               </div>
             </li>
             <li className="nav-item drop-down px-3.5 py-2">
               <div className="group relative cursor-pointer">
                 <div className="flex items-center justify-between">
-                  <a className="menu-hover no-underline font-medium leading-normal whitespace-nowrap text-[14px] text-text-black hover:text-text-color">
+                  <Link className="menu-hover no-underline font-medium leading-normal whitespace-nowrap text-[14px] text-text-black hover:text-text-color" href="/Services/">
                     Services
-                  </a>
+                  </Link>
                   <span>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -126,20 +126,20 @@ const Header = () => {
                   </span>
                 </div>
                 <div className="invisible absolute z-50 flex w-max flex-col bg-[#fff] border-solid border border-slate-200 rounded py-1 shadow-xl group-hover:visible">
-                  <Link className=" block px-4 border-solid hover:border-l-4 border-l-4 border-[#fff0] hover:border-l-[#004299] text-[16px] font-[productsans-Regular] text-[#423F3F] hover no-underline hover:bg-[#cfcfcf]" href="/uber-clone">Company</Link>
-                  <Link className=" block px-4 border-solid hover:border-l-4 border-l-4 border-[#fff0] hover:border-l-[#004299] text-[16px] font-[productsans-Regular] text-[#423F3F] hover no-underline hover:bg-[#cfcfcf]" href="/ubereats-clone/">Services</Link>
-                  <Link className=" block px-4 border-solid hover:border-l-4 border-l-4 border-[#fff0] hover:border-l-[#004299] text-[16px] font-[productsans-Regular] text-[#423F3F] hover no-underline hover:bg-[#cfcfcf]" href="/instacart-clone">Hire Developers</Link>
-                  <Link className=" block px-4 border-solid hover:border-l-4 border-l-4 border-[#fff0] hover:border-l-[#004299] text-[16px] font-[productsans-Regular] text-[#423F3F] hover no-underline hover:bg-[#cfcfcf]" href="/airbnb-clone">Contact Us</Link>
-                  {/* <Link className=" block px-4 border-solid hover:border-l-4 border-l-4 border-[#fff0] hover:border-l-[#004299] text-[16px] font-[productsans-Regular] text-[#423F3F] hover no-underline hover:bg-[#cfcfcf]" href="/carpooling-script">Ride Sharing Script</Link> */}
+                <Link className=" block px-4 border-solid hover:border-l-4 border-l-4 border-[#fff0] hover:border-l-[#004299] text-[14px] text-[#423F3F] hover no-underline hover:bg-[#cfcfcf]" href="/AboutUs/">Company</Link>
+                  <Link className=" block px-4 border-solid hover:border-l-4 border-l-4 border-[#fff0] hover:border-l-[#004299] text-[14px] text-[#423F3F] hover no-underline hover:bg-[#cfcfcf]" href="/Services/Single/">Services</Link>
+                  <Link className=" block px-4 border-solid hover:border-l-4 border-l-4 border-[#fff0] hover:border-l-[#004299] text-[14px] text-[#423F3F] hover no-underline hover:bg-[#cfcfcf]" href="/HireDevelopers/">Hire Developers</Link>
+                  <Link className=" block px-4 border-solid hover:border-l-4 border-l-4 border-[#fff0] hover:border-l-[#004299] text-[14px] text-[#423F3F] hover no-underline hover:bg-[#cfcfcf]" href="/ContactUs/">Contact Us</Link>
+                  {/* <Link className=" block px-4 border-solid hover:border-l-4 border-l-4 border-[#fff0] hover:border-l-[#004299] text-[14px] text-[#423F3F] hover no-underline hover:bg-[#cfcfcf]" href="/carpooling-script">Ride Sharing Script</Link> */}
                 </div>
               </div>
             </li>
             <li className="nav-item drop-down px-3.5 py-2">
               <div className="group relative cursor-pointer">
                 <div className="flex items-center justify-between">
-                  <a className="menu-hover no-underline font-medium leading-normal whitespace-nowrap text-[14px] text-text-black hover:text-text-color">
+                  <Link className="menu-hover no-underline font-medium leading-normal whitespace-nowrap text-[14px] text-text-black hover:text-text-color" href="/HireDevelopers/">
                     Hire Developers
-                  </a>
+                  </Link>
                   <span>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -158,16 +158,16 @@ const Header = () => {
                   </span>
                 </div>
                 <div className="invisible absolute z-50 flex w-max flex-col bg-[#fff] border-solid border border-slate-200 rounded py-1 shadow-xl group-hover:visible">
-                  <Link className=" block px-4 border-solid hover:border-l-4 border-l-4 border-[#fff0] hover:border-l-[#004299] text-[16px] font-[productsans-Regular] text-[#423F3F] hover no-underline hover:bg-[#cfcfcf]" href="/uber-clone">Company</Link>
-                  <Link className=" block px-4 border-solid hover:border-l-4 border-l-4 border-[#fff0] hover:border-l-[#004299] text-[16px] font-[productsans-Regular] text-[#423F3F] hover no-underline hover:bg-[#cfcfcf]" href="/ubereats-clone/">Services</Link>
-                  <Link className=" block px-4 border-solid hover:border-l-4 border-l-4 border-[#fff0] hover:border-l-[#004299] text-[16px] font-[productsans-Regular] text-[#423F3F] hover no-underline hover:bg-[#cfcfcf]" href="/instacart-clone">Hire Developers</Link>
-                  <Link className=" block px-4 border-solid hover:border-l-4 border-l-4 border-[#fff0] hover:border-l-[#004299] text-[16px] font-[productsans-Regular] text-[#423F3F] hover no-underline hover:bg-[#cfcfcf]" href="/airbnb-clone">Contact Us</Link>
-                  {/* <Link className=" block px-4 border-solid hover:border-l-4 border-l-4 border-[#fff0] hover:border-l-[#004299] text-[16px] font-[productsans-Regular] text-[#423F3F] hover no-underline hover:bg-[#cfcfcf]" href="/carpooling-script">Ride Sharing Script</Link> */}
+                <Link className=" block px-4 border-solid hover:border-l-4 border-l-4 border-[#fff0] hover:border-l-[#004299] text-[14px] text-[#423F3F] hover no-underline hover:bg-[#cfcfcf]" href="/AboutUs/">Company</Link>
+                  <Link className=" block px-4 border-solid hover:border-l-4 border-l-4 border-[#fff0] hover:border-l-[#004299] text-[14px] text-[#423F3F] hover no-underline hover:bg-[#cfcfcf]" href="/Services/">Services</Link>
+                  <Link className=" block px-4 border-solid hover:border-l-4 border-l-4 border-[#fff0] hover:border-l-[#004299] text-[14px] text-[#423F3F] hover no-underline hover:bg-[#cfcfcf]" href="/HireDevelopers/AndroidDevelopers/">Hire Developers</Link>
+                  <Link className=" block px-4 border-solid hover:border-l-4 border-l-4 border-[#fff0] hover:border-l-[#004299] text-[14px] text-[#423F3F] hover no-underline hover:bg-[#cfcfcf]" href="/ContactUs/">Contact Us</Link>
+                  {/* <Link className=" block px-4 border-solid hover:border-l-4 border-l-4 border-[#fff0] hover:border-l-[#004299] text-[14px] text-[#423F3F] hover no-underline hover:bg-[#cfcfcf]" href="/carpooling-script">Ride Sharing Script</Link> */}
                 </div>
               </div>
             </li>
             <li className="nav-item relative px-3.5 py-2">
-              <p className="nav-link cursor-pointer no-underline font-medium leading-normal whitespace-nowrap text-[14px] text-text-black hover:text-text-color" rel="noopener noreferrer" target="_self" href="/hire-dedicated-developers-in-india">Contact Us</p>
+              <Link className="nav-link cursor-pointer no-underline font-medium leading-normal whitespace-nowrap text-[14px] text-text-black hover:text-text-color" rel="noopener noreferrer" target="_self" href="/ContactUs/">Contact Us</Link>
             </li>
            
           </ul>
@@ -199,7 +199,7 @@ const Header = () => {
                 <Disclosure as="div" className="-mx-3">
                   {({ open }) => (
                     <>
-                      <Disclosure.Button className="flex items-center justify-between w-full py-2 pl-3 pr-3.5 text-base text-[16px] font-[productsans-Regular] text-[#423F3F] hover:text-[#0d6efd] ">
+                      <Disclosure.Button className="flex items-center justify-between w-full py-2 pl-3 pr-3.5 text-base text-[14px] text-[#423F3F] hover:text-[#0d6efd] ">
                         Home
                         <span>
                           <svg
@@ -224,7 +224,7 @@ const Header = () => {
                             key={item.name}
                             as="a"
                             href={item.href}
-                            className="block px-4 border-solid hover:border-l-4 border-l-4 border-[#fff0] hover:border-l-[#004299] text-[16px] font-[productsans-Regular] text-[#423F3F] hover:text-[#0d6efd] no-underline hover:bg-[#cfcfcf]"
+                            className="block px-4 border-solid hover:border-l-4 border-l-4 border-[#fff0] hover:border-l-[#004299] text-[14px] text-[#423F3F] hover:text-[#0d6efd] no-underline hover:bg-[#cfcfcf]"
                           >
                             {item.name}
                           </Disclosure.Button>
@@ -235,24 +235,24 @@ const Header = () => {
                 </Disclosure>
                 <div className='flex flex-col'>
                   <div>
-                    <Link className="nav-link no-underline text-[16px] font-[productsans-Regular] text-[#423F3F] hover:text-[#0d6efd]" rel="noopener noreferrer" target="_self" href="/about-us">Home</Link>
+                    <Link className="nav-link no-underline text-[14px] text-[#423F3F] hover:text-[#0d6efd]" rel="noopener noreferrer" target="_self" href="/about-us">Home</Link>
                   </div>
                   <div>
-                    <Link className="nav-link no-underline text-[16px] font-[productsans-Regular] text-[#423F3F] hover:text-[#0d6efd]" rel="noopener noreferrer" target="_self" href="/Portfolio">Company</Link>
+                    <Link className="nav-link no-underline text-[14px] text-[#423F3F] hover:text-[#0d6efd]" rel="noopener noreferrer" target="_self" href="/Portfolio">Company</Link>
                   </div>
                   <div>
-                    <Link className="nav-link no-underline text-[16px] font-[productsans-Regular] text-[#423F3F] hover:text-[#0d6efd]" rel="noopener noreferrer" target="_self" href="/Testimonial">Services</Link>
+                    <Link className="nav-link no-underline text-[14px] text-[#423F3F] hover:text-[#0d6efd]" rel="noopener noreferrer" target="_self" href="/Testimonial">Services</Link>
                   </div>
                   <div className='relative'>
-                    <Link className="nav-link no-underline text-[16px] font-[productsans-Regular] text-[#423F3F] hover:text-[#0d6efd]" rel="noopener noreferrer" target="_self" href="/hire-dedicated-developers-in-india">Hire Developers</Link>
+                    <Link className="nav-link no-underline text-[14px] text-[#423F3F] hover:text-[#0d6efd]" rel="noopener noreferrer" target="_self" href="/hire-dedicated-developers-in-india">Hire Developers</Link>
                   </div>
                   <div className='relative'>
-                    <Link className="nav-link no-underline text-[16px] font-[productsans-Regular] text-[#423F3F] hover:text-[#0d6efd]" rel="noopener noreferrer" target="_self" href="/hire-dedicated-developers-in-india">Contact Us</Link>
+                    <Link className="nav-link no-underline text-[14px] text-[#423F3F] hover:text-[#0d6efd]" rel="noopener noreferrer" target="_self" href="/hire-dedicated-developers-in-india">Contact Us</Link>
                   </div>
                 </div>
               </div>
               {/* <div className="py-6">
-                <Link href="/contact-us" className="text-[#fff] no-underline text-[16px] font-[productsans-Regular] hover:text-[#fff] rounded-3xl bg-gradient-to-r from-[#1B79F3] to-[#0F5DC4] px-5 xl:px-10 py-2"></Link>
+                <Link href="/contact-us" className="text-[#fff] no-underline text-[14px] hover:text-[#fff] rounded-3xl bg-gradient-to-r from-[#1B79F3] to-[#0F5DC4] px-5 xl:px-10 py-2"></Link>
               </div> */}
                 <button className='bg-default-primary whitespace-nowrap text-[#fff] capitalize  px-[25px] py-[10px] rounded-[4px] text-[10px] sm:text-[14px] font-medium leading-normal'>
                 Get A Free Quote

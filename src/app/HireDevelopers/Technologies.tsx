@@ -6,38 +6,38 @@ const cardData = [
     {
       title: "Website Development",
       description: "Lorem Ipsum is simply dummy text of the printing.",
-      icon: "/assets/image/Vector(6).png"
+      icon: "./assets/image/Vector(6).png"
     },
     {
       title: "Mobile App Development",
       description: "Lorem Ipsum is simply dummy text of the printing.",
-      icon: "/assets/image/Clip path group.png"
+      icon: "./assets/image/Clip path group.png"
     },
     
     {
       title: "Hire AngularJS Developers",
       description: "Lorem Ipsum is simply dummy text of the printing.",
-      icon: "/assets/image/Clip path group(1).png"
+      icon: "./assets/image/Clip path group(1).png"
     },
     {
         title: "Hire Laravel Developers",
         description: "Lorem Ipsum is simply dummy text of the printing.",
-        icon: "/assets/image/Vector(7).png"
+        icon: "./assets/image/Vector(7).png"
       },
       {
         title: "Hire Flutter Developers",
         description: "Lorem Ipsum is simply dummy text of the printing.",
-        icon: "/assets/image/Flutter.png"
+        icon: "./assets/image/Flutter.png"
       },
     {
         title: "Software Testing",
         description: "Lorem Ipsum is simply dummy text of the printing.",
-        icon: "/assets/svg/software.svg"
+        icon: "./assets/svg/software.svg"
       },
       {
         title: "Blockchain Development",
         description: "Lorem Ipsum is simply dummy text of the printing.",
-        icon: "/assets/svg/blockchain.svg"
+        icon: "./assets/svg/blockchain.svg"
       },
       {
         title: "Cryptocurrency",

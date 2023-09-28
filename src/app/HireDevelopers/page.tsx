@@ -3,7 +3,7 @@ import Business from "@abserve/app/Services/Single/Business";
 import Developer from "./Developer";
 import Hire from "./Hire";
 import Technologies from "./Technologies";
-import styles from "../css/about.module.css"
+import styles from "@abserve/app/css/about.module.css"
 import Achievements from "@abserve/app/AboutUs/Achievements";
 export default function Home() {
   return (

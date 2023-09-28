@@ -10,7 +10,7 @@ export default function Business() {
                         <p className="text-[33px] font-bold leading-normal text-text-white max-w-[448px] pt-[5px] pb-[20px]"> Do You Want To Know More
                             About Our Business?</p>
                         <p className="text-[14px] text-[#fff] md:max-w-[590px] leading-[30px] ">
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39s standard dummy text ever since the 1500s.
                         </p>
                     </div>
                 </div>
