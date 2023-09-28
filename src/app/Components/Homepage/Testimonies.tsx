@@ -11,7 +11,7 @@ const Testimonies = () => {
         mainHead: "Excellent Service & Commitment",
         para: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.",
         name: "Madhavan",
-        img: "/assets/image/banner2.png "
+        img: "./assets/image/banner2.png "
     },
     {
         subHead: "Client Reviews",
@@ -19,7 +19,7 @@ const Testimonies = () => {
         mainHead: "Excellent Service & Commitment",
         para: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.",
         name: "Madhavan",
-        img: "/assets/image/banner2.png "
+        img: "./assets/image/banner2.png "
     },
     {
         subHead: "Client Reviews",
@@ -27,7 +27,7 @@ const Testimonies = () => {
         mainHead: "Excellent Service & Commitment",
         para: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.",
         name: "Madhavan",
-        img: "/assets/image/banner2.png "
+        img: "./assets/image/banner2.png "
     },
 
     ]
@@ -76,15 +76,15 @@ const Testimonies = () => {
                                     <p className="text-[14px] font-normal  leading-[30px] text-[#414141] md:max-w-[520px] mt-[26px] mb-[20px]">
                                         {i.para}
                                     </p>
-                                    <img className="absolute top-[48%] right-[10%]" src="/assets/image/cottation.png" />
+                                    <img className="absolute top-[48%] right-[10%]" src="./assets/image/cottation.png" />
                                     <p className="text-[14px] font-bold leading-[30px] text-[#414141]">{i.name}</p>
                                 </div>
                                 <div className="flex relative justify-center md:justify-start gap-[20px] mt-[20px]">
                                     <div onClick={goToPrevSlide} className="rounded-full absolute px-[19px] py-[15px] bg-default-primary my-auto">
-                                        <img src="/assets/svg/leftArrow.svg" />
+                                        <img src="./assets/svg/leftArrow.svg" />
                                     </div>
                                     <div onClick={goToNextSlide} className="rounded-full absolute px-[19px] py-[15px] bg-default-primary my-auto">
-                                        <img src="/assets/svg/rightArrow.svg" />
+                                        <img src="./assets/svg/rightArrow.svg" />
                                     </div>
                                 </div>
                             </div>

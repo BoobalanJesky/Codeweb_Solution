@@ -3,17 +3,17 @@ import styles from "../css/about.module.css"
 const Assistance = () => {
   const cards = [
     {
-      icon: "/assets/svg/target.svg",
+      icon: "./assets/svg/target.svg",
       title: "Office location",
       location: "United States"
     },
     {
-      icon: "/assets/svg/cal.svg",
+      icon: "./assets/svg/cal.svg",
       title: "Office location",
       location: "United States"
     },
     {
-      icon: "/assets/svg/mail.svg",
+      icon: "./assets/svg/mail.svg",
       title: "Office location",
       location: "United States"
     }
@@ -21,7 +21,7 @@ const Assistance = () => {
   return (
     <>
       <section className='relative mt-[119px]'>
-        <img src="/assets/svg/spring.svg" className='absolute hidden md:block lg:left-[103px]' />
+        <img src="./assets/svg/spring.svg" className='absolute hidden md:block lg:left-[103px]' />
         <div className='grid justify-items-center relative'>
           <p className='text-[14px] font-semibold leading-normal text-text-color'>Get In Touch</p>
           <p className='text-[35px] text-center font-bold relative leading-normal max-w-[326px]'>
@@ -29,7 +29,7 @@ const Assistance = () => {
             {[41, 81, 41].map((top, index) => (
               <img
                 key={index}
-                src="/assets/image/fade.png"
+                src="./assets/image/fade.png"
                 className={`absolute top-[${top}px] hidden md:block ${index === 0 ? 'left-[-60px]' : index === 1 ? 'right-[-20px]' : 'md:right-[-126px] lg:right-[-225px]'
                   }`}
               />
@@ -40,7 +40,7 @@ const Assistance = () => {
           {cards.map((card, index) => (
             <div key={index} className='flex justify-center items-center h-full w-full sm:w-[338px] py-[54px] rounded-[21px] border m-auto shadow-sm'>
               <div className='grid gap-[21px] relative'>
-                <img src="/assets/image/ellipse.png" className='mx-auto' alt='Ellipse' />
+                <img src="./assets/image/ellipse.png" className='mx-auto' alt='Ellipse' />
                 <img src={card.icon} style={{ position: 'absolute', top: '36px', left: `${index === 2 ? '41px' : '46px'}` }} alt='Icon' />
                 <p className='text-[18px] leading-[33px] font-medium text-center'>{card.title}</p>
                 <p className='text-[16px] font-semibold leading-[25px] text-center'>{card.location}</p>

@@ -2,22 +2,22 @@ import React from "react";
 
 const platformInfo = [
   {
-    image: "/assets/image/Vector(8).png",
+    image: "./assets/image/Vector(8).png",
     title: "Open Source",
     content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
   },
   {
-    image: "/assets/image/team-collaboration-icon 1.png",
+    image: "./assets/image/team-collaboration-icon 1.png",
     title: "Scope for Innovation",
     content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
   },
   {
-    image: "/assets/image/team-member-icon 1(1).png",
+    image: "./assets/image/team-member-icon 1(1).png",
     title: "Target Multiple Platforms",
     content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
   },
   {
-    image: "/assets/image/challenge-target-icon 1.png",
+    image: "./assets/image/challenge-target-icon 1.png",
     title: "Cost-Platform",
     content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
   }

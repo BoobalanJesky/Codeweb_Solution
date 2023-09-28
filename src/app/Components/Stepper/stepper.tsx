@@ -17,6 +17,7 @@ const Stepper = () => {
     return (
         <section className={`${styles.verticalStepper}   gap-[67px] md:gap-[40px] lg:gap-[90px] grid justify-center items-start`}>
             {steps.map((step, i) => (
+                // eslint-disable-next-line react/jsx-key
                 <div className='relative'>
                     <div className='flex gap-[28px] items-center'>
                         <div key={i} className={`${styles.stepItem}  ${activeSteps.includes(i + 1) && styles.active}`} onClick={() => handleStepClick(i)}>

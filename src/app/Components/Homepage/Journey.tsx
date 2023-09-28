@@ -8,35 +8,35 @@ const Journey = () => {
   const sliderRef = useRef(null);
   const journey = [
     {
-      image:"/assets/image/banner.png",
+      image:"./assets/image/banner.png",
       subhead: "Case Studies",
       head: "Unlocking Success Story Of AloApp, From Scratch to Finish",
       para: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. Lorem Ipsum is simply dummy text of the printing.",
       button: "Explore AloApp Case Study",
     },
     {
-      image:"/assets/image/banner2.png",
+      image:"./assets/image/banner2.png",
       subhead: "Case Studies",
       head: "Want To know About Our Service? Join Us Now!",
       para: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. Lorem Ipsum is simply dummy text of the printing.",
       button: "Explore AloApp Case Study",
     },
     {
-      image:"/assets/image/banner.png",
+      image:"./assets/image/banner.png",
       subhead: "Case Studies",
       head: "Are you looking for any unique set of services?",
       para: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. Lorem Ipsum is simply dummy text of the printing.",
       button: "Explore AloApp Case Study",
     },
     {
-      image:"/assets/image/banner2.png",
+      image:"./assets/image/banner2.png",
       subhead: "Case Studies",
       head: "Do You Want To Know More About Our Business?",
       para: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. Lorem Ipsum is simply dummy text of the printing.",
       button: "Explore AloApp Case Study",
     },
     {
-      image:"/assets/image/banner.png",
+      image:"./assets/image/banner.png",
       subhead: "Case Studies",
       head: "Do You Want To Know More Dedicated Developer Services?",
       para: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. Lorem Ipsum is simply dummy text of the printing.",
@@ -74,7 +74,7 @@ const Journey = () => {
     <div className="relative">
       {/*   */}
       <div onClick={goToPrevSlide} className={`rounded-full  ${styles.leftAbs} absolute z-10   border border-[#0F5DC4] h-[50px] w-[50px] flex justify-center items-center  bg-default-primary my-auto`}>
-        <img src="/assets/svg/leftArrow.svg" />
+        <img src="./assets/svg/leftArrow.svg" />
       </div>
       <Slider {...settings} ref={sliderRef} initialSlide={currentSlide}>
         {journey.map((i, j) => (
@@ -99,7 +99,7 @@ const Journey = () => {
                   <button className="bg-default-primary flex justify-between items-center gap-[7px] text-[#fff] capitalize px-[25px] py-[13px] rounded-[4px] text-[14px] font-medium leading-normal">
                     <span>{i.button}</span>
                     <img
-                      src="/assets/svg/keyArrow.svg"
+                      src="./assets/svg/keyArrow.svg"
                       className="w-[12px] h-[8px]"
                     ></img>
                   </button></div>
@@ -109,7 +109,7 @@ const Journey = () => {
           </div>))}
       </Slider>
       <div onClick={goToNextSlide} className={`rounded-full absolute ${styles.rightAbs}    border border-[#0F5DC4] h-[50px] w-[50px] flex justify-center items-center  bg-default-primary my-auto`}>
-        <img src="/assets/svg/rightArrow.svg" />
+        <img src="./assets/svg/rightArrow.svg" />
       </div>
     </div>
   );

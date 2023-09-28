@@ -34,7 +34,7 @@ export default function Topquality() {
                 <div className="md:w-1/2">
                     <p className="font-semibold text-[14px] text-text-color leading-normal">Top Quality</p>
                     <p className="font-bold text-text-white my-[10px]  text-[24px] md:text-[30px] lg:text-[33px] md:max-w-[550px] leading-normal">Is it reasonable to Hire Developers From Code Web Solutions?</p>
-                    <p className="text-[14px] text-text-white md:max-w-[590px] leading-[30px]">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                    <p className="text-[14px] text-text-white md:max-w-[590px] leading-[30px]">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39s standard dummy text ever since the 1500s.</p>
                 </div>
                 <div className="md:w-1/2">
                     <div className='bg-default-black rounded-[20px] px-[20px]  mx-auto'>

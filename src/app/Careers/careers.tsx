@@ -11,12 +11,12 @@ export default function Careers() {
                         </p>
                     <div className="py-[20px]">
                         <p className="text-[14px] leading-[21px] font-normal max-w-[540px]">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p></div>
+                            Lorem Ipsum has been the industry&#39s standard dummy text ever since the 1500s</p></div>
                     <button className="bg-[#005CFF] px-[25px] py-[13px] w-[179px] h-[49px] rounded text-[#fff] font-medium text-[14px]">Explore Vacancies</button>
                 </div>
 
                 <div className=" md:w-1/2">
-                    <img className="" src="/assets/image/Group 2019.png" />
+                    <img className="" src="./assets/image/Group 2019.png" />
 
                 </div>
 

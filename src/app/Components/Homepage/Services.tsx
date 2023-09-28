@@ -11,49 +11,49 @@ const Services = () => {
     {
       title: "Website Development",
       description: "Lorem Ipsum is simply dummy text of the printing.",
-      icon: "/assets/svg/website.svg",
+      icon: "./assets/svg/website.svg",
       className: "mt-10 w-[268px] h-[293px] px-[27px] py-[36px] mx-auto "
     },
     {
       title: "Mobile App Development",
       description: "Lorem Ipsum is simply dummy text of the printing.",
-      icon: "/assets/svg/mobile.svg",
+      icon: "./assets/svg/mobile.svg",
       className: "mt-10 w-[268px] h-[293px] px-[27px] py-[36px] mx-auto "
     },
     {
       title: "Digital Marketing",
       description: "Lorem Ipsum is simply dummy text of the printing.",
-      icon: "/assets/svg/digital.svg",
+      icon: "./assets/svg/digital.svg",
       className: "mt-10 w-[268px] h-[293px] px-[27px] py-[36px] mx-auto "
     },
     {
       title: "Graphic Designing",
       description: "Lorem Ipsum is simply dummy text of the printing.",
-      icon: "/assets/svg/graphic.svg",
+      icon: "./assets/svg/graphic.svg",
       className: "mt-10 w-[268px] h-[293px] px-[27px] py-[36px] mx-auto "
     },
     {
       title: "UI/UX Designing",
       description: "Lorem Ipsum is simply dummy text of the printing.",
-      icon: "/assets/svg/uiux.svg",
+      icon: "./assets/svg/uiux.svg",
       className: "mt-10 w-[268px] h-[293px] px-[27px] py-[36px] mx-auto "
     },
     {
       title: "Software Testing",
       description: "Lorem Ipsum is simply dummy text of the printing.",
-      icon: "/assets/svg/software.svg",
+      icon: "./assets/svg/software.svg",
       className: "mt-10 w-[268px] h-[293px] px-[27px] py-[36px] mx-auto "
     },
     {
       title: "Blockchain Development",
       description: "Lorem Ipsum is simply dummy text of the printing.",
-      icon: "/assets/svg/blockchain.svg",
+      icon: "./assets/svg/blockchain.svg",
       className: "mt-10 w-[268px] h-[293px] px-[27px] py-[36px] mx-auto "
     },
     {
       title: "Cryptocurrency",
       description: "Lorem Ipsum is simply dummy text of the printing.",
-      icon: "/assets/svg/crypto.svg",
+      icon: "./assets/svg/crypto.svg",
       className: "mt-10 w-[268px] h-[293px] px-[27px] py-[36px] mx-auto "
     },
   ];

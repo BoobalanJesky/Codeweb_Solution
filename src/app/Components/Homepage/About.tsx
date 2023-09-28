@@ -31,8 +31,8 @@ const About = () => {
       headText: "Website & Mobile Application",
       head: "Development Company",
       button: "Explore our services",
-      img: "/assets/svg/keyArrow.svg",
-      bannerImage: "/assets/image/banner.png"
+      img: "./assets/svg/keyArrow.svg",
+      bannerImage: "./assets/image/banner.png"
     },
     {
       pageHead: "About Us",
@@ -40,7 +40,7 @@ const About = () => {
       head: "A Canvas for Passionate Creators: Nurturing Enthusiasm & Creativity",
       button: "Get Started",
       img: "",
-      bannerImage: "/assets/image/bannerImage2.png"
+      bannerImage: "./assets/image/bannerImage2.png"
     },
     {
       pageHead: "Services",
@@ -48,7 +48,7 @@ const About = () => {
       head: "Code Web Solutions: The Future of Web & Mobile Technologies",
       button: "Get Started",
       img: "",
-      bannerImage: "/assets/image/bannerImage2.png"
+      bannerImage: "./assets/image/bannerImage2.png"
     },
     {
       pageHead: "Website Development Services",
@@ -56,7 +56,7 @@ const About = () => {
       head: "The Best Website Development Services for Your Business",
       button: "Get Started",
       img: "",
-      bannerImage: "/assets/image/bannerImage2.png"
+      bannerImage: "./assets/image/bannerImage2.png"
     },
     {
       pageHead: "Hire Developers",
@@ -64,7 +64,7 @@ const About = () => {
       head: "Hire Our Expert Developers For Your Projects",
       button: "Get Started",
       img: "",
-      bannerImage: "/assets/image/bannerImage2.png"
+      bannerImage: "./assets/image/bannerImage2.png"
     },
     {
       pageHead: "Android Developers",
@@ -72,7 +72,7 @@ const About = () => {
       head: "Hire Our Expert Android Developers ForYour Projects",
       button: "Send Query",
       img: "",
-      bannerImage: "/assets/image/bannerImage2.png"
+      bannerImage: "./assets/image/bannerImage2.png"
     },
     {
       pageHead: "Careers",
@@ -80,7 +80,7 @@ const About = () => {
       head: "We’re Re-defining Work at Code Web Solutions",
       button: "Explore Vacancies",
       img: "",
-      bannerImage: "/assets/image/bannerImage2.png"
+      bannerImage: "./assets/image/bannerImage2.png"
     },
   ]
 
@@ -98,7 +98,7 @@ const About = () => {
                 </p>
                 <p className="max-w-[540px]  md:mx-0 flex justify-center text-[14px] mt-[27px] mb-[20px] md:mb-[51px] leading-normal font-normal">
                   Lorem Ipsum is simply dummy text of the printing and typesetting
-                  industry. Lorem Ipsum has been the industry's standard dummy text ever
+                  industry. Lorem Ipsum has been the industry&#39s standard dummy text ever
                   since the 1500s
                 </p>
 
@@ -112,7 +112,7 @@ const About = () => {
                   </button>
                   {j === 0 && (
                     <div className="rounded-full border  flex justify-between px-[21px] py-[14px] bg-default-primary">
-                      <img src="/assets/svg/arrow.svg" alt="arrow" />
+                      <img src="./assets/svg/arrow.svg" alt="arrow" />
                     </div>
                   )}
                 </div>

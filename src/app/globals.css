@@ -133,3 +133,13 @@ body {
 }
 
 
+@media only screen and (min-width: 375px)and (max-width: 640px){
+  .height{
+Height:300px;
+  }
+}
+@media only screen and (min-width: 641px)and (max-width: 760px){
+  .height{
+Height:350px;
+  }
+}

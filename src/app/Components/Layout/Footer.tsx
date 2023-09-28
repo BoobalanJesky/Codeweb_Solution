@@ -8,17 +8,17 @@ const Footer = () => {
                 <div className=''>
                     <p className='text-[27px] font-bold leading-normal text-[#fff]'>Code Web Solutions</p>
                     <p className='text-[14px] font-normal leading-[30px] text-[#fff] md:w-[310px]'>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39s standard dummy text ever. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39s standard dummy text ever.
                     </p>
                     <div className='grid gap-[14px] pt-[27px]'>
                     <p className='text-[27px] font-bold leading-normal text-[#fff]'>Social Profiles</p>
                     <div className='flex gap-[18px]'>
-                        <img className='w-[25px] h-[25px]' src="/assets/svg/fb.svg"></img>
-                        <img className='w-[25px] h-[25px]' src="/assets/svg/twit.svg"></img>
-                        <img className='w-[25px] h-[25px]' src="/assets/svg/insta.svg"></img>
-                        <img className='w-[25px] h-[25px]' src="/assets/svg/linkdin.svg"></img>
-                        <img className='w-[25px] h-[25px]' src="/assets/svg/whatsap.svg"></img>
-                        <img className='w-[25px] h-[25px]' src="/assets/svg/yt.svg"></img>
+                        <img className='w-[25px] h-[25px]' src="./assets/svg/fb.svg"></img>
+                        <img className='w-[25px] h-[25px]' src="./assets/svg/twit.svg"></img>
+                        <img className='w-[25px] h-[25px]' src="./assets/svg/insta.svg"></img>
+                        <img className='w-[25px] h-[25px]' src="./assets/svg/linkdin.svg"></img>
+                        <img className='w-[25px] h-[25px]' src="./assets/svg/whatsap.svg"></img>
+                        <img className='w-[25px] h-[25px]' src="./assets/svg/yt.svg"></img>
                     </div>
                 </div>
                 </div>
@@ -69,12 +69,12 @@ const Footer = () => {
                 {/* <div className='grid gap-[14px]'>
                     <p className='text-[27px] font-bold leading-normal text-[#fff]'>Social Profiles</p>
                     <div className='flex gap-[18px]'>
-                        <img className='w-[25px] h-[25px]' src="/assets/svg/fb.svg"></img>
-                        <img className='w-[25px] h-[25px]' src="/assets/svg/twit.svg"></img>
-                        <img className='w-[25px] h-[25px]' src="/assets/svg/insta.svg"></img>
-                        <img className='w-[25px] h-[25px]' src="/assets/svg/linkdin.svg"></img>
-                        <img className='w-[25px] h-[25px]' src="/assets/svg/whatsap.svg"></img>
-                        <img className='w-[25px] h-[25px]' src="/assets/svg/yt.svg"></img>
+                        <img className='w-[25px] h-[25px]' src="./assets/svg/fb.svg"></img>
+                        <img className='w-[25px] h-[25px]' src="./assets/svg/twit.svg"></img>
+                        <img className='w-[25px] h-[25px]' src="./assets/svg/insta.svg"></img>
+                        <img className='w-[25px] h-[25px]' src="./assets/svg/linkdin.svg"></img>
+                        <img className='w-[25px] h-[25px]' src="./assets/svg/whatsap.svg"></img>
+                        <img className='w-[25px] h-[25px]' src="./assets/svg/yt.svg"></img>
                     </div>
                 </div> */}
                 {/* <div className='px-14 '>

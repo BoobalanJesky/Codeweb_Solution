@@ -11,7 +11,7 @@
 //     {/* linearColor */}
 //     <div className="relative pxPadNav    mb-10 lg:mb-[115px]  background flex justify-between gap-3  pt-[21px] items-center">
 //         <div className={`${styles.NavbarItem} flex items-center lg:gap-[50px]`}>
-//          <img src="/assets/image/logo.png"/>
+//          <img src="./assets/image/logo.png"/>
 //          <div>
 //           <ul className='lg:flex gap-[25px] text-[14px] hidden   font-medium leading-normal whitespace-nowrap'>
 //             <li>Home</li>
@@ -55,7 +55,7 @@ const Header = () => {
       <nav className="mx-auto flex items-center justify-between py-3 px-4 lg:px-8" aria-label="Global">
         <div className="pr-6 ">
           <Link className="" href="/Homepage/">
-            <img src="/assets/svg/logo.svg" alt="logo" />
+            <img src="./assets/svg/logo.svg" alt="logo" />
           </Link>
         </div>
         <div className="flex lg:hidden">

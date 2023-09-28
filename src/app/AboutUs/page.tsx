@@ -10,7 +10,7 @@ import Layout from '../Components/Layout/layout';
 import styles from "../../app/css/about.module.css";
 import Footer from '../Components/Layout/Footer';
 
-export default function Home(props) {
+export default function Home(props: any) {
   console.log("mnb", props)
 
   return (
