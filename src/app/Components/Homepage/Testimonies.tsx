@@ -12,7 +12,7 @@ const Testimonies = () => {
         mainHead: "Excellent Service & Commitment",
         para: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.",
         name: "Madhavan",
-        img:"/assets/image/banner2.png "
+        img: "/assets/image/banner2.png "
     },
     {
         subHead: "Client Reviews",
@@ -20,7 +20,7 @@ const Testimonies = () => {
         mainHead: "Excellent Service & Commitment",
         para: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.",
         name: "Madhavan",
-        img:"/assets/image/banner2.png "
+        img: "/assets/image/banner2.png "
     },
     {
         subHead: "Client Reviews",
@@ -28,13 +28,13 @@ const Testimonies = () => {
         mainHead: "Excellent Service & Commitment",
         para: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.",
         name: "Madhavan",
-        img:"/assets/image/banner2.png "
+        img: "/assets/image/banner2.png "
     },
 
     ]
     const settings = {
         dots: true,
-        fade: true,
+        // fade: true,
         infinite: false,
         speed: 500,
         slidesToShow: 1,
@@ -42,28 +42,26 @@ const Testimonies = () => {
     };
     const goToNextSlide = () => {
         if (currentSlide === sliderRef.current.props.children.length - 1) {
-          // If at the last slide, reset to the first slide
-          setCurrentSlide(0);
-          sliderRef.current.slickGoTo(0);
+            setCurrentSlide(0);
+            sliderRef.current.slickGoTo(0);
         } else {
-          setCurrentSlide(currentSlide + 1);
-          sliderRef.current.slickNext();
+            setCurrentSlide(currentSlide + 1);
+            sliderRef.current.slickNext();
         }
-      };
-    
-      const goToPrevSlide = () => {
+    };
+
+    const goToPrevSlide = () => {
         if (currentSlide === 0) {
-          // If at the first slide, go to the last slide
-          setCurrentSlide(sliderRef.current.props.children.length - 1);
-          sliderRef.current.slickGoTo(sliderRef.current.props.children.length - 1);
+            setCurrentSlide(sliderRef.current.props.children.length - 1);
+            sliderRef.current.slickGoTo(sliderRef.current.props.children.length - 1);
         } else {
-          setCurrentSlide(currentSlide - 1);
-          sliderRef.current.slickPrev();
+            setCurrentSlide(currentSlide - 1);
+            sliderRef.current.slickPrev();
         }
-      };
+    };
     return (
         <div className="grid grid-cols-1 mx-auto ">
-            <Slider {...settings}  ref={sliderRef} initialSlide={currentSlide}>
+            <Slider {...settings} ref={sliderRef} initialSlide={currentSlide}>
                 {testimony.map((i, j) => (
                     <div key={j} className="custom-slide ">
                         <div className="grid justify-center">
@@ -89,20 +87,20 @@ const Testimonies = () => {
                                     <p className="text-[14px] font-bold leading-[30px] text-[#414141]">{i.name}</p>
                                 </div>
                                 <div className="flex justify-center md:justify-start gap-[20px] mt-[20px]">
-                <div onClick={goToPrevSlide} className="rounded-full px-[19px] py-[15px] bg-default-primary my-auto">
-                    <img src="/assets/svg/leftArrow.svg" />
-                </div>
-                <div onClick={goToNextSlide} className="rounded-full px-[19px] py-[15px] bg-default-primary my-auto">
-                    <img src="/assets/svg/rightArrow.svg" />
-                </div>
-            </div>
+                                    <div onClick={goToPrevSlide} className="rounded-full px-[19px] py-[15px] bg-default-primary my-auto">
+                                        <img src="/assets/svg/leftArrow.svg" />
+                                    </div>
+                                    <div onClick={goToNextSlide} className="rounded-full px-[19px] py-[15px] bg-default-primary my-auto">
+                                        <img src="/assets/svg/rightArrow.svg" />
+                                    </div>
+                                </div>
                             </div>
 
                         </section>
                     </div>
                 ))}
             </Slider>
-          
+
         </div>
     );
 };

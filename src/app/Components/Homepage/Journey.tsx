@@ -39,6 +39,7 @@ const Journey = () => {
     },
   ]
   const settings = {
+    fade:true,
     arrows: false,
     infinite: false,
     speed: 500,
