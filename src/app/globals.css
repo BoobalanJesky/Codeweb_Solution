@@ -41,22 +41,6 @@ body {
     padding-right: 68px;
   }
 }
-.linearColor {
-  content: "";  
-  background: rgba(0, 92, 255, 0.3);
-  position: absolute;
-  width: 300px; 
-  height: 300px;
-  flex-shrink: 0;
-    top: 0;
-  left: 0; 
-  /* filter: drop-shadow(8px 8px 10px #005cff); */
-  filter: blur(147px);
-  border-radius: 50%;
-
-  z-index: -1;
-
-}
 .slick-track {
   width: 100%; 
 }
@@ -86,15 +70,25 @@ body {
   margin:0 !important
 }
 
-.background ::before{
-  content: "";  
-  background-color: rgba(0, 92, 255, 0.30);
+#demo::before{
+  content: "";
   position: absolute;
-  width: 300px;
-  height: 300px;
-  top: -248px;
- left: -290px;
- box-shadow: 50px 10px 200rem 180px rgba(0, 92, 255, 0.30);
-  border-radius: 50%;
-  z-index: -1;
+  width: 10px;
+  height: 10px;
+  top: 0%;
+  left: -3%;
+  background: unset;
+  box-shadow: 0px 0px 200rem 356px #016eff73;
+  z-index: 0;
+}
+.background::after{
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  bottom: 30%;
+  right: -3%;
+  background: unset;
+  box-shadow: 0px 0px 200rem 256px #016eff73;
+  z-index: 0;
 }

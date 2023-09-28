@@ -9,18 +9,18 @@ const Navbar = () => {
   return (
     <>
     {/* linearColor */}
-    <div className="relative pxPadNav    mb-10 lg:mb-[115px]  background flex justify-between gap-3  pt-[21px] items-center">
+    <div className="relative pxPadNav mb-10 lg:mb-[115px] flex justify-between gap-3  pt-[21px] items-center">
         <div className={`${styles.NavbarItem} flex items-center lg:gap-[50px]`}>
          <img src="/assets/image/logo.png"/>
-         <div>
+         <nav>
           <ul className='lg:flex gap-[25px] text-[14px] hidden   font-medium leading-normal whitespace-nowrap'>
             <li>Home</li>
             <li>Company <KeyboardArrowDownIcon/></li>
             <li>Services<KeyboardArrowDownIcon/></li>
-            <li>Hire Developers <KeyboardArrowDownIcon/></li>
+            <li>Hire Developers<KeyboardArrowDownIcon/></li>
             <li>Contact Us</li>
           </ul>
-        </div>
+        </nav>
         </div>
       
         <div>
