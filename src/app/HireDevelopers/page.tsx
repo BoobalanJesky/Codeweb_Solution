@@ -1,10 +1,10 @@
 import Layout from "../Components/Layout/layout";
-import Business from "../Homepage4/Business";
+import Business from "@abserve/app/Services/Single/Business";
 import Developer from "./Developer";
 import Hire from "./Hire";
 import Technologies from "./Technologies";
 import styles from "../css/about.module.css"
-import Achievements from "../Homepage2/Achievements";
+import Achievements from "@abserve/app/AboutUs/Achievements";
 export default function Home() {
   return (
     <>

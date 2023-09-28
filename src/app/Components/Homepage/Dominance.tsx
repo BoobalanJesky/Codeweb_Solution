@@ -27,7 +27,7 @@ const Dominance = () => {
         </div>
       </div>
       {/* <div className=`grid sm:grid-cols-2 lg:grid-cols-4 justify-center ${styles.customcols} gap-[88px] gap-y-[40px] mt-[69px]`> */}
-      <div className={`grid sm:grid-cols-2 lg:grid-cols-4  ${styles.customcols} gap-[10px] sm:gap-[40px] gap-y-[40px] md:mt-[69px]`}>
+      <div className={`grid sm:grid-cols-2 lg:grid-cols-4  ${styles.customcols} gap-[10px] sm:gap-[40px] gap-y-[40px] md:mt-[40px]`}>
          {cardData.map((card, index) => (
           <div key={index} className="shadow-lg border rounded-xl bg-[#fff] group transition duration-500 hover:bg-[#005CFF] mx-auto py-[50px] w-[259px] h-[176px]">
             <div className="grid justify-center gap-[15px]">

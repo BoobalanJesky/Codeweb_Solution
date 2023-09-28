@@ -8,30 +8,35 @@ const Journey = () => {
   const sliderRef = useRef(null);
   const journey = [
     {
+      image:"/assets/image/banner.png",
       subhead: "Case Studies",
       head: "Unlocking Success Story Of AloApp, From Scratch to Finish",
       para: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. Lorem Ipsum is simply dummy text of the printing.",
       button: "Explore AloApp Case Study",
     },
     {
+      image:"/assets/image/banner2.png",
       subhead: "Case Studies",
       head: "Want To know About Our Service? Join Us Now!",
       para: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. Lorem Ipsum is simply dummy text of the printing.",
       button: "Explore AloApp Case Study",
     },
     {
+      image:"/assets/image/banner.png",
       subhead: "Case Studies",
       head: "Are you looking for any unique set of services?",
       para: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. Lorem Ipsum is simply dummy text of the printing.",
       button: "Explore AloApp Case Study",
     },
     {
+      image:"/assets/image/banner2.png",
       subhead: "Case Studies",
       head: "Do You Want To Know More About Our Business?",
       para: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. Lorem Ipsum is simply dummy text of the printing.",
       button: "Explore AloApp Case Study",
     },
     {
+      image:"/assets/image/banner.png",
       subhead: "Case Studies",
       head: "Do You Want To Know More Dedicated Developer Services?",
       para: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. Lorem Ipsum is simply dummy text of the printing.",
@@ -78,7 +83,7 @@ const Journey = () => {
 
             <div key={j} className="flex justify-center items-center flex-wrap">
               <div className="md:w-1/2">
-                <img src="/assets/image/banner.png" className="mx-auto py-[50px]" />
+                <img src={i.image} className="mx-auto py-[50px]" />
               </div>
               <div className="md:w-1/2  lg:mt-[49px] my-auto md:mt-[70px]">
                 <p className="text-[14px] my-[5px] text-center lg:text-start  leading-normal font-semibold text-text-color">

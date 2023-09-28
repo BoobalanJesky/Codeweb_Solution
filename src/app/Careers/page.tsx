@@ -3,7 +3,7 @@ import Careers from "./careers";
 import styles from "../../app/css/about.module.css";
 import Believe from "./Believe";
 import Vacancies from "./Vacancies";
-import Business from "../Homepage4/Business";
+import Business from "@abserve/app/Services/Single/Business";
 export default function Home() {
     return (
         <>
