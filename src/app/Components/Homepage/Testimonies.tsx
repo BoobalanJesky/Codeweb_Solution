@@ -34,7 +34,7 @@ const Testimonies = () => {
     ]
     const settings = {
         dots: true,
-        fade: true,
+        // fade: true,
         infinite: false,
         speed: 500,
         slidesToShow: 1,
