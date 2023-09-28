@@ -1,17 +1,17 @@
 "use client"
-import React, {  useState } from "react";
+import React, { useRef, useState } from "react";
 import Slider from "react-slick"
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 const Testimonies = () => {
-
+    const sliderRef = useRef(null);
     const testimony = [{
         subHead: "Client Reviews",
         head: "Testimonials From Our Beloved Clients",
         mainHead: "Excellent Service & Commitment",
         para: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.",
         name: "Madhavan",
-        img: "./assets/image/banner2.png "
+        img: "./assets/svg/fam.svg ",
     },
     {
         subHead: "Client Reviews",
@@ -19,7 +19,7 @@ const Testimonies = () => {
         mainHead: "Excellent Service & Commitment",
         para: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.",
         name: "Madhavan",
-        img: "./assets/image/banner2.png "
+        img: "./assets/svg/fam.svg ",
     },
     {
         subHead: "Client Reviews",
@@ -27,12 +27,11 @@ const Testimonies = () => {
         mainHead: "Excellent Service & Commitment",
         para: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.",
         name: "Madhavan",
-        img: "./assets/image/banner2.png "
+        img: "./assets/svg/fam.svg ",
     },
 
     ]
     const settings = {
-        dots: true,
         fade: true,
         infinite: true,
         speed: 500,
@@ -40,33 +39,37 @@ const Testimonies = () => {
         slidesToScroll: 1,
     };
     const [currentSlide, setCurrentSlide] = useState(0);
-
     const goToNextSlide = () => {
-      setCurrentSlide(currentSlide === testimony.length - 1 ? 0 : currentSlide + 1);
+        const slider = sliderRef.current as any;
+        if (slider) {
+            slider.slickNext();
+        }
     };
-  
+
     const goToPrevSlide = () => {
-      setCurrentSlide(currentSlide === 0 ? testimony.length - 1 : currentSlide - 1);
+        const slider = sliderRef.current as any;
+        if (slider) {
+            slider.slickPrev();
+        }
     };
-  
- 
     return (
         <div className="grid grid-cols-1 mx-auto mt-[100px] relative testimonial">
-            <Slider {...settings}  initialSlide={currentSlide}>
+            <Slider {...settings} ref={sliderRef} >
                 {testimony.map((i, j) => (
                     <div key={j} className="custom-slide ">
                         <div className="grid justify-center">
                             <p className="text-[14px]  my-[5px] text-center leading-normal font-semibold text-text-color">
                                 {i.subHead}
                             </p>
-                            <p className="text-[24px] md:text-[28px] lg:text-[33px] font-bold max-w-[623px] text-center flex justify-center leading-normal mt-[5px] mb-10 md:mb-[70px] text-[#222] ">
+                            <p className="text-[24px] h-[121px] md:text-[28px] lg:text-[33px] font-bold max-w-[623px] text-center flex justify-center leading-normal mt-[5px] text-[#222] ">
                                 {i.head}
                             </p>
-
                         </div>
-                        <section className="md:flex custom-slide items-center mb-10 md:mb-[110px] relative">
+                        <section className="md:flex custom-slide items-center mb-10 md:mb-[110px]  mt-10 md:mt-[70px] relative">
                             <div className="md:w-1/2 mx-auto">
-                                <img src={i.img} className="mx-auto" />
+                                <div>
+                                    <img src={i.img} className="mx-auto w-96" />
+                                </div>
                             </div>
                             <div className="md:w-1/2 relative grid gap-[20px] ">
                                 <div>
@@ -77,19 +80,22 @@ const Testimonies = () => {
                                         {i.para}
                                     </p>
                                     <img className="absolute top-[48%] right-[10%]" src="./assets/image/cottation.png" />
-                                    <p className="text-[14px] font-bold leading-[30px] text-[#414141]">{i.name}</p>
+                                    <p className="text-[14px] font-bold leading-[30px] text-[#414141]">- {i.name}</p>
                                 </div>
-                                <div className="flex relative justify-center md:justify-start gap-[20px] mt-[20px]">
-                                    <div onClick={goToPrevSlide} className="rounded-full absolute px-[19px] py-[15px] bg-default-primary my-auto">
-                                        <img src="./assets/svg/leftArrow.svg" />
-                                    </div>
-                                    <div onClick={goToNextSlide} className="rounded-full absolute px-[19px] py-[15px] bg-default-primary my-auto">
-                                        <img src="./assets/svg/rightArrow.svg" />
-                                    </div>
-                                </div>
+                                <div className="flex absolute md:bottom-[-65px] bottom-0 left-[40%] md:left-0 justify-center md:justify-start gap-[20px] mt-[20px]">
+                            <div onClick={goToPrevSlide} className="rounded-full  px-[19px] py-[15px] bg-default-primary my-auto cursor-pointer z-10">
+                                <img src="./assets/svg/leftArrow.svg" alt="left arrow" />
                             </div>
-
+                            <div onClick={goToNextSlide} className="rounded-full  px-[19px] py-[15px] bg-default-primary my-auto cursor-pointer z-10">
+                                <img src="./assets/svg/rightArrow.svg" alt="right arrow" />
+                            </div>
+                        </div>
+                            </div>
                         </section>
+                      
+
+
+
                     </div>
                 ))}
             </Slider>
