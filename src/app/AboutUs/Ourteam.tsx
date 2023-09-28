@@ -1,5 +1,6 @@
 import React from "react";
 export default function Ourteam() {
+ 
     const imageUrls = [
         "/assets/image/ceo.png",
         "/assets/image/designer.png",

@@ -1,3 +1,4 @@
+
 import Navbar from '../Components/Layout/Navbar'
 import Aboutus from "@abserve/app/AboutUs/About";
 import Marketing from "@abserve/app/AboutUs/Marketing"
@@ -7,9 +8,13 @@ import Ourteam from './Ourteam';
 import Getstarted from './Getstarted';
 import Layout from '../Components/Layout/layout';
 import styles from "../../app/css/about.module.css";
-export default function Home() {
+
+export default function Home(props) {
+console.log("mnb",props)
+
   return (
-    <Layout>
+    <Layout> 
+  
       <div className={`${styles.pxPadding} lg:px-[68px]`}>
         <Aboutus />
         <Achievements />
