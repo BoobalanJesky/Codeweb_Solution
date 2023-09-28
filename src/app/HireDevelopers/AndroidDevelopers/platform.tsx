@@ -36,7 +36,7 @@ export default function Platform() {
         {platformInfo.map((info, index) => (
           <div key={index} className="bg-[#fff] p-[20px] grid gap-[20px]  mx-auto border-1 shadow-xl rounded-[20px]">
             <div className="flex gap-[20px] items-center">
-              <img src={info.image} alt={info.title} />
+              <img src={`${process.env.NEXT_PUBLIC_BASE_FOLDER}${info.image}`} alt={info.title} />
               <p className="text-text-black text-[14px] font-semibold leading-[18px]">{info.title}</p>
             </div>
             <p className="text-text-black text-[14px] font-normal max-w-[560px] leading-[30px] ">{info.content}</p>
