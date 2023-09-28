@@ -2,7 +2,7 @@ import React from "react";
 export default function Innovative() {
     return (
         <>
-            <div className="w-full flex items-center flex-wrap gap-3 lg:gap-0 md:flex-nowrap ">
+            <div className="w-full flex items-center flex-wrap gap-3 lg:gap-0 md:flex-nowrap mt-[124px]">
                 <div className="md:w-1/2">
                     <p className="text-[14px] text-text-color font-semibold leading-normal">Services</p>
                     <p className="text-[24px] md:text-[30px] lg:text-[35px] text-[#000] max-w-[567px] font-bold leading-normal">

@@ -1,12 +1,12 @@
-import Testimonies from "../Components/Homepage/Testimonies";
-import Layout from "../Components/Layout/layout";
+import Testimonies from "@abserve/app/Components/Homepage/Testimonies";
+import Layout from "@abserve/app/Components/Layout/layout";
 import Chooseus from "./Chooseus";
 import Industries from "./Industries";
 import Sendquery from "./Sendquery";
 import Platform from "./platform";
 import Topquality from "./Topquality";
-import styles from "../css/about.module.css"
-import Achievements from "../Homepage2/Achievements";
+import styles from "@abserve/app/css/about.module.css"
+import Achievements from "@abserve/app/AboutUs/Achievements";
 export default function Home() {
     return (
         <>

@@ -1,6 +1,6 @@
 "use client"
 import React, { useState } from 'react';
-import MyAccordion from "../help/Accordion";
+import MyAccordion from "@abserve/app/ContactUs/Accordion";
 export default function Topquality() {
     const [expanded, setExpanded] = useState(null);
     const accordionData = [

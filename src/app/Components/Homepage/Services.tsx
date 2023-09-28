@@ -64,7 +64,7 @@ const Services = () => {
         <p className='text-[24px] md:text-[30px] lg:text-[33px] font-bold leading-normal text-text-black max-w-[560px] text-center'>Our Services: Your One-Stop Shop
           for Every IT Services</p>
       </div>
-      <div className={`grid sm:grid-cols-2  lg:grid-cols-4  ${styles.customcols} gap-[15px] lg:gap-[76px]`}>
+      <div className={`grid sm:grid-cols-2  lg:grid-cols-4  ${styles.customcols} gap-[15px] lg:gap-[60px] mt-[70px]`}>
         {cardData.map((card, index) => (
           <AccountCard
             key={index}

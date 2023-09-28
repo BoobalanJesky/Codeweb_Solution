@@ -1,6 +1,6 @@
 import React from "react";
-import AccountCard from "../Components/Reusable/Accountcard";
-import styles from "../../app/css/about.module.css";
+import AccountCard from "@abserve/app/Components/Reusable/Accountcard";
+import styles from "@abserve/app/css/about.module.css";
 export default function Choose() {
     const cardData = [
         {

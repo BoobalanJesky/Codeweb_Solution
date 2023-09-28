@@ -20,7 +20,7 @@ const Assistance = () => {
   ];
   return (
     <>
-      <section className='relative '>
+      <section className='relative mt-[119px]'>
         <img src="/assets/svg/spring.svg" className='absolute hidden md:block lg:left-[103px]' />
         <div className='grid justify-items-center relative'>
           <p className='text-[14px] font-semibold leading-normal text-text-color'>Get In Touch</p>

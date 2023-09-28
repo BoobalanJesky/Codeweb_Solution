@@ -88,7 +88,7 @@ const About = () => {
       <Slider {...settings} >
         {header.map((i, j) => (
           <div key={j} className="custom-slide" >
-            <div className={`${styles.AboutItem} w-full flex justify-center  flex-wrap lg:flex-nowrap items-center px-[5px] pb-[73px]`}>
+            <div className={`${styles.AboutItem} w-full flex justify-center  mt-[124px] flex-wrap lg:flex-nowrap items-center px-[5px] pb-[73px]`}>
               <div className="grid md:w-1/2 m-auto">
                 <p className="font-bold  mt-[7px] text-center   md:text-start text-[24px] md:text-[30px] lg:text-[35px] max-w-[567px]">
                   <span className="text-text-color block text-[14px] font-semibold leading-normal">{i.pageHead}</span>

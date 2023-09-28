@@ -2,7 +2,7 @@ import React from "react";
 export default function Sendquery() {
     return (
         <>
-            <div className="w-full flex  items-center gap-3 lg:gap-0 flex-wrap md:flex-nowrap">
+            <div className="w-full flex  items-center gap-3 lg:gap-0 flex-wrap md:flex-nowrap mt-[124px]">
                 <div className="md:w-1/2">
                     <p className="text-[14px] text-[#005CFF] font-semibold leading-normal">Android Developers</p>
                     <p className="text-[24px] md:text-[30px] lg:text-[35px] text-[#000] max-w-[567px] font-bold leading-normal">

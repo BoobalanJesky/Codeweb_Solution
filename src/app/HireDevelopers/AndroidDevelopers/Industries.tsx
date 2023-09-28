@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../../app/css/about.module.css";
+import styles from "@abserve/app/css/about.module.css";
 export default function Industries() {
     const header = [
         {
