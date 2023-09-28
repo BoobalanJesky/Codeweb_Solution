@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 const Footer = () => {
@@ -24,12 +25,11 @@ const Footer = () => {
                 <div className='md:px-14 '>
                     <p className='text-[27px] font-bold leading-normal text-[#fff] '>pages</p>
                     <ul className='text-[14px] font-normal leading-[30px] text-[#fff]'>
-                        <li>Home</li>
-                        <li>About Us</li>
-                        <li>Client Testimonials</li>
-                        <li></li>
-                        <li>Careers</li>
-                        <li>Case Studies</li>
+                        <li><Link className='hover:underline hover:decoration-[#fff]' href="/Homepage/">Home</Link></li>
+                        <li><Link className='hover:underline hover:decoration-[#fff]' href="/AboutUs/">About Us</Link></li>
+                        <li><Link className='hover:underline hover:decoration-[#fff]' href="/HireDevelopers/">Client Testimonials</Link></li>
+                        <li><Link className='hover:underline hover:decoration-[#fff]' href="/Careers/">Careers</Link></li>
+                        <li><Link className='hover:underline hover:decoration-[#fff]' href="/Homepage/">Case Studies</Link></li>
                     </ul>
                     <div className='pt-[17px]'>
                     <p className='text-[27px] font-bold leading-normal text-[#fff]'>Legal</p>

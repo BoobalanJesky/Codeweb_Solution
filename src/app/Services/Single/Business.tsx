@@ -1,5 +1,5 @@
 import React from "react";
-import MyForm from "../Components/Reusable/form";
+import MyForm from "@abserve/app/Components/Reusable/form";
 export default function Business() {
     return (
         <>

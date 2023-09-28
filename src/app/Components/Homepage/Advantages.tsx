@@ -12,19 +12,19 @@ const Advantages = () => {
     {
       title: "Lorem Ipsum",
       description: "Lorem Ipsum is simply dummy text of the printing.",
-      icon: "/assets/svg/info.svg",
+      icon: "/assets/svg/Frame.svg",
       className: "lg:mb-10 w-[243px] h-[243px] px-[27px] py-[36px] w-[228px] mx-auto lg:mx-0",
     },
     {
       title: "Faster Hiring",
       description: "Lorem Ipsum is simply dummy text of the printing.",
-      icon: "/assets/svg/info.svg",
+      icon: "/assets/svg/account.svg",
       className: `${styles.advGridgap} lg:mt-10 w-[243px] h-[243px] px-[27px] py-[36px] mx-auto`,
     },
     {
       title: "Faster Hiring",
       description: "Lorem Ipsum is simply dummy text of the printing.",
-      icon: "/assets/svg/info.svg",
+      icon: "/assets/svg/hosting tools.svg",
       className: "lg:mb-10 w-[243px] h-[243px] px-[27px] py-[36px]  w-[228px] mx-auto lg:mx-0",
     },
   ];
