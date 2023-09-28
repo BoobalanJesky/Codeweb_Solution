@@ -189,24 +189,24 @@
 @media only screen and (min-width: 826px) and (max-width: 1034px) {
   .rightAbs {
     right: 15px;
-    top: 362px;
+    top: 185px;
   }
 
   .leftAbs {
     left: 15px;
-    top: 362px;
+    top: 185px;
   }
 }
 
 @media only screen and (min-width: 290px)and (max-width: 825px) {
   .rightAbs {
     right: 15px;
-    top: 332px;
+    top: 185px;
   }
 
   .leftAbs {
     left: 15px;
-    top: 332px;
+    top: 185px;
   }
 }
 

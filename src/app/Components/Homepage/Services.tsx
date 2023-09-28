@@ -74,7 +74,7 @@ const Services = () => {
             className={card.className}
             link="Explore"
             LinkclassName="mt-[16px]"
-            iconComponent={<NorthEastIcon style={iconStyle} className='animate-bounce'/>}
+            iconComponent={<NorthEastIcon style={iconStyle} className='hover:animate-ping'/>}
           />
         ))}
       </div>

@@ -1,11 +1,10 @@
 "use client"
-import React, { useRef, useState } from "react";
+import React, {  useState } from "react";
 import Slider from "react-slick"
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 const Testimonies = () => {
-    const [currentSlide, setCurrentSlide] = useState(0);
-    const sliderRef = useRef(null);
+
     const testimony = [{
         subHead: "Client Reviews",
         head: "Testimonials From Our Beloved Clients",
@@ -34,36 +33,26 @@ const Testimonies = () => {
     ]
     const settings = {
         dots: true,
-        // fade: true,
-        infinite: false,
+        fade: true,
+        infinite: true,
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
     };
-    const goToNextSlide = () => {
-        if (currentSlide === sliderRef.current.props.children.length - 1) {
-            // If at the last slide, reset to the first slide
-            setCurrentSlide(0);
-            sliderRef.current.slickGoTo(0);
-        } else {
-            setCurrentSlide(currentSlide + 1);
-            sliderRef.current.slickNext();
-        }
-    };
+    const [currentSlide, setCurrentSlide] = useState(0);
 
-    const goToPrevSlide = () => {
-        if (currentSlide === 0) {
-            // If at the first slide, go to the last slide
-            setCurrentSlide(sliderRef.current.props.children.length - 1);
-            sliderRef.current.slickGoTo(sliderRef.current.props.children.length - 1);
-        } else {
-            setCurrentSlide(currentSlide - 1);
-            sliderRef.current.slickPrev();
-        }
+    const goToNextSlide = () => {
+      setCurrentSlide(currentSlide === testimony.length - 1 ? 0 : currentSlide + 1);
     };
+  
+    const goToPrevSlide = () => {
+      setCurrentSlide(currentSlide === 0 ? testimony.length - 1 : currentSlide - 1);
+    };
+  
+ 
     return (
         <div className="grid grid-cols-1 mx-auto mt-[100px] relative testimonial">
-            <Slider {...settings} ref={sliderRef} initialSlide={currentSlide}>
+            <Slider {...settings}  initialSlide={currentSlide}>
                 {testimony.map((i, j) => (
                     <div key={j} className="custom-slide ">
                         <div className="grid justify-center">
@@ -90,11 +79,11 @@ const Testimonies = () => {
                                     <img className="absolute top-[48%] right-[10%]" src="/assets/image/cottation.png" />
                                     <p className="text-[14px] font-bold leading-[30px] text-[#414141]">{i.name}</p>
                                 </div>
-                                <div className="flex justify-center md:justify-start gap-[20px] mt-[20px]">
-                                    <div onClick={goToPrevSlide} className="rounded-full px-[19px] py-[15px] bg-default-primary my-auto">
+                                <div className="flex relative justify-center md:justify-start gap-[20px] mt-[20px]">
+                                    <div onClick={goToPrevSlide} className="rounded-full absolute px-[19px] py-[15px] bg-default-primary my-auto">
                                         <img src="/assets/svg/leftArrow.svg" />
                                     </div>
-                                    <div onClick={goToNextSlide} className="rounded-full px-[19px] py-[15px] bg-default-primary my-auto">
+                                    <div onClick={goToNextSlide} className="rounded-full absolute px-[19px] py-[15px] bg-default-primary my-auto">
                                         <img src="/assets/svg/rightArrow.svg" />
                                     </div>
                                 </div>

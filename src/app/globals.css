@@ -52,23 +52,19 @@ body {
   color:#005cff !important;
   font-size: 10px !important;
 }
-
-/* Container holding the carousel */
-
 .custom-slide {
-  width: 100% !important; /* Set your desired width */
-/* height:100% !important; */
+  width: 100% !important; 
 }
-/* Style for carousel items (slides) */
+
 
 .carousel-container {
-  width: 100%; /* Set a default width */
+  width: 100%; 
 }
 .slick-arrow slick-next{
   display: none;
 }
 .slick-prev {
-  display: none !important; /* Hide the previous button */
+  display: none !important; 
 }
 .css-ws89sb-MuiPaper-root-MuiAccordion-root.Mui-expanded {
   margin:0 !important

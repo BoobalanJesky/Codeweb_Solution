@@ -54,7 +54,7 @@ const Header = () => {
     <section className=" ">
       <nav className="mx-auto flex items-center justify-between py-3 px-4 lg:px-8" aria-label="Global">
         <div className="pr-6 ">
-          <Link className="" href="/">
+          <Link className="" href="/Homepage">
             <img src="/assets/svg/logo.svg" alt="Rebustar-logo" />
           </Link>
         </div>
