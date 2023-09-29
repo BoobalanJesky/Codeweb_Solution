@@ -19,7 +19,7 @@ const Testimonies = () => {
         mainHead: "Excellent Service & Commitment",
         para: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.",
         name: "Madhavan",
-        img: "./assets/svg/fam.svg ",
+        img: "./assets/image/Group 2019.png",
     },
     {
         subHead: "Client Reviews",
