@@ -60,11 +60,11 @@ const Testimonies = () => {
                             <p className="text-[14px]  my-[5px] text-center leading-normal font-semibold text-text-color">
                                 {i.subHead}
                             </p>
-                            <p className="text-[24px] h-[121px] md:text-[28px] lg:text-[33px] font-bold max-w-[623px] text-center flex justify-center leading-normal mt-[5px] text-[#222] ">
+                            <p className="text-[24px] h-[114px] sm:h-[85px] md:h-[121px] md:text-[28px] lg:text-[33px] font-bold max-w-[623px] text-center flex justify-center leading-normal mt-[5px] text-[#222] ">
                                 {i.head}
                             </p>
                         </div>
-                        <section className="md:flex custom-slide items-center mb-10 md:mb-[110px]  mt-10 md:mt-[70px] relative">
+                        <section className="md:flex custom-slide items-center mb-10 md:mb-[110px] grid gap-20 md:gap-0  md:mt-[70px] relative">
                             <div className="md:w-1/2 mx-auto">
                                 <div>
                                     <img src={`${process.env.NEXT_PUBLIC_BASE_FOLDER}${i.img}`} className="mx-auto w-[300px] lg:w-96 h-[400px]" />
@@ -78,27 +78,22 @@ const Testimonies = () => {
                                     <p className="text-[14px] font-normal  leading-[30px] text-[#414141] md:max-w-[520px] mt-[26px] mb-[20px]">
                                         {i.para}
                                     </p>
-                                    <img className="absolute top-[48%] right-[10%]" src={`${process.env.NEXT_PUBLIC_BASE_FOLDER}assets/image/quotation.png`}/>
+                                    <img className="absolute top-[48%] right-[10%]" src={`${process.env.NEXT_PUBLIC_BASE_FOLDER}assets/image/quotation.png`} />
                                     <p className="text-[14px] font-bold leading-[30px] text-[#414141]">- {i.name}</p>
                                 </div>
-                                <div className="flex absolute md:bottom-[-65px] bottom-0 left-[40%] md:left-0 justify-center md:justify-start gap-[20px] mt-[20px]">
-                            <div onClick={goToPrevSlide} className="rounded-full  px-[19px] py-[15px] bg-default-primary my-auto cursor-pointer z-10">
-                                <img src={`${process.env.NEXT_PUBLIC_BASE_FOLDER}assets/svg/leftArrow.svg`}alt="left arrow" />
-                            </div>
-                            <div onClick={goToNextSlide} className="rounded-full  px-[19px] py-[15px] bg-default-primary my-auto cursor-pointer z-10">
-                                <img src={`${process.env.NEXT_PUBLIC_BASE_FOLDER}assets/svg/rightArrow.svg`} alt="right arrow" />
-                            </div>
-                        </div>
+                                <div className="flex absolute top-[-104px] sm:top-auto md:bottom-[-65px] bottom-0 left-[35%] sm:left-[40%] md:left-0 justify-center md:justify-start gap-[20px] mt-[20px]">
+                                    <div onClick={goToPrevSlide} className="rounded-full px-[19px] h-[50px]  py-[15px] bg-default-primary md:my-auto cursor-pointer z-10">
+                                        <img src={`${process.env.NEXT_PUBLIC_BASE_FOLDER}assets/svg/leftArrow.svg`} alt="left arrow" />
+                                    </div>
+                                    <div onClick={goToNextSlide} className="rounded-full  px-[19px] h-[50px] top py-[15px] bg-default-primary  md:my-auto cursor-pointer z-10">
+                                        <img src={`${process.env.NEXT_PUBLIC_BASE_FOLDER}assets/svg/rightArrow.svg`} alt="right arrow" />
+                                    </div>
+                                </div>
                             </div>
                         </section>
-                      
-
-
-
                     </div>
                 ))}
             </Slider>
-
         </div>
     );
 };

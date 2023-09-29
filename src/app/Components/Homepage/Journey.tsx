@@ -76,9 +76,9 @@ const goToPrevSlide = () => {
 
             <div className="flex justify-center items-center flex-wrap">
               <div className="md:w-1/2">
-                <img src={i.image} className="mx-auto w-[300px] md:w-[18.5rem] lg:w-auto py-[50px]" />
+                <img src={i.image} className="mx-auto w-[300px] h-[470px] md:w-[18.5rem] lg:w-auto py-[50px]" />
               </div>
-              <div className="md:w-1/2 mt-20  lg:mt-[49px] my-auto md:mt-[70px]">
+              <div className="md:w-1/2 mt-20  lg:mt-[49px] my-auto  md:mt-[70px]">
                 <p className="text-[14px] my-[5px] text-center lg:text-start  leading-normal font-semibold text-text-color">
                   {i.subhead}
                 </p>
