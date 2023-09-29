@@ -199,7 +199,7 @@ const Header = () => {
                 <Disclosure as="div" className="-mx-3">
                   {({ open }) => (
                     <>
-                      <Disclosure.Button className="flex items-center justify-between w-full py-2 pl-3 pr-3.5 text-base text-[14px] text-[#423F3F] hover:text-[#0d6efd] ">
+                      {/* <Disclosure.Button className="flex items-center justify-between w-full py-2 pl-3 pr-3.5 text-base text-[14px] text-[#423F3F] hover:text-[#0d6efd] ">
                         Home
                         <span>
                           <svg
@@ -217,7 +217,7 @@ const Header = () => {
                             />
                           </svg>
                         </span>
-                      </Disclosure.Button>
+                      </Disclosure.Button> */}
                       <Disclosure.Panel className="border-solid border py-1">
                         {[...products].map((item) => (
                           <Disclosure.Button
@@ -235,19 +235,19 @@ const Header = () => {
                 </Disclosure>
                 <div className='flex flex-col'>
                   <div>
-                    <Link className="nav-link no-underline text-[14px] text-[#423F3F] hover:text-[#0d6efd]" rel="noopener noreferrer" target="_self" href="/about-us">Home</Link>
+                    <Link className="nav-link no-underline text-[14px] text-[#423F3F] hover:text-[#0d6efd]" rel="noopener noreferrer" target="_self" href="/Homepage">Home</Link>
                   </div>
                   <div>
-                    <Link className="nav-link no-underline text-[14px] text-[#423F3F] hover:text-[#0d6efd]" rel="noopener noreferrer" target="_self" href="/Portfolio">Company</Link>
+                    <Link className="nav-link no-underline text-[14px] text-[#423F3F] hover:text-[#0d6efd]" rel="noopener noreferrer" target="_self" href="/AboutUs">Company</Link>
                   </div>
                   <div>
-                    <Link className="nav-link no-underline text-[14px] text-[#423F3F] hover:text-[#0d6efd]" rel="noopener noreferrer" target="_self" href="/Testimonial">Services</Link>
+                    <Link className="nav-link no-underline text-[14px] text-[#423F3F] hover:text-[#0d6efd]" rel="noopener noreferrer" target="_self" href="/Services">Services</Link>
                   </div>
                   <div className='relative'>
-                    <Link className="nav-link no-underline text-[14px] text-[#423F3F] hover:text-[#0d6efd]" rel="noopener noreferrer" target="_self" href="/hire-dedicated-developers-in-india">Hire Developers</Link>
+                    <Link className="nav-link no-underline text-[14px] text-[#423F3F] hover:text-[#0d6efd]" rel="noopener noreferrer" target="_self" href="/HireDevelopers">Hire Developers</Link>
                   </div>
                   <div className='relative'>
-                    <Link className="nav-link no-underline text-[14px] text-[#423F3F] hover:text-[#0d6efd]" rel="noopener noreferrer" target="_self" href="/hire-dedicated-developers-in-india">Contact Us</Link>
+                    <Link className="nav-link no-underline text-[14px] text-[#423F3F] hover:text-[#0d6efd]" rel="noopener noreferrer" target="_self" href="/ContactUs">Contact Us</Link>
                   </div>
                 </div>
               </div>
