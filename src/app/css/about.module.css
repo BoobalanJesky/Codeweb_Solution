@@ -222,15 +222,15 @@
     top: 210px;
   }
 }
-@media only screen and (min-width: 500px)and (max-width: 767px) {
+@media only screen and (min-width: 300px)and (max-width: 767px) {
   .rightAbs {
-    right: 2px;
-    top: 210px;
+    right: 132px;
+    top: 399px;
   }
 
   .leftAbs {
-    left: 2px;
-    top: 210px;
+    left: 132px;
+    top: 399px;
   }
 }
 .fadeDesign ::before {
