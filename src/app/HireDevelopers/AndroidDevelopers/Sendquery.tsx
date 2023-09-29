@@ -15,7 +15,7 @@ export default function Sendquery() {
                 </div>
                 
                     <div className="md:w-1/2  md:mt-0 mx-auto">
-                        <img className="mx-auto" src="./assets/image/Group 2019.png" />
+                        <img className="mx-auto" src={`${process.env.NEXT_PUBLIC_BASE_FOLDER}assets/image/Group 2019.png`}/>
 
                     </div>
                 

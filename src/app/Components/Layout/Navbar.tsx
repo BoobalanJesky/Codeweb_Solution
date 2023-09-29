@@ -55,7 +55,7 @@ const Header = () => {
       <nav className="mx-auto flex items-center justify-between py-3 px-4 lg:px-8" aria-label="Global">
         <div className="pr-6 ">
           <Link className="" href="/Homepage/">
-            <img src="./assets/svg/logo.svg" alt="logo" />
+            <img src={`${process.env.NEXT_PUBLIC_BASE_FOLDER}assets/svg/logo.svg`} alt="logo" />
           </Link>
         </div>
         <div className="flex lg:hidden">

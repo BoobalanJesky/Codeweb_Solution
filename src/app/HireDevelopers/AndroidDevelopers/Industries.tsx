@@ -45,7 +45,7 @@ export default function Industries() {
                 {header.map((i, j) => (
                     <div key={j} className="bg-default-white p-[20px] w-[300px] mx-auto border-1 shadow-lg rounded-[20px]">
                         <div className="flex gap-[20px] items-center">
-                            <img src={i.icon} alt={i.head} />
+                            <img src={`${process.env.NEXT_PUBLIC_BASE_FOLDER}${i.icon}`} alt={i.head} />
                             <p className="text-[#414141] text-[14px] font-semibold leading-[24px]">{i.head}</p>
                         </div>
                     </div>
