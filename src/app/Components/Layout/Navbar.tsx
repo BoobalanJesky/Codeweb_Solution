@@ -95,10 +95,8 @@ const Header = () => {
                   </span>
                 </div>
                 <div className="invisible absolute z-50 flex w-max flex-col bg-[#fff] border-solid border border-slate-200 rounded py-1 shadow-xl group-hover:visible">
-                  <Link className=" block px-4 border-solid hover:border-l-4 border-l-4 border-[#fff0] hover:border-l-[#004299] text-[14px] text-[#423F3F] hover no-underline  hover:bg-[#cfcfcf]" href="/AboutUs/">Company</Link>
-                  <Link className=" block px-4 border-solid hover:border-l-4 border-l-4 border-[#fff0] hover:border-l-[#004299] text-[14px] text-[#423F3F] hover no-underline  hover:bg-[#cfcfcf]" href="/Services/">Services</Link>
-                  <Link className=" block px-4 border-solid hover:border-l-4 border-l-4 border-[#fff0] hover:border-l-[#004299] text-[14px] text-[#423F3F] hover no-underline  hover:bg-[#cfcfcf]" href="/HireDevelopers/">Hire Developers</Link>
-                  <Link className=" block px-4 border-solid hover:border-l-4 border-l-4 border-[#fff0] hover:border-l-[#004299] text-[14px] text-[#423F3F] hover no-underline  hover:bg-[#cfcfcf]" href="/ContactUs/">Contact Us</Link>
+                  <Link className=" block px-4 border-solid hover:border-l-4 border-l-4 border-[#fff0] hover:border-l-[#004299] text-[14px] text-[#423F3F] hover no-underline  hover:bg-[#cfcfcf]" href="/AboutUs/">AboutUs</Link>
+                  <Link className=" block px-4 border-solid hover:border-l-4 border-l-4 border-[#fff0] hover:border-l-[#004299] text-[14px] text-[#423F3F] hover no-underline  hover:bg-[#cfcfcf]" href="/Careers/">Careers</Link>
                 </div>
               </div>
             </li>
@@ -126,10 +124,7 @@ const Header = () => {
                   </span>
                 </div>
                 <div className="invisible absolute z-50 flex w-max flex-col bg-[#fff] border-solid border border-slate-200 rounded py-1 shadow-xl group-hover:visible">
-                <Link className=" block px-4 border-solid hover:border-l-4 border-l-4 border-[#fff0] hover:border-l-[#004299] text-[14px] text-[#423F3F] hover no-underline hover:bg-[#cfcfcf]" href="/AboutUs/">Company</Link>
-                  <Link className=" block px-4 border-solid hover:border-l-4 border-l-4 border-[#fff0] hover:border-l-[#004299] text-[14px] text-[#423F3F] hover no-underline hover:bg-[#cfcfcf]" href="/Services/Single/">Services</Link>
-                  <Link className=" block px-4 border-solid hover:border-l-4 border-l-4 border-[#fff0] hover:border-l-[#004299] text-[14px] text-[#423F3F] hover no-underline hover:bg-[#cfcfcf]" href="/HireDevelopers/">Hire Developers</Link>
-                  <Link className=" block px-4 border-solid hover:border-l-4 border-l-4 border-[#fff0] hover:border-l-[#004299] text-[14px] text-[#423F3F] hover no-underline hover:bg-[#cfcfcf]" href="/ContactUs/">Contact Us</Link>
+                  <Link className=" block px-4 border-solid hover:border-l-4 border-l-4 border-[#fff0] hover:border-l-[#004299] text-[14px] text-[#423F3F] hover no-underline hover:bg-[#cfcfcf]" href="/Services/Single/">Single</Link>
                   {/* <Link className=" block px-4 border-solid hover:border-l-4 border-l-4 border-[#fff0] hover:border-l-[#004299] text-[14px] text-[#423F3F] hover no-underline hover:bg-[#cfcfcf]" href="/carpooling-script">Ride Sharing Script</Link> */}
                 </div>
               </div>
@@ -158,10 +153,7 @@ const Header = () => {
                   </span>
                 </div>
                 <div className="invisible absolute z-50 flex w-max flex-col bg-[#fff] border-solid border border-slate-200 rounded py-1 shadow-xl group-hover:visible">
-                <Link className=" block px-4 border-solid hover:border-l-4 border-l-4 border-[#fff0] hover:border-l-[#004299] text-[14px] text-[#423F3F] hover no-underline hover:bg-[#cfcfcf]" href="/AboutUs/">Company</Link>
-                  <Link className=" block px-4 border-solid hover:border-l-4 border-l-4 border-[#fff0] hover:border-l-[#004299] text-[14px] text-[#423F3F] hover no-underline hover:bg-[#cfcfcf]" href="/Services/">Services</Link>
-                  <Link className=" block px-4 border-solid hover:border-l-4 border-l-4 border-[#fff0] hover:border-l-[#004299] text-[14px] text-[#423F3F] hover no-underline hover:bg-[#cfcfcf]" href="/HireDevelopers/AndroidDevelopers/">Hire Developers</Link>
-                  <Link className=" block px-4 border-solid hover:border-l-4 border-l-4 border-[#fff0] hover:border-l-[#004299] text-[14px] text-[#423F3F] hover no-underline hover:bg-[#cfcfcf]" href="/ContactUs/">Contact Us</Link>
+                  <Link className=" block px-4 border-solid hover:border-l-4 border-l-4 border-[#fff0] hover:border-l-[#004299] text-[14px] text-[#423F3F] hover no-underline hover:bg-[#cfcfcf]" href="/HireDevelopers/AndroidDevelopers/">Android Developers</Link>
                   {/* <Link className=" block px-4 border-solid hover:border-l-4 border-l-4 border-[#fff0] hover:border-l-[#004299] text-[14px] text-[#423F3F] hover no-underline hover:bg-[#cfcfcf]" href="/carpooling-script">Ride Sharing Script</Link> */}
                 </div>
               </div>
