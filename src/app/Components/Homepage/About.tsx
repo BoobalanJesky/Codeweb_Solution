@@ -7,8 +7,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 // import "./CustomSlider.css"; 
 const About = () => {
-  const [activeDot, setActiveDot] = useState(0);
-  const handleDotClick = (index) => {
+  const [activeDot, setActiveDot] = useState<number | string>(0);
+  const handleDotClick = (index:number | string) => {
     setActiveDot(index);
   };
   const settings = {
@@ -18,7 +18,7 @@ const About = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     prevArrow: <></> ,
-    appendDots: (dots) => (
+    appendDots: (dots: React.ReactNode[]) => (
       <ul className="custom-dots">
         {dots.slice(0, 8)}
       </ul>

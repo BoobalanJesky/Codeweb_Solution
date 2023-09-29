@@ -19,7 +19,7 @@ const Testimonies = () => {
         mainHead: "Excellent Service & Commitment",
         para: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.",
         name: "Madhavan",
-        img: "./assets/svg/fam.svg ",
+        img: "./assets/image/Group 2019.png ",
     },
     {
         subHead: "Client Reviews",
@@ -38,7 +38,6 @@ const Testimonies = () => {
         slidesToShow: 1,
         slidesToScroll: 1,
     };
-    const [currentSlide, setCurrentSlide] = useState(0);
     const goToNextSlide = () => {
         const slider = sliderRef.current as any;
         if (slider) {
@@ -68,7 +67,7 @@ const Testimonies = () => {
                         <section className="md:flex custom-slide items-center mb-10 md:mb-[110px]  mt-10 md:mt-[70px] relative">
                             <div className="md:w-1/2 mx-auto">
                                 <div>
-                                    <img src={i.img} className="mx-auto w-96" />
+                                    <img src={i.img} className="mx-auto w-[300px] lg:w-96 h-[400px]" />
                                 </div>
                             </div>
                             <div className="md:w-1/2 relative grid gap-[20px] ">

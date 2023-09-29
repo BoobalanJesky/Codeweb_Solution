@@ -3,12 +3,11 @@ import React, { useState } from 'react';
 import MyAccordion from "./Accordion";
 
 export default function Faq() {
-    const [expanded, setExpanded] = useState(null);
-
-    const handleChange = (panel) => (event, isExpanded) => {
-        setExpanded(isExpanded ? panel : null);
-    };
-
+  const [expanded, setExpanded] = useState<string | null>(null);
+  const handleChange = (panel: string) => (event: React.ChangeEvent<{}>, expanded: boolean) => {
+    setExpanded((prevPanel) => (prevPanel === panel ? null : panel));
+  };
+  
     return (
         <>
             <div className="mt-10  md:mt-[100px] text-center">
