@@ -68,7 +68,7 @@ const Testimonies = () => {
                         <section className="md:flex custom-slide items-center mb-10 md:mb-[110px]  mt-10 md:mt-[70px] relative">
                             <div className="md:w-1/2 mx-auto">
                                 <div>
-                                    <img src={i.img} className="mx-auto w-96" />
+                                    <img src={`${process.env.NEXT_PUBLIC_BASE_FOLDER}${i.img}`} className="mx-auto w-96" />
                                 </div>
                             </div>
                             <div className="md:w-1/2 relative grid gap-[20px] ">
@@ -79,15 +79,15 @@ const Testimonies = () => {
                                     <p className="text-[14px] font-normal  leading-[30px] text-[#414141] md:max-w-[520px] mt-[26px] mb-[20px]">
                                         {i.para}
                                     </p>
-                                    <img className="absolute top-[48%] right-[10%]" src="./assets/image/cottation.png" />
+                                    <img className="absolute top-[48%] right-[10%]" src={`${process.env.NEXT_PUBLIC_BASE_FOLDER}assets/image/quotation.png`}/>
                                     <p className="text-[14px] font-bold leading-[30px] text-[#414141]">- {i.name}</p>
                                 </div>
                                 <div className="flex absolute md:bottom-[-65px] bottom-0 left-[40%] md:left-0 justify-center md:justify-start gap-[20px] mt-[20px]">
                             <div onClick={goToPrevSlide} className="rounded-full  px-[19px] py-[15px] bg-default-primary my-auto cursor-pointer z-10">
-                                <img src="./assets/svg/leftArrow.svg" alt="left arrow" />
+                                <img src={`${process.env.NEXT_PUBLIC_BASE_FOLDER}assets/svg/leftArrow.svg`}alt="left arrow" />
                             </div>
                             <div onClick={goToNextSlide} className="rounded-full  px-[19px] py-[15px] bg-default-primary my-auto cursor-pointer z-10">
-                                <img src="./assets/svg/rightArrow.svg" alt="right arrow" />
+                                <img src={`${process.env.NEXT_PUBLIC_BASE_FOLDER}assets/svg/rightArrow.svg`} alt="right arrow" />
                             </div>
                         </div>
                             </div>

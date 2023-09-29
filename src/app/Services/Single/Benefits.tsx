@@ -23,7 +23,7 @@ export default function Benefits() {
             <div className="w-full flex mt-10 md:mt-[150px] flex-wrap md:flex-nowrap items-center">
                 <div className="md:w-1/2 ">
                     <div className="">
-                        <img className="" src="./assets/image/Group 2024.png" />
+                        <img className="" src={`${process.env.NEXT_PUBLIC_BASE_FOLDER}assets/image/Group 2024.png`} />
                     </div>
                 </div>
                 <div className="md:w-1/2">
