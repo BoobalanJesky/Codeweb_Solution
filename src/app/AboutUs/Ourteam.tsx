@@ -1,11 +1,13 @@
 import React from "react";
 export default function Ourteam() {
  
-    const imageUrls = [
-        "./assets/image/ceo.png",
-        "./assets/image/designer.png",
-        "./assets/image/coo.png",
-        "./assets/image/cooo.png",
+    const image = [
+        // "./assets/image/ceo.png",
+        // "./assets/image/designer.png",
+        // "./assets/image/coo.png",
+        // "./assets/image/cooo.png",
+        {src:"./assets/image/Mask group(3).png"
+    },
     ];
     return (
         <>
@@ -15,8 +17,10 @@ export default function Ourteam() {
             </div>
 
             <div className="grid sm:grid-cols-2 justify-items-center lg:grid-cols-4 md:gap-[41px]">
-                {imageUrls.map((url, index) => (
-                    <img key={index} src={url} alt={`Image ${index + 1}`} />
+                {image.map((i, index) => (
+                    <div key={index} className="bg-[#fff] border shadow-md">
+                        <img src={i.src} className=""/>
+                        </div>
                 ))}
             </div>
         </>
