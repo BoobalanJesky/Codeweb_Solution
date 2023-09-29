@@ -78,27 +78,22 @@ const Testimonies = () => {
                                     <p className="text-[14px] font-normal  leading-[30px] text-[#414141] md:max-w-[520px] mt-[26px] mb-[20px]">
                                         {i.para}
                                     </p>
-                                    <img className="absolute top-[48%] right-[10%]" src={`${process.env.NEXT_PUBLIC_BASE_FOLDER}assets/image/quotation.png`}/>
+                                    <img className="absolute top-[48%] right-[10%]" src={`${process.env.NEXT_PUBLIC_BASE_FOLDER}assets/image/quotation.png`} />
                                     <p className="text-[14px] font-bold leading-[30px] text-[#414141]">- {i.name}</p>
                                 </div>
                                 <div className="flex absolute md:bottom-[-65px] bottom-0 left-[40%] md:left-0 justify-center md:justify-start gap-[20px] mt-[20px]">
-                            <div onClick={goToPrevSlide} className="rounded-full  px-[19px] py-[15px] bg-default-primary my-auto cursor-pointer z-10">
-                                <img src={`${process.env.NEXT_PUBLIC_BASE_FOLDER}assets/svg/leftArrow.svg`}alt="left arrow" />
-                            </div>
-                            <div onClick={goToNextSlide} className="rounded-full  px-[19px] py-[15px] bg-default-primary my-auto cursor-pointer z-10">
-                                <img src={`${process.env.NEXT_PUBLIC_BASE_FOLDER}assets/svg/rightArrow.svg`} alt="right arrow" />
-                            </div>
-                        </div>
+                                    <div onClick={goToPrevSlide} className="rounded-full  px-[19px] py-[15px] bg-default-primary my-auto cursor-pointer z-10">
+                                        <img src={`${process.env.NEXT_PUBLIC_BASE_FOLDER}assets/svg/leftArrow.svg`} alt="left arrow" />
+                                    </div>
+                                    <div onClick={goToNextSlide} className="rounded-full  px-[19px] py-[15px] bg-default-primary my-auto cursor-pointer z-10">
+                                        <img src={`${process.env.NEXT_PUBLIC_BASE_FOLDER}assets/svg/rightArrow.svg`} alt="right arrow" />
+                                    </div>
+                                </div>
                             </div>
                         </section>
-                      
-
-
-
                     </div>
                 ))}
             </Slider>
-
         </div>
     );
 };

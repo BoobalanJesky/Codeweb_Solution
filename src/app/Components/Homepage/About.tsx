@@ -19,7 +19,7 @@ const About = () => {
     slidesToScroll: 1,
     prevArrow: <></> ,
     appendDots: (dots: React.ReactNode[]) => (
-      <ul className="custom-dots">
+      <ul className="slick-dots custom-dots progress-bar">
         {dots.slice(0, 8)}
       </ul>
     )
