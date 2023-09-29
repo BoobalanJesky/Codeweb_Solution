@@ -39,7 +39,7 @@ export default function Topquality() {
                     <p className="text-[14px] text-text-white md:max-w-[590px] leading-[30px]">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39s standard dummy text ever since the 1500s.</p>
                 </div>
                 <div className="md:w-1/2">
-                    <div className='bg-default-black rounded-[20px] px-[20px]  mx-auto'>
+                    <div className='bg-default-black  rounded-[20px] px-[20px]  mx-auto'>
                         {accordionData.map((item, index) => (
                             <MyAccordion
                                 key={index}
@@ -48,11 +48,12 @@ export default function Topquality() {
                                 expanded={expanded === `panel${index + 1}`}
                                 onChange={handleChange(`panel${index + 1}`)}
                                 sx={{
+                                    color:"#fff",
                                     border: "0.5px solid #fff",
                                     backgroundColor: "#222222",
                                 }}
                                 titleSx={{
-                                    color: "#fff"
+                                    color: "#fff !important"
                                 }}
                                 contentSx={{
                                     fontSize: '14px',
