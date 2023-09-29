@@ -13,12 +13,12 @@ const Footer = () => {
                     <div className='grid gap-[14px] pt-[27px]'>
                     <p className='text-[27px] font-bold leading-normal text-[#fff]'>Social Profiles</p>
                     <div className='flex gap-[18px]'>
-                        <img className='w-[25px] h-[25px]' src="./assets/svg/fb.svg"></img>
-                        <img className='w-[25px] h-[25px]' src="./assets/svg/twit.svg"></img>
-                        <img className='w-[25px] h-[25px]' src="./assets/svg/insta.svg"></img>
-                        <img className='w-[25px] h-[25px]' src="./assets/svg/linkdin.svg"></img>
-                        <img className='w-[25px] h-[25px]' src="./assets/svg/whatsap.svg"></img>
-                        <img className='w-[25px] h-[25px]' src="./assets/svg/yt.svg"></img>
+                        <img className='w-[25px] h-[25px]' src={`${process.env.NEXT_PUBLIC_BASE_FOLDER}assets/svg/fb.svg`}></img>
+                        <img className='w-[25px] h-[25px]' src={`${process.env.NEXT_PUBLIC_BASE_FOLDER}assets/svg/twit.svg`}></img>
+                        <img className='w-[25px] h-[25px]' src={`${process.env.NEXT_PUBLIC_BASE_FOLDER}assets/svg/insta.svg`}></img>
+                        <img className='w-[25px] h-[25px]' src={`${process.env.NEXT_PUBLIC_BASE_FOLDER}assets/svg/linkdin.svg`}></img>
+                        <img className='w-[25px] h-[25px]' src={`${process.env.NEXT_PUBLIC_BASE_FOLDER}assets/svg/whatsap.svg`}></img>
+                        <img className='w-[25px] h-[25px]' src={`${process.env.NEXT_PUBLIC_BASE_FOLDER}assets/svg/yt.svg`}></img>
                     </div>
                 </div>
                 </div>
