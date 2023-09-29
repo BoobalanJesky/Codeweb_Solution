@@ -2,7 +2,11 @@
 import React, { useState } from 'react';
 import MyAccordion from "@abserve/app/ContactUs/Accordion";
 export default function Topquality() {
-    const [expanded, setExpanded] = useState(null);
+    const [expanded, setExpanded] = useState<string | null>(null);
+    const handleChange = (panel: string) => (event: React.ChangeEvent<{}>, expanded: boolean) => {
+        setExpanded((prevPanel) => (prevPanel === panel ? null : panel));
+    };
+
     const accordionData = [
         {
             title: "Efficient and Productive Workforce",
@@ -25,9 +29,7 @@ export default function Topquality() {
             content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
         },
     ];
-    const handleChange = (panel) => (event, isExpanded) => {
-        setExpanded(isExpanded ? panel : null);
-    };
+
     return (
         <>
             <div className="mt-[100px] w-full flex p-5 lg:p-[70px] gap-4 lg:gap-0 items-center flex-wrap md:flex-nowrap  bg-default-black">
@@ -38,39 +40,39 @@ export default function Topquality() {
                 </div>
                 <div className="md:w-1/2">
                     <div className='bg-default-black rounded-[20px] px-[20px]  mx-auto'>
-                    {accordionData.map((item, index) => (
-    <MyAccordion
-        key={index}
-        title={item.title}
-        content={item.content}
-        expanded={expanded === `panel${index + 1}`}
-        onChange={handleChange(`panel${index + 1}`)}
-        sx={{
-            border:"0.5px solid #fff",
-            backgroundColor: "#222222",
-          }}
-          titleSx={{
-            color:"#fff"
-          }}
-          contentSx={{
-            fontSize: '14px',
-            '@media (min-width: 768px)': {
-              fontSize: '14x',
-              lineHeight: '30px',
-            },
-            fontWeight: 'bold',
-            color: '#fff',
-            paddingTop: '20px',
-            paddingLeft: '20px',
-          }}
-          addSx={{
-            color:"#fff"
-          }}
-          removeSx={{
-            color:"#fff"
-          }}
-    />
-))}
+                        {accordionData.map((item, index) => (
+                            <MyAccordion
+                                key={index}
+                                title={item.title}
+                                content={item.content}
+                                expanded={expanded === `panel${index + 1}`}
+                                onChange={handleChange(`panel${index + 1}`)}
+                                sx={{
+                                    border: "0.5px solid #fff",
+                                    backgroundColor: "#222222",
+                                }}
+                                titleSx={{
+                                    color: "#fff"
+                                }}
+                                contentSx={{
+                                    fontSize: '14px',
+                                    '@media (min-width: 768px)': {
+                                        fontSize: '14x',
+                                        lineHeight: '30px',
+                                    },
+                                    fontWeight: 'bold',
+                                    color: '#fff',
+                                    paddingTop: '20px',
+                                    paddingLeft: '20px',
+                                }}
+                                addSx={{
+                                    color: "#fff"
+                                }}
+                                removeSx={{
+                                    color: "#fff"
+                                }}
+                            />
+                        ))}
 
                     </div>
                 </div>

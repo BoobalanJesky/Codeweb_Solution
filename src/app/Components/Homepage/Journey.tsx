@@ -46,30 +46,24 @@ const Journey = () => {
   const settings = {
     fade:true,
     arrows: false,
-    infinite: false,
+    infinite: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
   };
   const goToNextSlide = () => {
-    if (currentSlide === sliderRef.current.props.children.length - 1) {
-      setCurrentSlide(0);
-      sliderRef.current.slickGoTo(0);
-    } else {
-      setCurrentSlide(currentSlide + 1);
-      sliderRef.current.slickNext();
+    const slider = sliderRef.current as any;
+    if (slider) {
+        slider.slickNext();
     }
-  };
+};
 
-  const goToPrevSlide = () => {
-    if (currentSlide === 0) {
-      setCurrentSlide(sliderRef.current.props.children.length - 1);
-      sliderRef.current.slickGoTo(sliderRef.current.props.children.length - 1);
-    } else {
-      setCurrentSlide(currentSlide - 1);
-      sliderRef.current.slickPrev();
+const goToPrevSlide = () => {
+    const slider = sliderRef.current as any;
+    if (slider) {
+        slider.slickPrev();
     }
-  };
+};
   return (
     <div className="relative">
       {/*   */}
@@ -78,10 +72,9 @@ const Journey = () => {
       </div>
       <Slider {...settings} ref={sliderRef} initialSlide={currentSlide}>
         {journey.map((i, j) => (
-          // eslint-disable-next-line react/jsx-key
-          <div className={`w-full   p-2 h-full bg-[#222] lg:h-[520px] flex items-start justify-center  lg:flex-nowrap lg:gap-[70px]  ${styles.journeyPad} lg:px-[72px]`}>
+          <div key={j}  className={`w-full   p-2 h-full bg-[#222] lg:h-[520px] flex items-start justify-center  lg:flex-nowrap lg:gap-[70px]  ${styles.journeyPad} lg:px-[72px]`}>
 
-            <div key={j} className="flex justify-center items-center flex-wrap">
+            <div className="flex justify-center items-center flex-wrap">
               <div className="md:w-1/2">
                 <img src={i.image} className="mx-auto w-[300px] md:w-[18.5rem] lg:w-auto py-[50px]" />
               </div>
@@ -105,10 +98,9 @@ const Journey = () => {
                   </button></div>
               </div>
             </div>
-
           </div>))}
       </Slider>
-      <div onClick={goToNextSlide} className={`rounded-full absolute ${styles.rightAbs}    border border-[#0F5DC4] h-[50px] w-[50px] flex justify-center items-center  bg-default-primary my-auto`}>
+      <div onClick={goToNextSlide} className={`rounded-full absolute ${styles.rightAbs} cursor-pointer   border border-[#0F5DC4] h-[50px] w-[50px] flex justify-center items-center  bg-default-primary my-auto`}>
         <img src="./assets/svg/rightArrow.svg" />
       </div>
     </div>
