@@ -50,7 +50,7 @@ body {
 }
 .slick-dots li button:before {
   color:#005cff !important;
-  font-size: 15px !important;
+  font-size: 10px !important;
 }
 .custom-slide {
   width: 100% !important; 
