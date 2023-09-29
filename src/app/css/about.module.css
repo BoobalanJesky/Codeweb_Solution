@@ -175,41 +175,64 @@
     gap: 30px
   }
 
+
+}
+@media only screen and (min-width: 1134px) and (max-width: 1336px) {
   .leftAbs {
     left: 15px;
-    top: 270px;
+    top: 235px;
   }
 
   .rightAbs {
     right: 15px;
-    top: 270px;
+    top: 235px;
   }
 }
+@media only screen and (min-width: 1084px) and (max-width: 1134px) {
+  .leftAbs {
+    left: 2px;
+    top: 235px;
+  }
 
-@media only screen and (min-width: 826px) and (max-width: 1034px) {
   .rightAbs {
-    right: 15px;
-    top: 185px;
+    right: 2px;
+    top: 235px;
+  }
+}
+@media only screen and (min-width: 826px) and (max-width: 1083px) {
+  .rightAbs {
+    right: 2px;
+    top: 183px;
   }
 
   .leftAbs {
-    left: 15px;
-    top: 185px;
+    left: 2px;
+    top: 183px;
   }
 }
 
-@media only screen and (min-width: 290px)and (max-width: 825px) {
+@media only screen and (min-width: 768px)and (max-width: 825px) {
   .rightAbs {
-    right: 15px;
-    top: 185px;
+    right: 2px;
+    top: 210px;
   }
 
   .leftAbs {
-    left: 15px;
-    top: 185px;
+    left: 2px;
+    top: 210px;
   }
 }
+@media only screen and (min-width: 300px)and (max-width: 767px) {
+  .rightAbs {
+    right: 132px;
+    top: 399px;
+  }
 
+  .leftAbs {
+    left: 132px;
+    top: 399px;
+  }
+}
 .fadeDesign ::before {
   content: url("/assets/image/fade.png")
 }
