@@ -4,8 +4,8 @@ interface TeamMemberProps {
     role: string;
     image: string;
     svg: string;
-  }
-const TeamMember:React.FC<TeamMemberProps>  = ({ name, role, image, svg }) => (
+}
+const TeamMember: React.FC<TeamMemberProps> = ({ name, role, image, svg }) => (
     <div className="w-[295px] relative h-[328px] border rounded-[19px]">
         <img src={image} className="w-full rounded-t-[19px]" />
         <p className="bg-[#fff] border-2 absolute top-[53px] right-[59px] border-[#fff] flex justify-center items-center  w-[175px] h-[175px] rounded-full p-1">

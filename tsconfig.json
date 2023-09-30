@@ -20,6 +20,7 @@
       }
     ],
     "paths": {
+      "next/navigation": ["custom/path/to/next/navigation"],
       "@abserve/*": ["./src/*"],
       "@mui/material": ["../node_modules/@mui/material"],
       "@mui/material/styles": ["../node_modules/@mui/material/styles"]

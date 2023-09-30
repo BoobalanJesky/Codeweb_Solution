@@ -8,7 +8,7 @@ import "slick-carousel/slick/slick-theme.css";
 // import "./CustomSlider.css"; 
 const About = () => {
   const [activeDot, setActiveDot] = useState<number | string>(0);
-  const handleDotClick = (index:number | string) => {
+  const handleDotClick = (index: number | string) => {
     setActiveDot(index);
   };
   const settings = {
@@ -17,7 +17,7 @@ const About = () => {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    prevArrow: <></> ,
+    prevArrow: <></>,
     appendDots: (dots: React.ReactNode[]) => (
       <ul className="">
         {dots.slice(0, 8)}
@@ -85,46 +85,45 @@ const About = () => {
   ]
 
   return (
-    
-      <Slider {...settings} >
-        {header.map((i, j) => (
-          <div key={j} className="custom-slide" >
-            <div className={`${styles.AboutItem} w-full flex justify-center  mt-[124px] flex-wrap lg:flex-nowrap items-center px-[5px] pb-[73px]`}>
-              <div className="grid md:w-1/2 m-auto">
-                <p className="font-bold  mt-[7px] text-center   md:text-start text-[24px] md:text-[30px] lg:text-[35px] max-w-[567px]">
-                  <span className="text-text-color block text-[14px] font-semibold leading-normal">{i.pageHead}</span>
-                  <span className="text-text-color ">{i.headText} </span>
-                  <span className="">{i.head} </span>
-                </p>
-                <p className="max-w-[540px]  md:mx-0 flex justify-center text-[14px] mt-[27px] mb-[20px] md:mb-[51px] leading-normal font-normal">
-                  Lorem Ipsum is simply dummy text of the printing and typesetting
-                  industry. Lorem Ipsum has been the industry&#39s standard dummy text ever
-                  since the 1500s
-                </p>
 
-                <div className="flex mb-8 md:mb-0 justify-center md:justify-start gap-[11px]">
-                  <button className="bg-default-primary flex justify-between items-center gap-[7px] text-[#fff] capitalize px-[25px] py-[13px] rounded-[4px] text-[14px] font-medium leading-normal">
-                    <span className="whitespace-nowrap">{i.button}</span>
-                    <img
-                      src={i.img}
-                      className="w-[12px] h-[8px]"
-                    ></img>
-                  </button>
-                  {j === 0 && (
-                    <div className="rounded-full border  flex justify-between px-[21px] py-[14px] bg-default-primary">
-                      <img src="./assets/svg/arrow.svg" alt="arrow" />
-                    </div>
-                  )}
-                </div>
-              </div>
+    <Slider {...settings} >
+      {header.map((i, j) => (
+        <div key={j} className="custom-slide" >
+          <div className={`${styles.AboutItem} w-full flex justify-center  mt-[124px] flex-wrap lg:flex-nowrap items-center px-[5px] pb-[73px]`}>
+            <div className="grid md:w-1/2 m-auto">
+              <p className="font-bold  mt-[7px] text-center   md:text-start text-[24px] md:text-[30px] lg:text-[35px] max-w-[567px]">
+                <span className="text-text-color block text-[14px] font-semibold leading-normal">{i.pageHead}</span>
+                <span className="text-text-color ">{i.headText} </span>
+                <span className="">{i.head} </span>
+              </p>
+              <p className="max-w-[540px]  md:mx-0 flex justify-center text-[14px] mt-[27px] mb-[20px] md:mb-[51px] leading-normal font-normal">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry&#39s standard dummy text ever
+                since the 1500s
+              </p>
 
-              <div className="md:w-1/2">
-                <img src={i.bannerImage} className="mx-auto" />
+              <div className="flex mb-8 md:mb-0 justify-center md:justify-start gap-[11px]">
+                <button className="bg-default-primary flex justify-between items-center gap-[7px] text-[#fff] capitalize px-[25px] py-[13px] rounded-[4px] text-[14px] font-medium leading-normal">
+                  <span className="whitespace-nowrap">{i.button}</span>
+                  <img
+                    src={i.img}
+                    className="w-[12px] h-[8px]"
+                  ></img>
+                </button>
+                {j === 0 && (
+                  <div className="rounded-full border  flex justify-between px-[21px] py-[14px] bg-default-primary">
+                    <img src="./assets/svg/arrow.svg" alt="arrow" />
+                  </div>
+                )}
               </div>
             </div>
+            <div className="md:w-1/2">
+              <img src={i.bannerImage} className="mx-auto" />
+            </div>
           </div>
-        ))}
-      </Slider>
+        </div>
+      ))}
+    </Slider>
   );
 };
 

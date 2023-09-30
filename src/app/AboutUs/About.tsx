@@ -12,7 +12,7 @@ export default function Aboutus() {
                         <p className="text-[14px]  leading-[21px] font-normal max-w-[540px]">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                             Lorem Ipsum has been the industry&#39s standard dummy text ever since the 1500s</p>
                     </div>
-                    <button className="bg-default-primary w-[131px] h-[49px] border-2 px-[21px] py-[14px] rounded-[4px] text-[#fff] font-medium text-[14px]">Get started</button>
+                    <button className="bg-default-primary flex justify-between items-center gap-[7px] text-[#fff] w-[131px] h-[49px] capitalize px-[25px] py-[13px] rounded-[4px] text-[14px] font-medium leading-normal">Get started</button>
                 </div>
                 <div className=" md:w-1/2">
                     <img className="mx-auto height" src="./assets/image/Group 2019.png" />

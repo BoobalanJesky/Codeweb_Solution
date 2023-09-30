@@ -1,43 +1,6 @@
-// import React from 'react'
-// import Button from '../Reusable/Button'
-// import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
-// import styles from "../../css/about.module.css";
-// const Navbar = () => {
-//     const hanldeQuote=()=>{
-//         console.log("Hi")
-//     }
-//   return (
-//     <>
-//     {/* linearColor */}
-//     <div className="relative pxPadNav    mb-10 lg:mb-[115px]  background flex justify-between gap-3  pt-[21px] items-center">
-//         <div className={`${styles.NavbarItem} flex items-center lg:gap-[50px]`}>
-//          <img src="./assets/image/logo.png"/>
-//          <div>
-//           <ul className='lg:flex gap-[25px] text-[14px] hidden   font-medium leading-normal whitespace-nowrap'>
-//             <li>Home</li>
-//             <li>Company <KeyboardArrowDownIcon/></li>
-//             <li>Services<KeyboardArrowDownIcon/></li>
-//             <li>Hire Developers <KeyboardArrowDownIcon/></li>
-//             <li>Contact Us</li>
-//           </ul>
-//         </div>
-//         </div>
-
-//         <div>
-//             <button className='bg-default-primary whitespace-nowrap text-[#fff] capitalize px-[5px] sm:px-[25px] py-[10px] rounded-[4px] text-[10px] sm:text-[14px] font-medium leading-normal'>
-//             Get A Free Quote
-//             </button>
-//         </div>
-//     </div>
-//     </>
-//   )
-// }
-
-// export default Navbar
-
-
 'use client'
 import React, { useState } from 'react'
+import { useRouter } from 'next/navigation'
 import { Dialog, Disclosure } from '@headlessui/react'
 import Link from 'next/link'
 import CloseIcon from '@mui/icons-material/Close';
@@ -49,6 +12,7 @@ const products = [
   { name: 'Ride Sharing Script', href: '/carpooling-script' },
 ]
 const Header = () => {
+
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   return (
     <section className=" ">
@@ -74,9 +38,9 @@ const Header = () => {
             <li className="nav-item drop-down px-3.5 py-2">
               <div className="group relative cursor-pointer">
                 <div className="flex items-center justify-between">
-                  <Link className="menu-hover no-underline font-medium leading-normal whitespace-nowrap text-[14px] text-text-black hover:text-text-color" href='/AboutUs/'>
+                  <div className="menu-hover no-underline font-medium leading-normal whitespace-nowrap text-[14px] text-text-black hover:text-text-color">
                     Company
-                  </Link>
+                  </div>
                   <span>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -103,9 +67,9 @@ const Header = () => {
             <li className="nav-item drop-down px-3.5 py-2">
               <div className="group relative cursor-pointer">
                 <div className="flex items-center justify-between">
-                  <Link className="menu-hover no-underline font-medium leading-normal whitespace-nowrap text-[14px] text-text-black hover:text-text-color" href="/Services/">
+                  <div className="menu-hover no-underline font-medium leading-normal whitespace-nowrap text-[14px] text-text-black hover:text-text-color" >
                     Services
-                  </Link>
+                  </div>
                   <span>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -124,6 +88,7 @@ const Header = () => {
                   </span>
                 </div>
                 <div className="invisible absolute z-50 flex w-max flex-col bg-[#fff] border-solid border border-slate-200 rounded py-1 shadow-xl group-hover:visible">
+                <Link className=" block px-4 border-solid hover:border-l-4 border-l-4 border-[#fff0] hover:border-l-[#004299] text-[14px] text-[#423F3F] hover no-underline hover:bg-[#cfcfcf]" href="/Services/">Services</Link>
                   <Link className=" block px-4 border-solid hover:border-l-4 border-l-4 border-[#fff0] hover:border-l-[#004299] text-[14px] text-[#423F3F] hover no-underline hover:bg-[#cfcfcf]" href="/Services/Single/">Single</Link>
                   {/* <Link className=" block px-4 border-solid hover:border-l-4 border-l-4 border-[#fff0] hover:border-l-[#004299] text-[14px] text-[#423F3F] hover no-underline hover:bg-[#cfcfcf]" href="/carpooling-script">Ride Sharing Script</Link> */}
                 </div>
@@ -132,9 +97,9 @@ const Header = () => {
             <li className="nav-item drop-down px-3.5 py-2">
               <div className="group relative cursor-pointer">
                 <div className="flex items-center justify-between">
-                  <Link className="menu-hover no-underline font-medium leading-normal whitespace-nowrap text-[14px] text-text-black hover:text-text-color" href="/HireDevelopers/">
+                  <div className="menu-hover no-underline font-medium leading-normal whitespace-nowrap text-[14px] text-text-black hover:text-text-color">
                     Hire Developers
-                  </Link>
+                  </div>
                   <span>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -153,6 +118,7 @@ const Header = () => {
                   </span>
                 </div>
                 <div className="invisible absolute z-50 flex w-max flex-col bg-[#fff] border-solid border border-slate-200 rounded py-1 shadow-xl group-hover:visible">
+                <Link className=" block px-4 border-solid hover:border-l-4 border-l-4 border-[#fff0] hover:border-l-[#004299] text-[14px] text-[#423F3F] hover no-underline hover:bg-[#cfcfcf]" href="/HireDevelopers/">Hire Developers</Link>
                   <Link className=" block px-4 border-solid hover:border-l-4 border-l-4 border-[#fff0] hover:border-l-[#004299] text-[14px] text-[#423F3F] hover no-underline hover:bg-[#cfcfcf]" href="/HireDevelopers/AndroidDevelopers/">Android Developers</Link>
                   {/* <Link className=" block px-4 border-solid hover:border-l-4 border-l-4 border-[#fff0] hover:border-l-[#004299] text-[14px] text-[#423F3F] hover no-underline hover:bg-[#cfcfcf]" href="/carpooling-script">Ride Sharing Script</Link> */}
                 </div>

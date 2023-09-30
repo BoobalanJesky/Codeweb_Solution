@@ -17,7 +17,6 @@ export default function Careers() {
 
                 <div className=" md:w-1/2">
                     <img className="" src="./assets/image/Group 2019.png" />
-
                 </div>
 
             </div>

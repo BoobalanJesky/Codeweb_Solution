@@ -225,12 +225,12 @@
 @media only screen and (min-width: 300px)and (max-width: 767px) {
   .rightAbs {
     right: 132px;
-    top: 399px;
+    top:466px;
   }
 
   .leftAbs {
     left: 132px;
-    top: 399px;
+    top: 466px;
   }
 }
 .fadeDesign ::before {

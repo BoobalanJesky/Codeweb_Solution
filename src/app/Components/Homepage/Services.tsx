@@ -5,8 +5,8 @@ import styles from "../../css/about.module.css";
 import Link from 'next/link';
 const Services = () => {
   const iconStyle = {
-    fontSize: '18px', 
-    marginBottom:"36px"
+    fontSize: '18px',
+    marginBottom: "36px"
   };
   const cardData = [
     {
@@ -14,56 +14,56 @@ const Services = () => {
       description: "Lorem Ipsum is simply dummy text of the printing.",
       icon: "./assets/svg/website.svg",
       className: "mt-10 w-[268px] h-[293px] px-[27px] py-[36px] mx-auto ",
-      path:"/Careers/"
+      path: "/Careers/"
     },
     {
       title: "Mobile App Development",
       description: "Lorem Ipsum is simply dummy text of the printing.",
       icon: "./assets/svg/mobile.svg",
       className: "mt-10 w-[268px] h-[293px] px-[27px] py-[36px] mx-auto ",
-      path:"/Services/"
+      path: "/Services/"
     },
     {
       title: "Digital Marketing",
       description: "Lorem Ipsum is simply dummy text of the printing.",
       icon: "./assets/svg/digital.svg",
       className: "mt-10 w-[268px] h-[293px] px-[27px] py-[36px] mx-auto ",
-      path:"/HireDevelopers/"
+      path: "/HireDevelopers/"
     },
     {
       title: "Graphic Designing",
       description: "Lorem Ipsum is simply dummy text of the printing.",
       icon: "./assets/svg/graphic.svg",
       className: "mt-10 w-[268px] h-[293px] px-[27px] py-[36px] mx-auto ",
-      path:"/Services/Single"
+      path: "/Services/Single"
     },
     {
       title: "UI/UX Designing",
       description: "Lorem Ipsum is simply dummy text of the printing.",
       icon: "./assets/svg/uiux.svg",
       className: "mt-10 w-[268px] h-[293px] px-[27px] py-[36px] mx-auto ",
-      path:"/HireDevelopers/AndroidDevelopers"
+      path: "/HireDevelopers/AndroidDevelopers"
     },
     {
       title: "Software Testing",
       description: "Lorem Ipsum is simply dummy text of the printing.",
       icon: "./assets/svg/software.svg",
       className: "mt-10 w-[268px] h-[293px] px-[27px] py-[36px] mx-auto ",
-      path:"/ContactUs/"
+      path: "/ContactUs/"
     },
     {
       title: "Blockchain Development",
       description: "Lorem Ipsum is simply dummy text of the printing.",
       icon: "./assets/svg/blockchain.svg",
       className: "mt-10 w-[268px] h-[293px] px-[27px] py-[36px] mx-auto ",
-      path:"/Homepage/"
+      path: "/Homepage/"
     },
     {
       title: "Cryptocurrency",
       description: "Lorem Ipsum is simply dummy text of the printing.",
       icon: "./assets/svg/crypto.svg",
       className: "mt-10 w-[268px] h-[293px] px-[27px] py-[36px] mx-auto ",
-      path:"/AboutUs/"
+      path: "/AboutUs/"
     },
   ];
   return (
@@ -74,21 +74,19 @@ const Services = () => {
           for Every IT Services</p>
       </div>
       <div className={`grid sm:grid-cols-2  lg:grid-cols-4  ${styles.customcols} gap-[15px] lg:gap-[60px] mt-[70px]`}>
-        
         {cardData.map((card, index) => (
-          <Link href={`${card.path}`}>
-          <AccountCard
-            key={index}
-            title={card.title}
-            description={card.description}
-            icon={card.icon}
-            className={card.className}
-            link="Explore"
-            LinkclassName="mt-[16px]"
-            iconComponent={<NorthEastIcon style={iconStyle} className='hover:animate-ping'/>}
-          /> </Link>
+          <Link key={index} href={`${card.path}`}>
+            <AccountCard
+              title={card.title}
+              description={card.description}
+              icon={card.icon}
+              className={card.className}
+              link="Explore"
+              LinkclassName="mt-[16px]"
+              iconComponent={<NorthEastIcon style={iconStyle} className='hover:animate-ping' />}
+            />
+          </Link>
         ))}
-       
       </div>
     </div>
   )

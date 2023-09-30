@@ -8,35 +8,35 @@ const Journey = () => {
   const sliderRef = useRef(null);
   const journey = [
     {
-      image:"./assets/image/banner.png",
+      image: "./assets/image/banner.png",
       subhead: "Case Studies",
       head: "Unlocking Success Story Of AloApp, From Scratch to Finish",
       para: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. Lorem Ipsum is simply dummy text of the printing.",
       button: "Explore AloApp Case Study",
     },
     {
-      image:"./assets/image/banner2.png",
+      image: "./assets/image/banner2.png",
       subhead: "Case Studies",
       head: "Want To know About Our Service? Join Us Now!",
       para: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. Lorem Ipsum is simply dummy text of the printing.",
       button: "Explore AloApp Case Study",
     },
     {
-      image:"./assets/image/banner.png",
+      image: "./assets/image/banner.png",
       subhead: "Case Studies",
       head: "Are you looking for any unique set of services?",
       para: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. Lorem Ipsum is simply dummy text of the printing.",
       button: "Explore AloApp Case Study",
     },
     {
-      image:"./assets/image/banner2.png",
+      image: "./assets/image/banner2.png",
       subhead: "Case Studies",
       head: "Do You Want To Know More About Our Business?",
       para: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. Lorem Ipsum is simply dummy text of the printing.",
       button: "Explore AloApp Case Study",
     },
     {
-      image:"./assets/image/banner.png",
+      image: "./assets/image/banner.png",
       subhead: "Case Studies",
       head: "Do You Want To Know More Dedicated Developer Services?",
       para: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. Lorem Ipsum is simply dummy text of the printing.",
@@ -44,7 +44,7 @@ const Journey = () => {
     },
   ]
   const settings = {
-    fade:true,
+    fade: true,
     arrows: false,
     infinite: true,
     speed: 500,
@@ -54,16 +54,16 @@ const Journey = () => {
   const goToNextSlide = () => {
     const slider = sliderRef.current as any;
     if (slider) {
-        slider.slickNext();
+      slider.slickNext();
     }
-};
+  };
 
-const goToPrevSlide = () => {
+  const goToPrevSlide = () => {
     const slider = sliderRef.current as any;
     if (slider) {
-        slider.slickPrev();
+      slider.slickPrev();
     }
-};
+  };
   return (
     <div className="relative">
       {/*   */}
@@ -72,7 +72,7 @@ const goToPrevSlide = () => {
       </div>
       <Slider {...settings} ref={sliderRef} initialSlide={currentSlide}>
         {journey.map((i, j) => (
-          <div key={j}  className={`w-full   p-2 h-full bg-[#222] lg:h-[520px] flex items-start justify-center  lg:flex-nowrap lg:gap-[70px]  ${styles.journeyPad} lg:px-[72px]`}>
+          <div key={j} className={`w-full   p-2 h-full bg-[#222] lg:h-[520px] flex items-start justify-center  lg:flex-nowrap lg:gap-[70px]  ${styles.journeyPad} lg:px-[72px]`}>
 
             <div className="flex justify-center items-center flex-wrap">
               <div className="md:w-1/2">
