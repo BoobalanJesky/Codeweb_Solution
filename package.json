@@ -21,7 +21,7 @@
     "eslint": "8.49.0",
     "eslint-config-next": "13.4.19",
     "formik": "^2.4.5",
-    "next": "^13.4.19",
+    "next": "^13.5.3",
     "next-fonts": "^1.5.1",
     "next-google-fonts": "^2.2.0",
     "postcss": "8.4.29",

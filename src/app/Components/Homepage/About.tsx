@@ -25,6 +25,7 @@ const About = () => {
     )
 
   };
+  const router =useRouter
   const header = [
     {
       pageHead: "",

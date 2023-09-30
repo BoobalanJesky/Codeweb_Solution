@@ -28,7 +28,7 @@ export default function Ourteam() {
                 <p className="text-[14px] text-[#005CFF] font-semibold leading-normal">Our Team Members</p>
                 <p className="text-[24px] md:text-[28px] lg:text-[33px] text-[#000] font-bold leading-normal">Introducing Our Talented Team Members</p>
             </div>
-            <div className="flex justify-center items-center flex-wrap gap-5 md:gap-[41px]">
+            <div className="flex justify-center mt-5 md:mt-[71px] items-center flex-wrap gap-5 md:gap-[41px]">
                 {teamData.map((member, index) => (
                     <TeamMember
                         key={index}
